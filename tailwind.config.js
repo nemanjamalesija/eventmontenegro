@@ -15,6 +15,7 @@ module.exports = {
       backgroundColor: {
         'color-accent-main': '#b05ec4',
         'color-shade-main': '#9e55b0',
+        'color-shadest': '#f7eff9',
       },
       fontSize: {
         'font-nav': '1.1rem',
@@ -22,6 +23,9 @@ module.exports = {
 
       stroke: {
         'stroke-icon-primary': '#b05ec4',
+      },
+      ringColor: {
+        'ring-color-primary': '#c88ed6',
       },
     },
   },
