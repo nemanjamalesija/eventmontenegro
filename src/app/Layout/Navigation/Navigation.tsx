@@ -45,7 +45,7 @@ const Navigation: FC = () => {
         <li className='nav__ul--item'>
           <a
             href='#'
-            className='active:scale-95 py-2 px-10 bg-color-accent-main hover:bg-color-shade-main transition-all, duration-300 rounded-md text-color-shadest inline-flex items-center justify-center text-lg font-bold transition-color focus:outline-none focus:ring-8 focus:ring-ring-color-primary focus:ring-offset-2'
+            className='active:scale-95 py-2 px-10 bg-color-accent-main hover:bg-color-shade-main transition-all, duration-300 rounded-sm text-color-shadest inline-flex items-center justify-center text-lg font-bold transition-color focus:outline-none focus:ring-8 focus:ring-ring-color-primary focus:ring-offset-2'
           >
             Kontakt
           </a>
