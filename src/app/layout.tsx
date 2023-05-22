@@ -1,4 +1,4 @@
-import Navigation from './Navigation/Navigation';
+import Navigation from './Home/Navigation/Navigation';
 import './globals.css';
 import { Inter } from 'next/font/google';
 

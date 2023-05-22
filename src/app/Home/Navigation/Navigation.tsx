@@ -1,6 +1,6 @@
 import { FC } from 'react';
-import logo from '../../../assets/img/logo.png';
-import logoSub from '../../../assets/img/logo-sub.png';
+import logo from '../../../../assets/img/logo.png';
+import logoSub from '../../../../assets/img/logo-sub.png';
 import Image from 'next/image';
 
 const Navigation: FC = () => {
