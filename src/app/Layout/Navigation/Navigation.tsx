@@ -26,15 +26,26 @@ const Navigation: FC = () => {
           className='cursor-pointer   h-12 w-auto'
         />
       </div>
-      <ul className='flex justify-between items-center flex-1  text-gray-600 font-medium text-lg'>
-        <li className='nav__ul--item'>Početna</li>
-        <li className='nav__ul--item'>O nama</li>
-        <li className='nav__ul--item'>Iznajmi opremu</li>
-        <li className='nav__ul--item'>Proslave</li>
+      <ul className='flex justify-between items-center flex-1  text-gray-600 font-medium text-xl'>
+        <li className='nav__ul--item'>
+          <a href='#'> Početna</a>
+        </li>
+        <li className='nav__ul--item'>
+          {' '}
+          <a href='#'> O nama</a>
+        </li>
+        <li className='nav__ul--item'>
+          {' '}
+          <a href='#'> Iznajmi Opremu</a>
+        </li>
+        <li className='nav__ul--item'>
+          {' '}
+          <a href='#'>Kontakt</a>
+        </li>
         <li className='nav__ul--item'>
           <a
             href='#'
-            className='active:scale-95 py-2 px-10 bg-color-accent-main hover:bg-color-shade-main transition-all, duration-300 rounded-md text-color-shadest inline-flex items-center justify-center text-lg font-medium transition-color focus:outline-none focus:ring-8 focus:ring-ring-color-primary focus:ring-offset-2'
+            className='active:scale-95 py-2 px-10 bg-color-accent-main hover:bg-color-shade-main transition-all, duration-300 rounded-md text-color-shadest inline-flex items-center justify-center text-lg font-bold transition-color focus:outline-none focus:ring-8 focus:ring-ring-color-primary focus:ring-offset-2'
           >
             Kontakt
           </a>

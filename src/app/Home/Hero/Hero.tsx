@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import styles from './hero.module.css';
 import clsx from 'clsx';
-import { pinyonScript, poppins } from '../../../../utils/fonts';
+import { nunito, pinyonScript, poppins } from '../../../../utils/fonts';
 import Button from '@/components/ui/Button';
 
 const Hero: FC = () => {
@@ -15,12 +15,7 @@ const Hero: FC = () => {
         >
           Dio svake proslave!
         </h1>
-        <p
-          className={clsx(
-            poppins.className,
-            'text-2xl text-gray-600 font-medium mt-4'
-          )}
-        >
+        <p className='text-3xl text-gray-600 font-medium mt-4'>
           Stvaramo nezaboravna sjećanja koja traju vječno.
         </p>
         <div className='mt-10 flex gap-6'>

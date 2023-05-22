@@ -48,3 +48,10 @@ body {
 .ghost:hover {
   box-shadow: inset 0 0 0 3px #fff;
 }
+
+*:focus {
+  box-shadow: 0 0 0 0.6rem rgba(200, 142, 214);
+  transition: all 0.3s;
+  border: none;
+  outline: none;
+}

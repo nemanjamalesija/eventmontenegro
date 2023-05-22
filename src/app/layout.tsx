@@ -1,5 +1,5 @@
 import clsx from 'clsx';
-import { poppins } from '../../utils/fonts';
+import { nunito } from '../../utils/fonts';
 import Navigation from './Layout/Navigation/Navigation';
 import Sidebar from './Layout/Sidebar/Sidebar';
 import './globals.css';
@@ -17,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <body className={clsx(poppins.className)}>
+      <body className={clsx(nunito.className)}>
         <Navigation />
         <Sidebar />
         {children}
