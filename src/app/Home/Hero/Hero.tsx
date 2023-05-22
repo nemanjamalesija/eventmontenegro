@@ -5,7 +5,9 @@ import { pinyonScript, poppins } from '../../../../utils/fonts';
 
 const Hero: FC = () => {
   return (
-    <section className={clsx(styles.section__hero, 'mt-20 relative')}>
+    <section
+      className={clsx(styles.section__hero, 'mt-20 relative overflow-hidden')}
+    >
       <div className='hero__introduction w-full'>
         <h1
           className={clsx(pinyonScript.className, 'heading-primary  text-8xl')}

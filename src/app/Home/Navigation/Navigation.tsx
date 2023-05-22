@@ -31,7 +31,7 @@ const Navigation: FC = () => {
           className='cursor-pointer   h-12 w-auto'
         />
       </div>
-      <ul className='flex justify-between items-center flex-1  text-gray-600 font-medium'>
+      <ul className='flex justify-between items-center flex-1  text-gray-600 font-medium text-lg'>
         <li className='nav__ul--item'>Početna</li>
         <li className='nav__ul--item'>O nama</li>
         <li className='nav__ul--item'>Iznajmi opremu</li>
