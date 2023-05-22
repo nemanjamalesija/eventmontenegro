@@ -8,7 +8,9 @@ const Hero: FC = () => {
     <section
       className={clsx(styles.section__hero, 'mt-20 relative overflow-hidden')}
     >
-      <div className='hero__introduction w-full'>
+      <div
+        className={clsx(styles.hero__introduction, 'mt-20 relative  w-full')}
+      >
         <h1
           className={clsx(pinyonScript.className, 'heading-primary  text-8xl')}
         >
@@ -17,7 +19,7 @@ const Hero: FC = () => {
         <p
           className={clsx(
             poppins.className,
-            'text-2xl font-medium mt-6 text-gray-600'
+            'text-2xl text-gray-600 font-medium mt-6'
           )}
         >
           Stvaramo nezaboravna sjećanja koja traju vječno.

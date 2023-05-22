@@ -7,3 +7,11 @@
   background-position: center;
   height: 90vh;
 }
+
+.hero__introduction {
+  position: absolute;
+  top: 25%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}

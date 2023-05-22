@@ -6,11 +6,6 @@ import clsx from 'clsx';
 import styles from './nav.module.css';
 
 const Navigation: FC = () => {
-  // pocetna
-  // Iznajmi opremu
-  // Proslave
-  // O nama
-
   return (
     <nav
       className={clsx(
@@ -39,7 +34,7 @@ const Navigation: FC = () => {
         <li className='nav__ul--item'>
           <a
             href='#'
-            className='inline-block py-2 px-10 font-medium bg-color-accent-main hover:bg-color-shade-main transition-all, duration-300 rounded-full text-white'
+            className='inline-block py-2 px-10 font-medium bg-color-accent-main hover:bg-color-shade-main transition-all, duration-300 rounded-full text-color-shadest'
           >
             Kontakt
           </a>

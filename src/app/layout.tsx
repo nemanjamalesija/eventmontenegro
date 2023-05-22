@@ -1,5 +1,7 @@
+import clsx from 'clsx';
 import { poppins } from '../../utils/fonts';
-import Navigation from './Home/Navigation/Navigation';
+import Navigation from './Layout/Navigation/Navigation';
+import Sidebar from './Layout/Sidebar/Sidebar';
 import './globals.css';
 
 export const metadata = {
@@ -15,8 +17,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <body className={poppins.className}>
+      <body className={clsx(poppins.className)}>
         <Navigation />
+        <Sidebar />
         {children}
       </body>
     </html>

@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       textColor: {
         'color-accent-main': '#b05ec4',
+        'color-shadest': '#f7eff9',
       },
 
       backgroundColor: {
@@ -17,6 +18,10 @@ module.exports = {
       },
       fontSize: {
         'font-nav': '1.1rem',
+      },
+
+      stroke: {
+        'stroke-icon-primary': '#b05ec4',
       },
     },
   },

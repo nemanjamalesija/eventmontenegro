@@ -26,18 +26,12 @@ html {
 body {
   line-height: 1.9;
   background-color: #fafafa;
+  display: grid;
+  grid-template-columns: 3rem 1fr;
 }
 
 .nav__ul--item {
   cursor: pointer;
-}
-
-.hero__introduction {
-  position: absolute;
-  top: 30%;
-  left: 55%;
-  transform: translate(-50%, -50%);
-  width: 100%;
 }
 
 .heading-primary {
@@ -49,8 +43,4 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-}
-
-p {
-  color: rgb(53, 28, 59);
 }
