@@ -1,8 +1,6 @@
+import { poppins } from '../../utils/fonts';
 import Navigation from './Home/Navigation/Navigation';
 import './globals.css';
-import { Inter } from 'next/font/google';
-
-const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
   title: 'Event Montenegro',
@@ -17,7 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <body className='font-custom-font'>
+      <body className={poppins.className}>
         <Navigation />
         {children}
       </body>

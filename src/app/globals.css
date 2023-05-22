@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap');
 
 :root {
 }
@@ -23,14 +24,33 @@ html {
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
   line-height: 1.9;
-  font-weight: 300;
   background-color: #fafafa;
 }
 
 .nav__ul--item {
-  font-size: 1.1rem;
-  font-weight: 400;
   cursor: pointer;
+}
+
+.hero__introduction {
+  position: absolute;
+  top: 30%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.heading-primary {
+  background-image: linear-gradient(
+    to right,
+    rgb(176, 94, 196),
+    rgb(53, 28, 59)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+p {
+  color: rgb(53, 28, 59);
 }

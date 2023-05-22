@@ -1,9 +1,7 @@
-.section__hero {
+.nav {
   background-image: linear-gradient(
       rgba(239, 223, 243, 0.3),
       rgba(239, 223, 243, 0.3)
     ),
     url(../../../../assets/img/hero.png);
-  background-position: center;
-  height: 90vh;
 }

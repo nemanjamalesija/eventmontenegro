@@ -13,6 +13,7 @@ module.exports = {
 
       backgroundColor: {
         'color-accent-main': '#b05ec4',
+        'color-shade-main': '#9e55b0',
       },
       fontSize: {
         'font-nav': '1.1rem',
