@@ -1,8 +1,10 @@
+'use client';
+
 import React, { useContext, useEffect, useReducer, useState } from 'react';
 
 interface appContextValues {
-  isNavToggled: boolean;
-  setIsNavToggled: React.Dispatch<React.SetStateAction<boolean>>;
+  isNavVisible: boolean;
+  setIsNavVissible: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
 const ProductsContext = React.createContext<appContextValues>(
@@ -10,16 +12,16 @@ const ProductsContext = React.createContext<appContextValues>(
 );
 
 const AppProvider = ({ children }: { children: React.ReactNode }) => {
-  const [isNavToggled, setIsNavToggled] = useState<boolean>(false);
+  const [isNavVisible, setIsNavVissible] = useState<boolean>(false);
 
   return (
-    <ProductsContext.Provider value={{ isNavToggled, setIsNavToggled }}>
+    <ProductsContext.Provider value={{ isNavVisible, setIsNavVissible }}>
       {children}
     </ProductsContext.Provider>
   );
 };
 
-export const useProductsContext = () => {
+export const useAppContext = () => {
   return useContext(ProductsContext);
 };
 
