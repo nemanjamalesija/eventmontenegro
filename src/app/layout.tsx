@@ -3,6 +3,7 @@ import { nunito } from '../../utils/fonts';
 import Navigation from './Layout/Navigation/Navigation';
 import Sidebar from './Layout/Sidebar/Sidebar';
 import './globals.css';
+import { AppProvider } from '@/Provider/appContext';
 
 export const metadata = {
   title: 'Event Montenegro',
@@ -18,9 +19,11 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body className={clsx(nunito.className)}>
-        <Navigation />
-        <Sidebar />
-        {children}
+        <AppProvider>
+          <Navigation />
+          <Sidebar />
+          {children}
+        </AppProvider>
       </body>
     </html>
   );

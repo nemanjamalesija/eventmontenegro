@@ -1,4 +1,4 @@
-import { Pinyon_Script, Poppins, Nunito } from 'next/font/google';
+import { Pinyon_Script, Poppins, Nunito, Josefin_Sans } from 'next/font/google';
 
 export const pinyonScript = Pinyon_Script({
   subsets: ['latin'],
@@ -11,6 +11,11 @@ export const poppins = Poppins({
 });
 
 export const nunito = Nunito({
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '600', '700'],
+});
+
+export const josefinSans = Josefin_Sans({
   subsets: ['latin'],
   weight: ['300', '400', '500', '600', '700'],
 });

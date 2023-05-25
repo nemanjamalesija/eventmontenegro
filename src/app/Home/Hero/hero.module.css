@@ -1,7 +1,7 @@
 .section__hero {
   background-image: linear-gradient(
-      rgba(239, 223, 243, 0.3),
-      rgba(239, 223, 243, 0.3)
+      rgba(239, 223, 243, 0.2),
+      rgba(239, 223, 243, 0.2)
     ),
     url(../../../../assets/img/hero.png);
   background-position: center;
@@ -10,7 +10,7 @@
 
 .hero__introduction {
   position: absolute;
-  top: 25%;
+  top: 30%;
   left: 55%;
   transform: translate(-50%, -50%);
   width: 100%;
