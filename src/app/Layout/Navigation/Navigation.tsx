@@ -15,17 +15,19 @@ const Navigation: FC = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsNavVissible(window.innerWidth >= 600);
-    };
+      if (window.innerWidth >= 600 && !isNavVisible) setIsNavVissible(true);
 
-    console.log(window.innerWidth);
+      if (window.innerWidth <= 600 && isNavVisible) {
+        setIsNavVissible(false);
+      }
+    };
 
     window.addEventListener('resize', handleResize);
 
     return () => {
       window.removeEventListener('resize', handleResize);
     };
-  }, [setIsNavVissible]);
+  }, [isNavVisible, setIsNavVissible]);
 
   return (
     <header
@@ -65,7 +67,7 @@ const Navigation: FC = () => {
       <nav
         className={cn(
           styles.nav,
-          'nav flex items-center justify-center absolute top-0 left-0 w-full h-full sm:static sm:w-auto sm:h-auto z-40 transition-all duration-500 ease sm:translate-x-0',
+          'nav flex items-center justify-center absolute top-0 left-0 w-full h-full sm:static sm:w-auto sm:h-auto z-40 transition-all duration-500 ease-in sm:translate-x-0',
           {
             'opacity-0 translate-x-full pointer-events-none invisible':
               !isNavVisible,

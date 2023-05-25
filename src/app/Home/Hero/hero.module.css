@@ -15,3 +15,15 @@
   transform: translate(-50%, -50%);
   width: 100%;
 }
+
+@media (max-width: 644px) {
+  .section__hero {
+    background-image: linear-gradient(
+        rgba(239, 223, 243, 0.7),
+        rgba(239, 223, 243, 0.7)
+      ),
+      url(../../../../assets/img/hero.png);
+    background-position: center;
+    height: 90vh;
+  }
+}
