@@ -34,6 +34,7 @@ module.exports = {
       },
       fontSize: {
         'font-nav': '1.1rem',
+        '16rem': '1.6rem',
       },
 
       stroke: {

@@ -18,12 +18,12 @@ const Hero: FC = () => {
           >
             Stvaramo nezaboravna sjećanja koja traju vječno
           </h1>
-          <p className='text-lg text-center sm:text-start sm:text-3xl text-gray-700 font-normal mt-4 sm:mt-6'>
+          <p className='text-lg sm:text-16rem leading-7 sm:leading-9 text-center sm:text-start  text-gray-700 font-normal  mt-4 sm:mt-6'>
             Iznajmljivanje opreme, organizacija i koordinacija proslava.
-            Prilagođeno vašim potrebama i ličnim željama.
+            Prilagođeno vašim ličnim potrebama i detaljnim željama.
           </p>
           <div className='mt-10 flex justify-center sm:justify-start gap-6'>
-            <Button className='px-4 py-2 sm:py-3 sm:px-10 sm:text-xl'>
+            <Button className='px-4 py-2 sm:py-3 sm:px-10 sm:text-2xl'>
               Počni svoj projekat
             </Button>
             <Button

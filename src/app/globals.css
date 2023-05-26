@@ -26,6 +26,7 @@ html {
 body {
   line-height: 1.9;
   background-color: #fafafa;
+
   display: grid;
   grid-template-columns: 4rem 1fr;
 }
