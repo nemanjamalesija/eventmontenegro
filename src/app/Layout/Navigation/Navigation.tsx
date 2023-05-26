@@ -14,6 +14,8 @@ const Navigation: FC = () => {
   const { isNavVisible, setIsNavVissible } = useAppContext();
 
   useEffect(() => {
+    if (window.innerWidth >= 600 && !isNavVisible) setIsNavVissible(true);
+
     const handleResize = () => {
       if (window.innerWidth >= 600 && !isNavVisible) setIsNavVissible(true);
 

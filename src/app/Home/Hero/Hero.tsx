@@ -16,12 +16,12 @@ const Hero: FC = () => {
         <h1
           className={clsx(
             josefinSans.className,
-            'heading-primary  text-7xl text-gray-600'
+            'heading-primary text-6xl sm:text-7xl text-gray-600'
           )}
         >
           Dio svake proslave
         </h1>
-        <p className='text-3xl text-gray-700 font-medium mt-4'>
+        <p className='text-2xl sm:text-3xl text-gray-700 font-medium mt-4'>
           Stvaramo nezaboravna sjećanja koja traju vječno.
         </p>
         <div className='mt-10 flex gap-6'>
