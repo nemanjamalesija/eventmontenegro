@@ -8,10 +8,10 @@ module.exports = {
   theme: {
     extend: {
       width: {
-        120: '120%',
+        130: '105%',
       },
       height: {
-        120: '120%',
+        130: '105%',
       },
 
       gridTemplateColumns: {
@@ -40,7 +40,7 @@ module.exports = {
         'stroke-icon-primary': '#b05ec4',
       },
       ringColor: {
-        'ring-color-primary': '#c88ed6',
+        'ring-color-primary': '#ee97a6',
       },
     },
   },

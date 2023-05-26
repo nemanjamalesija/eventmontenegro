@@ -50,7 +50,7 @@ body {
 }
 
 *:focus {
-  box-shadow: 0 0 0 0.6rem rgba(200, 142, 214);
+  box-shadow: 0 0 0 0.6rem rgba(238, 151, 166, 1);
   transition: all 0.3s;
   border: none;
   outline: none;
