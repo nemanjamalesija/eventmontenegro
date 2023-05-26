@@ -1,9 +1,8 @@
 import clsx from 'clsx';
 import { nunito } from '../../utils/fonts';
 import Navigation from './Layout/Navigation/Navigation';
-import Sidebar from './Layout/Sidebar/Sidebar';
 import './globals.css';
-import { AppProvider, useAppContext } from '@/Provider/appContext';
+import { AppProvider } from '@/Provider/appContext';
 import Hero from './Home/Hero/Hero';
 
 export const metadata = {
