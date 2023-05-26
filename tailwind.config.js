@@ -7,14 +7,29 @@ module.exports = {
   ],
   theme: {
     extend: {
+      width: {
+        120: '120%',
+      },
+      height: {
+        120: '120%',
+      },
+
+      gridTemplateColumns: {
+        custom: '1fr 1fr',
+      },
+
+      maxWidth: {
+        custom: '87rem',
+      },
+
       textColor: {
-        'color-accent-main': '#b05ec4',
+        'color-accent-main': '#E66B80',
         'color-shadest': '#f7eff9',
       },
 
       backgroundColor: {
-        'color-accent-main': '#b05ec4',
-        'color-shade-main': '#9e55b0',
+        'color-accent-main': '#E66B80',
+        'color-shade-main': '#cf6073',
         'color-shadest': '#f7eff9',
       },
       fontSize: {

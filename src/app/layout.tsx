@@ -21,7 +21,7 @@ export default function RootLayout({
       <body className={clsx(nunito.className)}>
         <AppProvider>
           <Navigation />
-          <Sidebar />
+          {/* <Sidebar /> */}
           {children}
         </AppProvider>
       </body>
