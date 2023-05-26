@@ -7,19 +7,12 @@ module.exports = {
   ],
   theme: {
     extend: {
-      width: {
-        130: '105%',
-      },
-      height: {
-        130: '105%',
-      },
-
       gridTemplateColumns: {
         custom: '1fr 1fr',
       },
 
       maxWidth: {
-        custom: '87rem',
+        custom: '80rem',
       },
 
       textColor: {
@@ -31,10 +24,11 @@ module.exports = {
         'color-accent-main': '#E66B80',
         'color-shade-main': '#cf6073',
         'color-shadest': '#f7eff9',
+        'bg-general': '#fafafa',
       },
       fontSize: {
         'font-nav': '1.1rem',
-        '16rem': '1.6rem',
+        '16rem': '1.42rem',
       },
 
       stroke: {

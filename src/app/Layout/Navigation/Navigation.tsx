@@ -5,7 +5,6 @@ import logo from '../../../../assets/img/logo.png';
 import logoSub from '../../../../assets/img/logo-sub.png';
 import Image from 'next/image';
 import clsx from 'clsx';
-import styles from './nav.module.css';
 import { X, AlignJustify } from 'lucide-react';
 import { useAppContext } from '@/Provider/appContext';
 import { cn } from '../../../../utils/twinMerge';
@@ -32,12 +31,7 @@ const Navigation: FC = () => {
   }, [isNavVisible, setIsNavVissible]);
 
   return (
-    <header
-      className={clsx(
-        styles.header,
-        'nav__header col-start-1 row-start-1 col-span-2 flex justify-between items-center h-20 sm:pr-20 sm:pl-20 px-6 z-50'
-      )}
-    >
+    <header className='nav__header col-start-1 row-start-1 col-span-2 flex justify-between items-center h-20 sm:pr-20 sm:pl-20 px-6 z-50'>
       <div className='flex gap-2 items-center z-200'>
         <Image
           src={logo}
@@ -56,20 +50,19 @@ const Navigation: FC = () => {
           className='sm:hidden absolute top-5 right-10 z-50 block'
           onClick={() => setIsNavVissible(!isNavVisible)}
         >
-          <AlignJustify className='h-10 w-10 stroke-slate-700' />
+          <AlignJustify className='h-9 w-9 stroke-slate-700' />
         </button>
       ) : (
         <button
           className='sm:hidden absolute top-5 right-10 z-50 block '
           onClick={() => setIsNavVissible(!isNavVisible)}
         >
-          <X className='h-10 w-10 stroke-slate-700' />
+          <X className='h-9 w-9 stroke-slate-700' />
         </button>
       )}
       <nav
         className={cn(
-          styles.nav,
-          'nav flex items-center justify-center absolute top-0 left-0 w-full h-full sm:static sm:w-auto sm:h-auto z-40 transition-all duration-500 ease-in sm:translate-x-0',
+          'bg-white sm:bg-bg-general bg-opacity-80 sm:bg-opacity-1 backdrop-blur-md sm:backdropbackdrop-blur-0 flex items-center justify-center absolute top-0 left-0 w-full h-full sm:static sm:w-auto sm:h-auto z-40 transition-all duration-500 ease-in sm:translate-x-0',
           {
             'opacity-0 translate-x-full pointer-events-none invisible':
               !isNavVisible,

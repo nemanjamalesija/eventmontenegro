@@ -3,7 +3,8 @@ import { nunito } from '../../utils/fonts';
 import Navigation from './Layout/Navigation/Navigation';
 import Sidebar from './Layout/Sidebar/Sidebar';
 import './globals.css';
-import { AppProvider } from '@/Provider/appContext';
+import { AppProvider, useAppContext } from '@/Provider/appContext';
+import Hero from './Home/Hero/Hero';
 
 export const metadata = {
   title: 'Event Montenegro',
@@ -17,12 +18,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang='en' className='overflow-hidden'>
-      <body className={clsx(nunito.className)}>
+    <html lang='en'>
+      <body className={(clsx(nunito.className), 'bg-general relative')}>
         <AppProvider>
           <Navigation />
-          {/* <Sidebar /> */}
-          {children}
+          <Hero />
         </AppProvider>
       </body>
     </html>

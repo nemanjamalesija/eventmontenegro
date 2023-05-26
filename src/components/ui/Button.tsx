@@ -3,7 +3,7 @@ import { cva, VariantProps } from 'class-variance-authority';
 import { ButtonHTMLAttributes, FC } from 'react';
 
 export const buttonVariants = cva(
-  'active:scale-95 transition-all, duration-300 rounded-sm inline-flex items-center justify-center font-bold transition-color focus:outline-none focus:ring-8 focus:ring-ring-color-primary focus:ring-offset-2',
+  'active:scale-95 transition-all, duration-300 rounded-sm inline-flex items-center justify-center font-semibold transition-color focus:outline-none focus:ring-8 focus:ring-ring-color-primary focus:ring-offset-2',
   {
     variants: {
       variant: {

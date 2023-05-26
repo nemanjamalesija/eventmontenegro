@@ -7,13 +7,13 @@ import hero from '../../../../assets/img/hero.png';
 
 const Hero: FC = () => {
   return (
-    <section className='pt-4 sm:pt-12 px-2'>
-      <div className='flex flex-col sm:grid sm:grid-cols-custom sm:items-start gap-24 mx-auto max-w-custom'>
-        <div className='mt-4 sm:mt-16'>
+    <section className='pt-4 sm:pt-12 px-5'>
+      <div className='flex flex-col sm:grid sm:grid-cols-custom sm:items-start gap-20 sm:gap-24 mx-auto max-w-custom'>
+        <div className='mt-4 sm:mt-20'>
           <h1
             className={clsx(
               josefinSans.className,
-              'heading-primary text-center sm:text-start text-4xl sm:text-6xl font-bold text-gray-600'
+              'heading-primary text-center sm:text-start text-4xl sm:text-5xl font-bold text-gray-600'
             )}
           >
             Stvaramo nezaboravna sjećanja koja traju vječno
@@ -23,7 +23,7 @@ const Hero: FC = () => {
             Prilagođeno vašim ličnim potrebama i detaljnim željama.
           </p>
           <div className='mt-10 flex justify-center sm:justify-start gap-6'>
-            <Button className='px-4 py-2 sm:py-3 sm:px-10 sm:text-2xl'>
+            <Button className='px-4 py-2 sm:py-3 sm:px-6 sm:text-xl'>
               Počni svoj projekat
             </Button>
             <Button
@@ -39,7 +39,7 @@ const Hero: FC = () => {
             <Image
               src={hero}
               alt='Hero image'
-              className='max-w-7xl w-130 h-130 object-cover'
+              className='w-full h-full object-cover'
             />
           </picture>
         </div>
