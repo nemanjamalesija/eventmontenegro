@@ -12,7 +12,7 @@ module.exports = {
       },
 
       maxWidth: {
-        custom: '80rem',
+        custom: '75rem',
       },
 
       textColor: {
