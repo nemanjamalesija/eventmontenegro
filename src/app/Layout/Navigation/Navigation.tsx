@@ -69,7 +69,7 @@ const Navigation: FC = () => {
           }
         )}
       >
-        <ul className='flex flex-col lg:flex-row  gap-11 lg:gap-16 items-center text-gray-600 font-bold lg:font-medium text-2xl lg:text-xl'>
+        <ul className='flex flex-col lg:flex-row  gap-11 lg:gap-16 items-center text-gray-600 font-bold font-medium lg:font-normal text-2xl lg:text-xl'>
           <li className='nav__ul--item'>
             <a href='#'> Početna</a>
           </li>
