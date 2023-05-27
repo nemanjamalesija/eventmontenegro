@@ -62,7 +62,7 @@ const Navigation: FC = () => {
       )}
       <nav
         className={cn(
-          'bg-white lg:bg-bg-general bg-opacity-80 lg:bg-opacity-1 backdrop-blur-md lg:backdropbackdrop-blur-0 flex items-center justify-center absolute top-0 left-0 w-full h-full lg:static lg:w-auto lg:h-auto z-40 transition-all duration-500 ease-in lg:translate-x-0',
+          'bg-white lg:bg-bg-general bg-opacity-80 lg:bg-opacity-1 backdrop-blur-md lg:backdropbackdrop-blur-0 flex items-start justify-center absolute top-0 left-0 w-full h-full lg:static lg:w-auto lg:h-auto z-40 transition-all duration-500 ease-in lg:translate-x-0',
           {
             'opacity-0 translate-x-full pointer-events-none invisible':
               !isNavVisible,
@@ -70,13 +70,13 @@ const Navigation: FC = () => {
           }
         )}
       >
-        <ul className='flex flex-col lg:flex-row  gap-11 lg:gap-16 items-center text-gray-600 font-bold font-medium lg:font-normal text-2xl lg:text-xl'>
+        <ul className='flex flex-col lg:flex-row  gap-11 lg:gap-16 items-center mt-48 lg:mt-0  text-gray-600 font-bold  lg:font-normal text-2xl lg:text-xl'>
           <li className='nav__ul--item'>
             <a href='#'> Početna</a>
           </li>
           <li className='nav__ul--item'>
             {' '}
-            <a href='#'> O nama</a>
+            <a href='#'>Kako radimo</a>
           </li>
           <li className='nav__ul--item'>
             {' '}
