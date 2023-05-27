@@ -30,10 +30,10 @@ const HowItWorks: FC = () => {
               Recite nam šta volite (a šta ne){' '}
             </h4>
             <p className='text-base md:text-lg text-gray-700'>
-              Recite nam o vašem projektu iz snova. Bilo da se radi o dječijem
+              Recite nam o Vašem projektu iz snova. Bilo da se radi o dječijem
               događaju, vjenčanju, rođendanskoj proslavi ili balonijadi,
               podijelite svoje želje i posebne zahtjeve sa nama. Daćemo sve od
-              sebe kako bismo razumjeli vašu viziju i kreirali jedinstveno
+              sebe kako bismo razumjeli Vašu viziju i kreirali jedinstveno
               iskustvo.
             </p>
           </div>
@@ -47,15 +47,14 @@ const HowItWorks: FC = () => {
               03
             </p>
             <h4 className='text-gray-700 text-2xl lg:text-3xl font-bold mb-6'>
-              Opustite se i uživajte u vašem slavlju
+              Opustite se i uživajte u Vašem slavlju
             </h4>
             <p className='text-base md:text-lg text-gray-700'>
               Prepustite se i uživajte u bezbrižnom i nezaboravnom slavlju, dok
-              mi brinemo o svim detaljima. Naš tim će vam pružiti podršku i
-              obezbijediti vrhunsku opremu za vaš događaj. Bez obzira da li se
+              mi brinemo o svim detaljima. Naš tim će Vam pružiti podršku i
+              obezbijediti vrhunsku opremu za Vaš događaj. Bez obzira da li se
               odlučite za rentiranje opreme ili nam povjerite i organizaciju, mi
-              smo tu da vam pružimo sve što vam je potrebno za nezaboravno
-              iskustvo.
+              smo tu da pružimo sve što Vam je potrebno za nezaboravno iskustvo.
             </p>
           </div>
 

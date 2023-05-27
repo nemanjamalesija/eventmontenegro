@@ -29,8 +29,8 @@ const LetUsKnow: FC = () => {
         </h4>
         <p className='text-base md:text-lg text-gray-700'>
           Izaberite iz našeg obimnog izbora vrhunske opreme i dekoracije za
-          događaje i pronađite savršene elemente za oživljavanje vašeg događaja.
-          Takođe, ako vam je potrebna pomoć u organizaciji događaja, naš stručni
+          događaje i pronađite savršene elemente za oživljavanje Vašeg događaja.
+          Takođe, ako Vam je potrebna pomoć u organizaciji događaja, naš stručni
           tim može se pozabaviti logistikom, koordinacijom i ostalim sitnicama.
         </p>
       </div>
@@ -40,12 +40,12 @@ const LetUsKnow: FC = () => {
       <div className='step__text'>
         <p className='text-5xl  text-gray-300 font-bold mb-3'>02</p>
         <h4 className='text-gray-700 text-2xl lg:text-3xl font-bold mb-6'>
-          Izaberite i personalizujte ponudu
+          Opustite se i uživajte u Vašem slavlju
         </h4>
         <p className='text-base md:text-lg text-gray-700'>
           Izaberite iz našeg obimnog izbora vrhunske opreme i dekoracije za
-          događaje i pronađite savršene elemente za oživljavanje vašeg događaja.
-          Takođe, ako vam je potrebna pomoć u organizaciji događaja, naš stručni
+          događaje i pronađite savršene elemente za oživljavanje Vašeg događaja.
+          Takođe, ako Vam je potrebna pomoć u organizaciji događaja, naš stručni
           tim može se pozabaviti logistikom, koordinacijom i ostalim sitnicama.
         </p>
       </div>

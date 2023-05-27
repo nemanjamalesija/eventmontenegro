@@ -25,18 +25,18 @@ const Hero: FC = () => {
             )}
           >
             Iznajmljivanje opreme, organizacija i koordinacija proslava.
-            Prilagođeno vašim ličnim potrebama i detaljnim željama.
+            Prilagođeno Vašim ličnim potrebama i detaljnim željama.
           </p>
           <div className='mt-10 flex justify-center lg:justify-start gap-6'>
             <CustomLink className='px-4 py-2 sm:py-3 sm:px-6 sm:text-xl'>
-              Počni svoj projekat
+              Počnite svoj projekat
             </CustomLink>
             <CustomLink
               className='ghost flex items-center justify-center px-4 py-2 sm:py-3 sm:px-10  text-lg  sm:text-xl'
               variant='ghost'
               href='#howItWorks'
             >
-              Saznaj više &darr;
+              Saznajte više &darr;
             </CustomLink>
           </div>
         </div>
