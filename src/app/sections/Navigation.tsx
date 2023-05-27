@@ -1,12 +1,12 @@
 'use client';
 
 import { FC, useEffect } from 'react';
-import logo from '../../../../assets/img/logo.png';
-import logoSub from '../../../../assets/img/logo-sub.png';
+import logo from '../../../assets/img/logo.png';
+import logoSub from '../../../assets/img/logo-sub.png';
 import Image from 'next/image';
 import { X, AlignJustify } from 'lucide-react';
 import { useAppContext } from '@/Provider/appContext';
-import { cn } from '../../../../utils/twinMerge';
+import { cn } from '../../../utils/twinMerge';
 
 const Navigation: FC = () => {
   const { isNavVisible, setIsNavVissible } = useAppContext();

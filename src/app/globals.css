@@ -17,11 +17,6 @@ html {
   box-sizing: border-box;
 }
 
-body {
-  line-height: 1.9;
-  background-color: #fafafa;
-}
-
 .nav__ul--item {
   cursor: pointer;
 }
