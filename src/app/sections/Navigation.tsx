@@ -7,6 +7,7 @@ import Image from 'next/image';
 import { X, AlignJustify } from 'lucide-react';
 import { useAppContext } from '@/Provider/appContext';
 import { cn } from '../../../utils/twinMerge';
+import CustomLink from '@/components/ui/CustomLink';
 
 const Navigation: FC = () => {
   const { isNavVisible, setIsNavVissible } = useAppContext();
@@ -86,12 +87,9 @@ const Navigation: FC = () => {
             <a href='#'>Proslave</a>
           </li>
           <li className='nav__ul--item'>
-            <a
-              href='#'
-              className='active:scale-95 py-2 px-6 bg-color-accent-main hover:bg-color-shade-main transition-all, duration-300 rounded-sm text-color-shadest inline-flex items-center justify-center text-2xl lg:text-lg font-semibold transition-color focus:outline-none focus:ring-8 focus:ring-ring-color-primary focus:ring-offset-2'
-            >
+            <CustomLink className='py-2 px-5 text-xl font-semibold'>
               Kontakt
-            </a>
+            </CustomLink>
           </li>
         </ul>
       </nav>

@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import clsx from 'clsx';
 import { josefinSans, nunito } from '../../../utils/fonts';
-import Button from '@/components/ui/Button';
+import CustomLink from '@/components/ui/CustomLink';
 import Image from 'next/image';
 import hero from '../../../assets/img/hero.png';
 
@@ -28,15 +28,16 @@ const Hero: FC = () => {
             Prilagođeno vašim ličnim potrebama i detaljnim željama.
           </p>
           <div className='mt-10 flex justify-center lg:justify-start gap-6'>
-            <Button className='px-4 py-2 sm:py-3 sm:px-6 sm:text-xl'>
+            <CustomLink className='px-4 py-2 sm:py-3 sm:px-6 sm:text-xl'>
               Počni svoj projekat
-            </Button>
-            <Button
+            </CustomLink>
+            <CustomLink
               className='ghost flex items-center justify-center px-4 py-2 sm:py-3 sm:px-10  text-lg  sm:text-xl'
               variant='ghost'
+              href='#howItWorks'
             >
               Saznaj više &darr;
-            </Button>
+            </CustomLink>
           </div>
         </div>
         <div className='relative '>

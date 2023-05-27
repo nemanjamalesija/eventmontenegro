@@ -18,7 +18,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang='en'>
+    <html lang='en' className='scroll-smooth'>
       <body className={clsx(nunito.className, 'bg-bg-general relative')}>
         <AppProvider>
           <Navigation />

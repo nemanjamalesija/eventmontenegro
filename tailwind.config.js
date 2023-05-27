@@ -17,13 +17,13 @@ module.exports = {
 
       textColor: {
         'color-accent-main': '#E66B80',
-        'color-shadest': '#f7eff9',
+        'color-shadest': '#fafafa',
       },
 
       backgroundColor: {
         'color-accent-main': '#E66B80',
         'color-shade-main': '#cf6073',
-        'color-shadest': '#f7eff9',
+        'color-shadest': '#fafafa',
         'bg-general': '#fafafa',
       },
       fontSize: {
