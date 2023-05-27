@@ -18,13 +18,11 @@ const LetUsKnow: FC = () => {
   }, [isBigScreen]);
 
   return isBigScreen ? (
-    <div className='step flex flex-col lg:grid lg:grid-cols-custom  gap-20 lg:gap-24 mb-20'>
+    <div className='step  grid grid-cols-custom items-center gap-24  mb-24'>
       <div className='step__icon'>{icons.letUsKnow}</div>
       <div className='step__text'>
-        <p className=' md:text-6xl lg:text-7xl text-gray-300 font-bold mb-3'>
-          02
-        </p>
-        <h4 className='text-gray-700 text-2xl lg:text-3xl font-bold mb-6'>
+        <p className=' md:text-6xl text-7xl text-gray-300 font-bold mb-3'>02</p>
+        <h4 className='text-gray-700 text-3xl font-bold mb-6'>
           Izaberite i personalizujte ponudu
         </h4>
         <p className='text-base md:text-lg text-gray-700'>
@@ -36,13 +34,13 @@ const LetUsKnow: FC = () => {
       </div>
     </div>
   ) : (
-    <div className='step flex flex-col lg:grid lg:grid-cols-custom items-center gap-20 lg:gap-24 mb-20'>
+    <div className='step flex flex-col items-center gap-12 mb-12'>
       <div className='step__text'>
         <p className='text-5xl  text-gray-300 font-bold mb-3'>02</p>
-        <h4 className='text-gray-700 text-2xl lg:text-3xl font-bold mb-6'>
+        <h4 className='text-gray-700 text-2xl  font-bold mb-4 lg:mb-6'>
           Opustite se i uživajte u Vašem slavlju
         </h4>
-        <p className='text-base md:text-lg text-gray-700'>
+        <p className='text-base text-gray-700'>
           Izaberite iz našeg obimnog izbora vrhunske opreme i dekoracije za
           događaje i pronađite savršene elemente za oživljavanje Vašeg događaja.
           Takođe, ako Vam je potrebna pomoć u organizaciji događaja, naš stručni

@@ -7,7 +7,7 @@ import hero from '../../../assets/img/hero.png';
 
 const Hero: FC = () => {
   return (
-    <section className='pt-4 sm:pt-12 px-5 mb-24'>
+    <section className='pt-4 sm:pt-12 px-5 mb-28'>
       <div className='flex flex-col lg:grid lg:grid-cols-custom lg:items-start gap-20 lg:gap-24 mx-auto max-w-7xl'>
         <div className='mt-4 sm:mt-20'>
           <h1

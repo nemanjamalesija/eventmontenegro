@@ -17,6 +17,7 @@ module.exports = {
 
       textColor: {
         'color-accent-main': '#E66B80',
+        'color-shade-main': '#cf6073',
         'color-shadest': '#fafafa',
       },
 
@@ -25,6 +26,7 @@ module.exports = {
         'color-shade-main': '#cf6073',
         'color-shadest': '#fafafa',
         'bg-general': '#fafafa',
+        'color-lightest': '#fdf2f3',
       },
       fontSize: {
         'font-nav': '1.1rem',

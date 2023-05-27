@@ -6,8 +6,8 @@ import LetUsKnow from '@/components/ui/LetUsKnow';
 
 const HowItWorks: FC = () => {
   return (
-    <section id='howItWorks' className='mt-24 lg:pt-20 px-5'>
-      <div className='mx-auto max-w-custom'>
+    <section id='howItWorks' className='py-12  bg-color-lightest'>
+      <div className='mx-auto max-w-custom px-5 lg:px-0'>
         <div className='mb-24'>
           <h2
             className={clsx(
@@ -21,12 +21,12 @@ const HowItWorks: FC = () => {
             Organizujte svoj projekat iz snova u 3 laka koraka
           </h3>
         </div>
-        <div className='step flex flex-col lg:grid lg:grid-cols-custom items-center gap-20 lg:gap-24 mb-20'>
+        <div className='step flex flex-col lg:grid lg:grid-cols-custom items-center gap-12 lg:gap-24 mb-12 lg:mb-24'>
           <div className='step__text'>
             <p className='text-5xl md:text-6xl lg:text-7xl text-gray-300 font-bold mb-3'>
               01
             </p>
-            <h4 className='text-gray-700 text-2xl lg:text-3xl font-bold mb-6'>
+            <h4 className='text-gray-700 text-2xl lg:text-3xl font-bold mb-4 lg:mb-6'>
               Recite nam šta volite (a šta ne){' '}
             </h4>
             <p className='text-base md:text-lg text-gray-700'>
@@ -41,12 +41,12 @@ const HowItWorks: FC = () => {
           <div className='step__icon'>{icons.choose}</div>
         </div>
         <LetUsKnow />
-        <div className='step flex flex-col lg:grid lg:grid-cols-custom items-center justify-between gap-20 lg:gap-24 mb-20'>
+        <div className='step flex flex-col lg:grid lg:grid-cols-custom items-center gap-12 lg:gap-24'>
           <div className='step__text'>
             <p className='text-5xl md:text-6xl lg:text-7xl text-gray-300 font-bold mb-3'>
               03
             </p>
-            <h4 className='text-gray-700 text-2xl lg:text-3xl font-bold mb-6'>
+            <h4 className='text-gray-700 text-2xl lg:text-3xl font-bold mb-4 lg:mb-6'>
               Opustite se i uživajte u Vašem slavlju
             </h4>
             <p className='text-base md:text-lg text-gray-700'>
