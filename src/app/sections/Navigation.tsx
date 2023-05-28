@@ -10,7 +10,7 @@ import { cn } from '../../../utils/twinMerge';
 import CustomLink from '@/components/ui/CustomLink';
 
 const Navigation: FC = () => {
-  const { isNavVisible, setIsNavVissible } = useAppContext();
+  const { isNavVisible, setIsNavVissible, navRef } = useAppContext();
 
   useEffect(() => {
     if (window.innerWidth >= 1000 && !isNavVisible) setIsNavVissible(true);
@@ -31,7 +31,10 @@ const Navigation: FC = () => {
   }, [isNavVisible, setIsNavVissible]);
 
   return (
-    <header className='nav__header flex justify-between items-center h-20 sm:px-20 px-6 z-50'>
+    <header
+      ref={navRef}
+      className='nav__header flex justify-between items-center h-20 sm:px-20 px-6 z-50 '
+    >
       <div className='flex gap-2 items-center'>
         <Image
           src={logo}
@@ -62,11 +65,12 @@ const Navigation: FC = () => {
       )}
       <nav
         className={cn(
-          'bg-white lg:bg-bg-general bg-opacity-80 lg:bg-opacity-1 backdrop-blur-md lg:backdropbackdrop-blur-0 flex items-start justify-center absolute top-0 left-0 w-full h-full lg:static lg:w-auto lg:h-auto z-40 transition-all duration-500 ease-in lg:translate-x-0',
+          'nav absolute top-0 left-0 w-full h-screen lg:static lg:w-auto lg:h-full bg-white lg:bg-bg-general lg:backdropbackdrop-blur-0 flex items-start lg:items-center justify-center  z-40 transition-translate duration-500 opacity-1 ease-in backdrop-blur-md',
           {
             'opacity-0 translate-x-full pointer-events-none invisible':
               !isNavVisible,
-            'opacity-1 translate-x-0 pointer-events-auto visible': isNavVisible,
+            ' translate-x-0 pointer-events-auto visible bg-opacity-80':
+              isNavVisible,
           }
         )}
       >
@@ -87,7 +91,7 @@ const Navigation: FC = () => {
             <a href='#'>Proslave</a>
           </li>
           <li className='nav__ul--item'>
-            <CustomLink className='py-2 px-5 text-xl font-semibold'>
+            <CustomLink href='#' className='py-2 px-5 text-xl font-semibold'>
               Kontakt
             </CustomLink>
           </li>
