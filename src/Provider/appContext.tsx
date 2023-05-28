@@ -14,7 +14,9 @@ const ProductsContext = React.createContext<appContextValues>(
 );
 
 const AppProvider = ({ children }: { children: React.ReactNode }) => {
-  const [isNavVisible, setIsNavVissible] = useState<boolean>(false);
+  const [isNavVisible, setIsNavVissible] = useState<boolean>(
+    window.innerWidth >= 1000
+  );
   const navRef = useRef<HTMLDivElement | null>(null);
   const heroRef = useRef<HTMLDivElement | null>(null);
 

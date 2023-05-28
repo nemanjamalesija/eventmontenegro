@@ -33,9 +33,9 @@ const Navigation: FC = () => {
   return (
     <header
       ref={navRef}
-      className='nav__header flex justify-between items-center h-20 sm:px-20 px-6 z-50 '
+      className='nav__header absolute top-0 left-0 w-full flex justify-between items-center h-20 sm:px-20 px-6 z-50 '
     >
-      <div className='flex gap-2 items-center'>
+      <div className='logo flex gap-2 items-center'>
         <Image
           src={logo}
           alt='Picture of the author'
@@ -65,7 +65,7 @@ const Navigation: FC = () => {
       )}
       <nav
         className={cn(
-          'nav absolute top-0 left-0 w-full h-custom lg:static lg:w-auto lg:h-full bg-white lg:bg-bg-general lg:backdropbackdrop-blur-0 flex items-start lg:items-center justify-center  z-40 transition-translate duration-500 opacity-1 ease-in backdrop-blur-md',
+          'nav absolute top-0 left-0 lg:static w-full h-custom-nav lg:h-full  lg:w-auto  bg-white lg:bg-color-gray-light-1 lg:backdropbackdrop-blur-0 flex items-start lg:items-center justify-center  z-40 transition-translate duration-500 opacity-1 ease-in backdrop-blur-md translate-x-0',
           {
             'opacity-0 translate-x-full pointer-events-none invisible':
               !isNavVisible,

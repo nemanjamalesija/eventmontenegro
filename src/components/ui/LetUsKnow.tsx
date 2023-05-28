@@ -18,7 +18,7 @@ const LetUsKnow: FC = () => {
   }, [isBigScreen]);
 
   return isBigScreen ? (
-    <div className='step  grid grid-cols-custom items-center gap-24  mb-24'>
+    <div className='step  grid grid-cols-custom2fr items-center gap-24  mb-24'>
       <div className='step__icon'>{icons.letUsKnow}</div>
       <div className='step__text'>
         <p className=' md:text-6xl text-7xl text-gray-300 font-bold mb-3'>02</p>

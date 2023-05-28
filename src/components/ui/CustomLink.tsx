@@ -8,7 +8,7 @@ export const CustomLinkVariants = cva(
     variants: {
       variant: {
         default: 'bg-color-accent-main hover:bg-color-shade-main text-white',
-        ghost: 'bg-white hover:bg-color-shadest text-gray-600',
+        ghost: 'bg-white hover:bg-color-gray-light-1 text-gray-600',
       },
       size: {},
     },

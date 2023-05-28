@@ -39,7 +39,7 @@ const Hero: FC = () => {
 
   return (
     <section className='pt-24 sm:pt-32 px-5 mb-24' ref={heroRef}>
-      <div className='flex flex-col lg:grid lg:grid-cols-custom lg:items-start gap-20 lg:gap-24 mx-auto max-w-7xl'>
+      <div className='flex flex-col lg:grid lg:grid-cols-custom2fr lg:items-start gap-20 lg:gap-24 mx-auto max-w-7xl'>
         <div className='mt-4 sm:mt-20'>
           <h1
             className={clsx(
@@ -52,7 +52,7 @@ const Hero: FC = () => {
           <p
             className={clsx(
               nunito.className,
-              'text-lg md:text-16rem leading-7 lg:leading-9 text-center lg:text-start  text-gray-700 font-normal  mt-4 sm:mt-6'
+              'text-lg md:text-hero-p leading-7 lg:leading-9 text-center lg:text-start  text-gray-700 font-normal  mt-4 sm:mt-6'
             )}
           >
             Iznajmljivanje opreme, organizacija i koordinacija proslava.

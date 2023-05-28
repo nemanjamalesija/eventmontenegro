@@ -19,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en' className='scroll-smooth'>
-      <body className={clsx(nunito.className, 'bg-bg-general ')}>
+      <body className={clsx(nunito.className, 'bg-color-gray-light-1 ')}>
         <AppProvider>
           <Navigation />
           <Hero />

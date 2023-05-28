@@ -21,7 +21,7 @@ const HowItWorks: FC = () => {
             Organizujte svoj projekat iz snova u 3 laka koraka
           </h3>
         </div>
-        <div className='step flex flex-col lg:grid lg:grid-cols-custom items-center gap-12 lg:gap-24 mb-12 lg:mb-24'>
+        <div className='step flex flex-col lg:grid lg:grid-cols-custom2fr items-center gap-12 lg:gap-24 mb-12 lg:mb-24'>
           <div className='step__text'>
             <p className='text-5xl md:text-6xl lg:text-7xl text-gray-300 font-bold mb-3'>
               01
@@ -41,7 +41,7 @@ const HowItWorks: FC = () => {
           <div className='step__icon'>{icons.choose}</div>
         </div>
         <LetUsKnow />
-        <div className='step flex flex-col lg:grid lg:grid-cols-custom items-center gap-12 lg:gap-24'>
+        <div className='step flex flex-col lg:grid lg:grid-cols-custom2fr items-center gap-12 lg:gap-24'>
           <div className='step__text'>
             <p className='text-5xl md:text-6xl lg:text-7xl text-gray-300 font-bold mb-3'>
               03
