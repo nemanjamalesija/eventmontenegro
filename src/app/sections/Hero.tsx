@@ -80,6 +80,7 @@ const Hero: FC = () => {
               src={hero}
               alt='Hero image'
               className='w-full h-full object-cover'
+              priority={true}
             />
           </picture>
         </div>
