@@ -27,7 +27,7 @@ const Hero: FC = () => {
     const headerObserver = new IntersectionObserver(stickyNav, {
       root: null,
       threshold: 0,
-      rootMargin: '30px',
+      rootMargin: '15px',
     });
 
     headerObserver.observe(heroRef.current);
@@ -39,7 +39,7 @@ const Hero: FC = () => {
   }, [heroRef, navRef]);
 
   return (
-    <section className='pt-24 sm:pt-32 px-5 mb-28' ref={heroRef}>
+    <section className='pt-24 sm:pt-32 px-5 mb-24' ref={heroRef}>
       <div className='flex flex-col lg:grid lg:grid-cols-custom lg:items-start gap-20 lg:gap-24 mx-auto max-w-7xl'>
         <div className='mt-4 sm:mt-20'>
           <h1

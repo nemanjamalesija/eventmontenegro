@@ -48,6 +48,7 @@ html {
 .nav__header.sticky {
   position: fixed;
   background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
 }
 
 .nav__header.sticky .nav {
