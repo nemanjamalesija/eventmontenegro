@@ -1,5 +1,4 @@
 'use client';
-
 import { useEffect } from 'react';
 import { FC } from 'react';
 import clsx from 'clsx';
@@ -15,7 +14,7 @@ const Hero: FC = () => {
   useEffect(() => {
     if (!heroRef.current) return;
 
-    const stickyNav = function (entries: any) {
+    const stickyNav = function (entries: IntersectionObserverEntry[]) {
       if (!navRef.current) return;
 
       const [entry] = entries;
@@ -27,7 +26,7 @@ const Hero: FC = () => {
     const headerObserver = new IntersectionObserver(stickyNav, {
       root: null,
       threshold: 0,
-      rootMargin: '15px',
+      rootMargin: '14px',
     });
 
     headerObserver.observe(heroRef.current);
