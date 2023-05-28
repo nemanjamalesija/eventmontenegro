@@ -38,7 +38,7 @@ const LetUsKnow: FC = () => {
       <div className='step__text'>
         <p className='text-5xl  text-gray-300 font-bold mb-3'>02</p>
         <h4 className='text-gray-700 text-2xl  font-bold mb-4 lg:mb-6'>
-          Opustite se i uživajte u Vašem slavlju
+          Izaberite i personalizujte ponudu
         </h4>
         <p className='text-base text-gray-700'>
           Izaberite iz našeg obimnog izbora vrhunske opreme i dekoracije za

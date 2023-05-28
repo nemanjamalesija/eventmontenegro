@@ -8,7 +8,7 @@ const HowItWorks: FC = () => {
   return (
     <section id='howItWorks' className='py-12  bg-color-lightest'>
       <div className='mx-auto max-w-custom px-5 lg:px-0'>
-        <div className='mb-24'>
+        <div className='mb-16 lg:mb-24'>
           <h2
             className={clsx(
               josefinSans.className,
