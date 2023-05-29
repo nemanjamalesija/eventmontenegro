@@ -6,6 +6,18 @@ import usernemanja from '../../../assets/img/usernemanja.jpg';
 import usernikola from '../../../assets/img/usernikola.jpg';
 import usertanja from '../../../assets/img/usertanja.jpg';
 import Image from 'next/image';
+import vjencanje1 from '../../../assets/img/gallery1/vjencanje1.jpg';
+import vjencanje2 from '../../../assets/img/gallery1/vjencanje2.jpg';
+import vjencanje3 from '../../../assets/img/gallery1/vjencanje3.jpg';
+import baloni1 from '../../../assets/img/gallery1/baloni1.avif';
+import baloni2 from '../../../assets/img/gallery1/baloni2.avif';
+import baloni3 from '../../../assets/img/gallery1/baloni3.avif';
+import biznis1 from '../../../assets/img/gallery1/biznis1.jpg';
+import biznis2 from '../../../assets/img/gallery1/biznis2.jpg';
+import biznis3 from '../../../assets/img/gallery1/biznis3.jpg';
+import kid1 from '../../../assets/img/gallery1/kid1.avif';
+import kid2 from '../../../assets/img/gallery1/kid2.avif';
+import kid3 from '../../../assets/img/gallery1/kid3.avif';
 
 const reviews = [
   {
@@ -37,6 +49,48 @@ const reviews = [
     image: usertanja,
     text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita dolorem iusto quo maiores explicabo excepturi vero, ipsam quasi ',
     author: '- Ivana Boljević',
+  },
+];
+
+const gallery1 = [
+  {
+    image: vjencanje1,
+  },
+  {
+    image: vjencanje2,
+  },
+  {
+    image: vjencanje3,
+  },
+  {
+    image: vjencanje1,
+  },
+  {
+    image: biznis1,
+  },
+  {
+    image: biznis2,
+  },
+  {
+    image: biznis3,
+  },
+  {
+    image: kid1,
+  },
+  {
+    image: kid2,
+  },
+  {
+    image: kid3,
+  },
+  {
+    image: baloni1,
+  },
+  {
+    image: baloni2,
+  },
+  {
+    image: baloni3,
   },
 ];
 
