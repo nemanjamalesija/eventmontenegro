@@ -10,7 +10,7 @@ import vjencanje1 from '../../../assets/img/gallery1/vjencanje1.jpg';
 import vjencanje2 from '../../../assets/img/gallery1/vjencanje2.jpg';
 import vjencanje3 from '../../../assets/img/gallery1/vjencanje3.jpg';
 import baloni1 from '../../../assets/img/gallery1/baloni1.avif';
-import baloni2 from '../../../assets/img/gallery1/baloni2.avif';
+import baloni2 from '../../../assets/img/gallery1/baloni2.webp';
 import baloni3 from '../../../assets/img/gallery1/baloni3.avif';
 import biznis1 from '../../../assets/img/gallery1/biznis1.jpg';
 import biznis2 from '../../../assets/img/gallery1/biznis2.jpg';
