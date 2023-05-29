@@ -15,6 +15,10 @@ module.exports = {
 
         'color-gray-light-1': '#fafafa',
       },
+
+      height: {
+        'custom-nav': 'calc(100vh+1000px)',
+      },
       gridTemplateColumns: {
         custom2fr: '1fr 1fr',
         custom3fr: '1fr 1fr 1fr',

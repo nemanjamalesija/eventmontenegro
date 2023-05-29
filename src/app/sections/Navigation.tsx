@@ -65,7 +65,7 @@ const Navigation: FC = () => {
       )}
       <nav
         className={cn(
-          'nav absolute top-0 left-0 lg:static w-full h-custom-nav lg:h-full  lg:w-auto  bg-white lg:bg-color-gray-light-1 lg:backdropbackdrop-blur-0 flex items-start lg:items-center justify-center  z-40 transition-translate duration-500 opacity-1 ease-in backdrop-blur-md translate-x-0',
+          'nav absolute top-0 left-0 lg:static w-full h-[calc(100vh+1000px)] lg:h-full  lg:w-auto  bg-white lg:bg-inherit lg:backdropbackdrop-blur-0 flex items-start lg:items-center justify-center  z-40  transition-all ease-in duration-500 lg:transition-none opacity-1  backdrop-blur-md translate-x-0',
           {
             'opacity-0 translate-x-full pointer-events-none invisible':
               !isNavVisible,

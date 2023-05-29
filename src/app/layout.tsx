@@ -5,6 +5,7 @@ import './globals.css';
 import { AppProvider } from '@/Provider/appContext';
 import Hero from './sections/Hero';
 import HowItWorks from './sections/HowItWorks';
+import Reviews from './sections/Reviews';
 
 export const metadata = {
   title: 'Event Montenegro',
@@ -24,6 +25,7 @@ export default function RootLayout({
           <Navigation />
           <Hero />
           <HowItWorks />
+          <Reviews />
         </AppProvider>
       </body>
     </html>
