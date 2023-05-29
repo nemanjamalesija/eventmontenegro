@@ -144,7 +144,6 @@ const Reviews: FC = () => {
                 key={i}
                 className='img__box relative overflow-hidden h-36 w-36 lg:h-auto lg:w-auto'
               >
-                <h1 className=''>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</h1>
                 <Image
                   src={img.image}
                   alt={img.description}
