@@ -55,50 +55,60 @@ const reviews = [
 const gallery1 = [
   {
     image: vjencanje1,
+    description: 'Wedding decoration. Table with flowers',
   },
   {
     image: vjencanje2,
+    description: 'Couple at the wedding',
   },
   {
     image: vjencanje3,
+    description: 'Bouquet of flowers',
   },
-  {
-    image: vjencanje1,
-  },
-  {
-    image: biznis1,
-  },
-  {
-    image: biznis2,
-  },
-  {
-    image: biznis3,
-  },
+
   {
     image: kid1,
+    description: 'Teenagers with a clown',
   },
   {
     image: kid2,
+    description: 'Decoration on a rock',
   },
   {
     image: kid3,
+    description: 'Kid painting with a smile',
   },
   {
     image: baloni1,
+    description: 'Birthday baloons',
   },
   {
     image: baloni2,
+    description: 'Couple kissing with baloons next to them',
   },
   {
     image: baloni3,
+    description: 'Baloons decoration',
+  },
+  {
+    image: biznis1,
+    description: 'Business gathering. Business event',
+  },
+  {
+    image: biznis3,
+    description: 'Singer singing on a business event',
+  },
+  {
+    image: biznis2,
+    description: 'Business gathering. Business event',
   },
 ];
 
 const Reviews: FC = () => {
   return (
     <section className='py-24 px-10 bg-color-lightest'>
-      <div className='grid grid-cols-custom2fr '>
-        <div className='reviews grid grid-cols-custom2fr gap-x-16 gap-y-8'>
+      <div className='grid grid-cols-custom2fr gap-x-16 '>
+        <div className='reviews grid grid-cols-custom2fr gap-x-16 gap-y-16'>
           {reviews.map((r, i) => {
             return (
               <div key={i} className='review'>
@@ -119,7 +129,20 @@ const Reviews: FC = () => {
             );
           })}
         </div>
-        <div className='images'></div>
+        <div className='images grid grid-cols-custom3fr gap-x-4 gap-y-4 '>
+          {gallery1.map((img, i) => {
+            return (
+              <div key={i} className='img__box relative overflow-hidden'>
+                <Image
+                  src={img.image}
+                  alt={img.description}
+                  fill={true}
+                  className='object-cover block transform hover:scale-110 transition-all duration-500'
+                />
+              </div>
+            );
+          })}
+        </div>
       </div>
     </section>
   );

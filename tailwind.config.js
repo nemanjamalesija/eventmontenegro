@@ -32,6 +32,7 @@ module.exports = {
         'font-nav': '1.1rem',
         'hero-p': '1.42rem',
       },
+      scale: ['hover'],
     },
   },
   plugins: [],
