@@ -18,6 +18,8 @@ import biznis3 from '../../../assets/img/gallery1/biznis3.jpg';
 import kid1 from '../../../assets/img/gallery1/kid1.avif';
 import kid2 from '../../../assets/img/gallery1/kid2.avif';
 import kid3 from '../../../assets/img/gallery1/kid3.avif';
+import { josefinSans } from '../../../utils/fonts';
+import clsx from 'clsx';
 
 const reviews = [
   {
@@ -35,16 +37,7 @@ const reviews = [
     text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita dolorem iusto quo maiores explicabo excepturi vero, ipsam quasi ',
     author: '- Nebojša i Ena Bojić',
   },
-  {
-    image: usernemanja,
-    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita dolorem iusto quo maiores explicabo excepturi vero, ipsam quasi ',
-    author: '- Nemanja Malesija',
-  },
-  {
-    image: usernikola,
-    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita dolorem iusto quo maiores explicabo excepturi vero, ipsam quasi ',
-    author: '- Nikola Vukčević',
-  },
+
   {
     image: usertanja,
     text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita dolorem iusto quo maiores explicabo excepturi vero, ipsam quasi ',
@@ -106,33 +99,52 @@ const gallery1 = [
 
 const Reviews: FC = () => {
   return (
-    <section className='py-24 px-10 bg-color-lightest'>
-      <div className='grid grid-cols-custom2fr gap-x-16 '>
-        <div className='reviews grid grid-cols-custom2fr gap-x-16 gap-y-16'>
-          {reviews.map((r, i) => {
-            return (
-              <div key={i} className='review'>
-                <div className='review__author mb-4'>
-                  <Image
-                    src={r.image}
-                    alt={r.author}
-                    className='h-16 w-16 rounded-full object-cover'
-                  />
+    <section className='py-24 px-5 lg:px-10 bg-color-lightest'>
+      <div className='flex flex-col lg:grid lg:grid-cols-custom2fr gap-x-16 gap-y-24'>
+        <div className='flex flex-col'>
+          <div className='mb-16 lg:mb-24'>
+            <h2
+              className={clsx(
+                josefinSans.className,
+                'text-base font-bold tracking-wide uppercase text-color-accent-main mb-3'
+              )}
+            >
+              Mišljenje korisnika
+            </h2>
+            <h3 className='text-3xl md:text-4xl lg:text-5xl font-bold text-gray-700'>
+              Projekat ostvaren sa nama se ne zaboravlja
+            </h3>
+          </div>
+          <div className='reviews flex flex-col lg:grid lg:grid-cols-custom2fr gap-y-10 lg:gap-x-14 lg:gap-y-16'>
+            {reviews.map((r, i) => {
+              return (
+                <div key={i} className='review'>
+                  <div className='review__author mb-3 lg:mb-4'>
+                    <Image
+                      src={r.image}
+                      alt={r.author}
+                      className='h-14 w-14  md:h-16 md:w-16 rounded-full object-cover'
+                    />
+                  </div>
+                  <p className='review__text mb-4 md:mb-6 text-base md:text-lg text-gray-700'>
+                    {r.text}
+                  </p>
+                  <span className='review__author text-sm  md:text-base text-gray-600'>
+                    {r.author}
+                  </span>
                 </div>
-                <p className='review__text mb-6 text-lg text-gray-700'>
-                  {r.text}
-                </p>
-                <span className='review__author text-base text-gray-600'>
-                  {r.author}
-                </span>
-              </div>
-            );
-          })}
+              );
+            })}
+          </div>
         </div>
-        <div className='images grid grid-cols-custom3fr gap-x-4 gap-y-4 '>
+        <div className='images grid grid-cols-custom3fr gap-x-2 gap-y-2 lg:gap-x-4 lg:gap-y-4 '>
           {gallery1.map((img, i) => {
             return (
-              <div key={i} className='img__box relative overflow-hidden'>
+              <div
+                key={i}
+                className='img__box relative overflow-hidden h-36 w-36 lg:h-auto lg:w-auto'
+              >
+                <h1 className=''>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</h1>
                 <Image
                   src={img.image}
                   alt={img.description}
