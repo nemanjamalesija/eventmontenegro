@@ -25,7 +25,8 @@ html {
   cursor: pointer;
 }
 
-.ghost:hover {
+.ghost:hover,
+.card__link:hover {
   box-shadow: inset 0 0 0 3px #fff;
 }
 
@@ -64,7 +65,7 @@ html {
   text-transform: uppercase;
   color: #fff;
   position: absolute;
-  bottom: 17.5rem;
+  bottom: 14.9rem;
   left: 0;
 }
 
@@ -80,13 +81,8 @@ html {
 }
 
 .card__cta {
-  padding: 5rem;
-  background-image: linear-gradient(
-      to right bottom,
-      rgb(255, 255, 255, 0.5),
-      rgb(255, 255, 255, 0.5)
-    ),
-    url('../../assets/img/logo-sub.png');
+  padding: 1.5rem;
+  background-color: #fff;
   /* background-image: url('../../assets/img/logo.png'); */
   background-position: center;
   background-blend-mode: screen;
@@ -96,4 +92,10 @@ html {
 .card__buttons {
   background-image: linear-gradient(to right bottom, #e66b80, #f03e3e);
   padding: 2rem;
+}
+
+.card__image {
+  left: 50%;
+  top: 50%;
+  transform: translate(50%, -10%);
 }
