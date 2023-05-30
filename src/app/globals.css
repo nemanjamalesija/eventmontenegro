@@ -45,3 +45,51 @@ html {
 .nav__header.sticky .nav {
   background-color: rgba(255, 255, 255, 0.95);
 }
+
+/* cards */
+.card__picture {
+  background-size: cover;
+  height: 23rem;
+  background-blend-mode: screen;
+}
+
+.card__picture--1 {
+  background-image: linear-gradient(to right bottom, #e66b80, #f03e3e),
+    url('../../assets/img/cards/vjencanja.jpg');
+}
+
+.card__heading {
+  font-size: 2.8rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #fff;
+  position: absolute;
+  bottom: 10rem;
+  left: 0;
+  text-align: left;
+}
+
+.card__heading-span {
+  padding: 1rem 1.5rem;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(230, 107, 128, 0.85),
+    rgba(240, 62, 62, 0.85)
+  );
+  width: 100%;
+}
+
+.card__cta {
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  background-image: linear-gradient(to right bottom, #e66b80, #f03e3e),
+    url('../../assets/img/logo.png');
+
+  background-position: center;
+  background-blend-mode: screen;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}

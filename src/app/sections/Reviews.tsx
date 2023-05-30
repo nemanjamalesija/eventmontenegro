@@ -2,8 +2,6 @@ import { FC } from 'react';
 import useramar from '../../../assets/img/useramar.jpg';
 import userelisa from '../../../assets/img/userelisa.jpg';
 import usernebuska from '../../../assets/img/usernebuska.jpg';
-import usernemanja from '../../../assets/img/usernemanja.jpg';
-import usernikola from '../../../assets/img/usernikola.jpg';
 import usertanja from '../../../assets/img/usertanja.jpg';
 import Image from 'next/image';
 import vjencanje1 from '../../../assets/img/gallery1/vjencanje1.jpg';
