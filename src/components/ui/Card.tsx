@@ -8,13 +8,24 @@ type CardProps = {
   cardHeadingText: string;
 };
 
+/* 
+
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #fff;
+  position: absolute;
+  bottom: 14.9rem;
+  left: 0;
+
+*/
+
 const Card = ({ cardNumber, cardHeadingText }: CardProps) => {
   return (
     <div className='card relative'>
       <div className={`card__picture card__picture--${cardNumber}`}>&nbsp;</div>
-      <h4 className='card__heading'>
+      <h4 className='card__heading text-[1.9rem] text-white absolute left-0 text-left uppercase'>
         <span
-          className={`card__heading-span card__heading-span--${cardNumber} capitalize`}
+          className={`card__heading-span card__heading-span--${cardNumber} font-light`}
         >
           {cardHeadingText}
         </span>

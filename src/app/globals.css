@@ -49,7 +49,7 @@ html {
 
 /* cards */
 .card {
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.05);
 }
 
 .card__picture {
@@ -65,17 +65,25 @@ html {
 
 .card__picture--2 {
   background-image: linear-gradient(to right bottom, #e66b80, #f03e3e),
-    url('../../assets/img/cards/poslovni.jpg');
+    url('../../assets/img/cards/biznis1.jpg');
+}
+
+.card__picture--3 {
+  background-image: linear-gradient(to right bottom, #e66b80, #f03e3e),
+    url('../../assets/img/cards/djecije.jpg');
+}
+.card__picture--4 {
+  background-image: linear-gradient(to right bottom, #e66b80, #f03e3e),
+    url('../../assets/img/cards/ostale.jpg');
+}
+
+.card__picture--5 {
+  background-image: linear-gradient(to right bottom, #e66b80, #f03e3e),
+    url('../../assets/img/cards/dodatne.jpg');
 }
 
 .card__heading {
-  font-size: 2.8rem;
-  font-weight: 400;
-  text-transform: uppercase;
-  color: #fff;
-  position: absolute;
   bottom: 14.9rem;
-  left: 0;
 }
 
 .card__heading-span {

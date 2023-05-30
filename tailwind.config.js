@@ -13,7 +13,7 @@ module.exports = {
         'ring-color-primary': '#ee97a6',
         'color-lightest': '#fdf2f3',
 
-        'color-gray-light-1': '#fafafa',
+        'color-gray-light-1': '#fdf2f3',
       },
 
       height: {
