@@ -49,7 +49,7 @@ html {
 /* cards */
 .card__picture {
   background-size: cover;
-  height: 23rem;
+  height: 20rem;
   background-blend-mode: screen;
 }
 
@@ -64,13 +64,12 @@ html {
   text-transform: uppercase;
   color: #fff;
   position: absolute;
-  bottom: 10rem;
+  bottom: 17.5rem;
   left: 0;
-  text-align: left;
 }
 
 .card__heading-span {
-  padding: 1rem 1.5rem;
+  padding: 0.5rem 1rem;
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
   background-image: linear-gradient(
@@ -78,18 +77,23 @@ html {
     rgba(230, 107, 128, 0.85),
     rgba(240, 62, 62, 0.85)
   );
-  width: 100%;
 }
 
 .card__cta {
-  padding-top: 4rem;
-  padding-bottom: 2rem;
-  background-image: linear-gradient(to right bottom, #e66b80, #f03e3e),
-    url('../../assets/img/logo.png');
-
+  padding: 5rem;
+  background-image: linear-gradient(
+      to right bottom,
+      rgb(255, 255, 255, 0.5),
+      rgb(255, 255, 255, 0.5)
+    ),
+    url('../../assets/img/logo-sub.png');
+  /* background-image: url('../../assets/img/logo.png'); */
   background-position: center;
   background-blend-mode: screen;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
+  background-repeat: no-repeat;
+}
+
+.card__buttons {
+  background-image: linear-gradient(to right bottom, #e66b80, #f03e3e);
+  padding: 2rem;
 }
