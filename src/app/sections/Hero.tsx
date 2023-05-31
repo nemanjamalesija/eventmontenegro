@@ -58,7 +58,7 @@ const Hero: FC = () => {
             Iznajmljivanje opreme, organizacija i koordinacija proslava.
             Prilagođeno Vašim ličnim potrebama i detaljnim željama.
           </p>
-          <div className='mt-10 flex justify-center lg:justify-start gap-2 lg:gap-6'>
+          <div className='mt-10 flex justify-center lg:justify-start gap-4 lg:gap-6'>
             <CustomLink
               href='#'
               className='px-4 py-2 sm:py-3 sm:px-6 sm:text-xl'

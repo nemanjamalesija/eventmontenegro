@@ -50,7 +50,7 @@ const Balloons: FC = () => {
   const [categoryIndex, setCategoryIndex] = useState(0);
   return (
     <section className='py-24 lg:px-10 bg-color-lightest border-t-2 border-b-2 border-white'>
-      <div className='mx-auto px-5 lg:px-0'>
+      <div className='mx-auto max-w-custom px-5 lg:px-0'>
         <div className='mb-8 lg:mb-12'>
           <h2
             className={clsx(
@@ -70,7 +70,7 @@ const Balloons: FC = () => {
           bg-cover
         ></div>
         <div className='balloons__content'>
-          <div className='balloons__buttons flex items-center justify-between -translate-y-6 mb-4 lg:mb-8'>
+          <div className='balloons__buttons flex items-center justify-between lg:justify-center gap-0 lg:gap-10 -translate-y-6 mb-4 lg:mb-8'>
             {baloonCategories.map((cat, i) => {
               return (
                 <button
@@ -99,7 +99,7 @@ const Balloons: FC = () => {
                   {baloonsContent[categoryIndex]?.offer?.map((off, i) => (
                     <li
                       key={i}
-                      className='list__item flex items-center gap-2  text-left text-gray-700 text-base lg:text-lg'
+                      className='list__item flex items-center gap-2 text-center text-gray-700 text-base lg:text-lg'
                     >
                       <Check className='stroke-color-accent-main' />
                       {off}
