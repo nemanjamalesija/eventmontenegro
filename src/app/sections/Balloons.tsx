@@ -70,7 +70,7 @@ const Balloons: FC = () => {
           bg-cover
         ></div>
         <div className='balloons__content'>
-          <div className='balloons__buttons flex gap-2 lg:gap-5 items-center justify-center -translate-y-6 mb-4 lg:mb-8'>
+          <div className='balloons__buttons flex items-center justify-between -translate-y-6 mb-4 lg:mb-8'>
             {baloonCategories.map((cat, i) => {
               return (
                 <button
