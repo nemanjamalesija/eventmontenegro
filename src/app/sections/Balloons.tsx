@@ -50,7 +50,7 @@ const Balloons: FC = () => {
   const [categoryIndex, setCategoryIndex] = useState(0);
   return (
     <section className='py-24 lg:px-10 bg-color-lightest border-t-2 border-b-2 border-white'>
-      <div className='mx-auto px-5 lg:px-0'>
+      <div className='mx-auto px-2 lg:px-0'>
         <div className='mb-8 lg:mb-12'>
           <h2
             className={clsx(
@@ -69,13 +69,12 @@ const Balloons: FC = () => {
           bg-blend-screen
           bg-cover
         ></div>
-        <div className='balloons__content'>
+        <div className='balloons__content mx-auto'>
           <div className='balloons__buttons flex gap-2 lg:gap-5 items-center justify-center -translate-y-6 mb-4 lg:mb-8'>
             {baloonCategories.map((cat, i) => {
               return (
                 <button
                   key={i}
-                  autoFocus={categoryIndex === i}
                   className={cn(
                     'active:scale-95 transition-all, duration-300 rounded-full inline-flex items-center justify-center font-semibold transition-color focus:outline-none focus:ring-8 focus:ring-ring-color-primary focus:ring-offset-2 cursor-pointer px-3 py-1 sm:py-3 sm:px-6 text-base sm:text-xl bg-color-accent-main hover:bg-color-shade-main text-white',
                     { '-translate-y-2': i === categoryIndex }
