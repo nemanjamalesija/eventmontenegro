@@ -44,17 +44,12 @@ const baloonsContent = [
   },
 ];
 
-const baloonCategories = [
-  'Dekoraija Balonima',
-  'Isporuka balona',
-  'Ispuštanje balona',
-  'Štampa na balonima',
-];
+const baloonCategories = ['Dekoraija', 'Isporuka', 'Ispuštanje', 'Štampa'];
 
 const Balloons: FC = () => {
   const [categoryIndex, setCategoryIndex] = useState(0);
   return (
-    <section className='py-24 px-5 lg:px-10 bg-color-lightest border-t-2 border-b-2 border-white'>
+    <section className='py-24 lg:px-10 bg-color-lightest border-t-2 border-b-2 border-white'>
       <div className='mx-auto px-5 lg:px-0'>
         <div className='mb-8 lg:mb-12'>
           <h2
@@ -70,19 +65,19 @@ const Balloons: FC = () => {
           </h3>
         </div>
         <div
-          className='balloons__img-box h-[40vh] bg-blend-screen bg-cover'
+          className='balloons__img-box h-[40vh] w-full bg-blend-screen bg-cover'
           bg-blend-screen
           bg-cover
         ></div>
         <div className='balloons__content'>
-          <div className='balloons__buttons flex gap-5 items-center justify-center -translate-y-6 mb-8'>
+          <div className='balloons__buttons flex gap-2 lg:gap-5 items-center justify-center -translate-y-6 mb-4 lg:mb-8'>
             {baloonCategories.map((cat, i) => {
               return (
                 <button
                   key={i}
                   autoFocus={categoryIndex === i}
                   className={cn(
-                    'active:scale-95 transition-all, duration-300 rounded-full inline-flex items-center justify-center font-semibold transition-color focus:outline-none focus:ring-8 focus:ring-ring-color-primary focus:ring-offset-2 cursor-pointer px-6 py-2 sm:py-3 sm:px-6 text-base sm:text-xl bg-color-accent-main hover:bg-color-shade-main text-white',
+                    'active:scale-95 transition-all, duration-300 rounded-full inline-flex items-center justify-center font-semibold transition-color focus:outline-none focus:ring-8 focus:ring-ring-color-primary focus:ring-offset-2 cursor-pointer px-3 py-1 sm:py-3 sm:px-6 text-base sm:text-xl bg-color-accent-main hover:bg-color-shade-main text-white',
                     { '-translate-y-2': i === categoryIndex }
                   )}
                   onClick={() => setCategoryIndex(i)}
@@ -93,19 +88,19 @@ const Balloons: FC = () => {
             })}
           </div>
           <div className='balloons__text mx-auto max-w-custom px-5 lg:px-0'>
-            <p className='text-lg text-gray-700 mb-10'>
+            <p className='text-base lg:text-lg text-gray-700 mb-6 lg:mb-10'>
               {baloonsContent[categoryIndex].categoryContent}
             </p>
             <ul className='balloons__offer list-none '>
               {baloonsContent[categoryIndex].offer && (
                 <div className='balloons__offer-box flex flex-col gap-5'>
-                  <h4 className='text-3xl font-bold text-gray-700'>
+                  <h4 className='text-2xl lg:text-3xl font-bold text-gray-700'>
                     U ponudi imamo:
                   </h4>
                   {baloonsContent[categoryIndex]?.offer?.map((off, i) => (
                     <li
                       key={i}
-                      className='list__item flex items-center gap-2 text-lg text-left text-gray-700'
+                      className='list__item flex items-center gap-2  text-left text-gray-700 text-base lg:text-lg'
                     >
                       <Check className='stroke-color-accent-main' />
                       {off}
