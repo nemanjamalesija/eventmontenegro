@@ -50,7 +50,7 @@ const Balloons: FC = () => {
   const [categoryIndex, setCategoryIndex] = useState(0);
   return (
     <section className='py-24 lg:px-10 bg-color-lightest border-t-2 border-b-2 border-white'>
-      <div className='mx-auto max-w-custom px-5 lg:px-0'>
+      <div className='mx-auto max-w-custom px-4 lg:px-0'>
         <div className='mb-8 lg:mb-12'>
           <h2
             className={clsx(
@@ -76,7 +76,7 @@ const Balloons: FC = () => {
                 <button
                   key={i}
                   className={cn(
-                    'active:scale-95 transition-all, duration-300 rounded-full inline-flex items-center justify-center font-semibold transition-color focus:outline-none focus:ring-8 focus:ring-ring-color-primary focus:ring-offset-2 cursor-pointer px-3 py-1 sm:py-3 sm:px-6 text-base sm:text-xl bg-color-accent-main hover:bg-color-shade-main text-white',
+                    'active:scale-95 transition-all, duration-300 rounded-full inline-flex items-center justify-center font-semibold transition-all focus:outline-none focus:ring-8 focus:ring-ring-color-primary focus:ring-offset-2 cursor-pointer px-2 py-1 sm:py-3 sm:px-6 text-base sm:text-xl bg-color-accent-main hover:bg-color-shade-main text-white',
                     { '-translate-y-2': i === categoryIndex }
                   )}
                   onClick={() => setCategoryIndex(i)}

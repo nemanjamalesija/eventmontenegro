@@ -63,7 +63,7 @@ const Hero: FC = () => {
               href='#'
               className='px-4 py-2 sm:py-3 sm:px-6 sm:text-xl'
             >
-              Počnite svoj projekat
+              Počnite projekat
             </CustomLink>
             <CustomLink
               className='ghost flex items-center justify-center px-4 py-2 sm:py-3 sm:px-10  text-lg  sm:text-xl'
