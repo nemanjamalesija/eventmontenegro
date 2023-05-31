@@ -77,9 +77,6 @@ html {
 }
 
 .card__heading-span {
-  padding: 0.5rem 1rem;
-  -webkit-box-decoration-break: clone;
-  box-decoration-break: clone;
   background-image: linear-gradient(
     to right bottom,
     rgba(230, 107, 128, 0.85),
@@ -87,16 +84,6 @@ html {
   );
 }
 
-.card__cta {
-  padding: 1.5rem;
-  background-color: #fff;
-  /* background-image: url('../../assets/img/logo.png'); */
-  background-position: center;
-  background-blend-mode: screen;
-  background-repeat: no-repeat;
-}
-
 .card__buttons {
   background-image: linear-gradient(to right bottom, #e66b80, #f03e3e);
-  padding: 2rem;
 }

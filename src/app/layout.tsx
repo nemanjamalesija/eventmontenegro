@@ -7,6 +7,7 @@ import Hero from './sections/Hero';
 import HowItWorks from './sections/HowItWorks';
 import Reviews from './sections/Reviews';
 import Offers from './sections/Offers';
+import Balloons from './sections/Balloons';
 
 export const metadata = {
   title: 'Event Montenegro',
@@ -27,6 +28,7 @@ export default function RootLayout({
           <Hero />
           <HowItWorks />
           <Offers />
+          <Balloons />
           <Reviews />
         </AppProvider>
       </body>
