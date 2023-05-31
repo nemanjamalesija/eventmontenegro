@@ -107,7 +107,7 @@ const Reviews: FC = () => {
                 'text-base font-bold tracking-wide uppercase text-color-accent-main mb-3'
               )}
             >
-              Mišljenje korisnika
+              Utisci korisnika
             </h2>
             <h3 className='text-3xl md:text-4xl lg:text-5xl font-bold text-gray-700'>
               Projekat ostvaren sa nama se ne zaboravlja
