@@ -3,11 +3,6 @@ import { nunito } from '../../utils/fonts';
 import Navigation from './Home/Navigation';
 import './globals.css';
 import { AppProvider } from '@/Provider/appContext';
-import Hero from './Home/Hero';
-import HowItWorks from './Home/HowItWorks';
-import Reviews from './Home/Reviews';
-import Offers from './Home/Offers';
-import Balloons from './Home/Balloons';
 
 export const metadata = {
   title: 'Event Montenegro',
