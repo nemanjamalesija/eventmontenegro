@@ -134,7 +134,7 @@ const Balloons: FC = () => {
             <h2
               className={clsx(
                 josefinSans.className,
-                'text-base font-bold tracking-wide uppercase text-color-accent-main mb-2 sm:mb-3 text-center'
+                'text-base font-bold tracking-wide uppercase text-color-accent-main mb-0 lg:mb-6 text-center'
               )}
             >
               Foto Galerija
