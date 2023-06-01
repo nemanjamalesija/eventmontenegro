@@ -35,6 +35,10 @@
   width: 28px;
 }
 @media (max-width: 768px) {
+  .image-gallery-slide {
+    height: 360px;
+  }
+
   .image-gallery-fullscreen-button,
   .image-gallery-play-button {
     padding: 15px;

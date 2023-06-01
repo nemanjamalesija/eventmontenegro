@@ -141,9 +141,8 @@ const Balloons: FC = () => {
             </h2>
             <ImageGallery
               items={balloonsImages}
-              showPlayButton={true}
-              showFullscreenButton={true}
-              slideInterval={1000}
+              showPlayButton={false}
+              showFullscreenButton={false}
               slideOnThumbnailOver={true}
               showIndex={true}
             />
