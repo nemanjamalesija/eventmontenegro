@@ -44,7 +44,7 @@ const baloonsContent = [
   },
 ];
 
-const baloonCategories = ['Dekoraija', 'Isporuka', 'Ispuštanje', 'Štampa'];
+const baloonCategories = ['Dekoracija', 'Isporuka', 'Ispuštanje', 'Štampa'];
 
 const Balloons: FC = () => {
   const [categoryIndex, setCategoryIndex] = useState(0);
