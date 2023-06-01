@@ -4,6 +4,9 @@ import { josefinSans } from '../../../utils/fonts';
 import clsx from 'clsx';
 import { Check } from 'lucide-react';
 import { cn } from '../../../utils/twinMerge';
+import ImageGallery from 'react-image-gallery';
+import '../gallery.css';
+import { balloonsImages } from '../../../assets/img/baloni/baloniImages';
 
 const baloonsContent = [
   {
@@ -41,6 +44,24 @@ const baloonsContent = [
   {
     categoryContent:
       'Baloni sa štampom su odličan način za promociju Vaše firme, brenda ili proizvoda. Štampu radimo u jednoj ili u više boja. Zavisno od količine balona, štampu na balonima treba poručiti tri do pet dana ranije. Osim štampe, u ponudi imamo i mogućnost ispisivanja raznih poruka ili imena na balonima, kao i loga Vaše firme.',
+  },
+];
+
+const images = [
+  {
+    original:
+      'https://www.eventmontenegro.com/files/images/1584044803-44355567_714906348902690_8794103107347153634_n%20-%20Copy.jpg',
+    thumbnail: 'https://picsum.photos/id/1018/250/150/',
+  },
+  {
+    original:
+      'https://www.eventmontenegro.com/files/images/1584039225-1573405957-20190822_172836_resize.jpg',
+    thumbnail: 'https://picsum.photos/id/1015/250/150/',
+  },
+  {
+    original:
+      'https://www.eventmontenegro.com/files/images/1584039263-DSC_0180%20(2).JPG',
+    thumbnail: 'https://picsum.photos/id/1019/250/150/',
   },
 ];
 
@@ -86,7 +107,7 @@ const Balloons: FC = () => {
               );
             })}
           </div>
-          <div className='balloons__text mx-auto '>
+          <div className='balloons__text mx-auto mb-8 '>
             <p className='text-base lg:text-lg text-gray-700 mb-6 lg:mb-10'>
               {baloonsContent[categoryIndex].categoryContent}
             </p>
@@ -108,6 +129,24 @@ const Balloons: FC = () => {
                 </div>
               )}
             </ul>
+          </div>
+          <div className='photo__gallery'>
+            <h2
+              className={clsx(
+                josefinSans.className,
+                'text-base font-bold tracking-wide uppercase text-color-accent-main mb-3 text-center'
+              )}
+            >
+              Foto Galerija
+            </h2>
+            <ImageGallery
+              items={balloonsImages}
+              showPlayButton={true}
+              showFullscreenButton={true}
+              slideInterval={1000}
+              slideOnThumbnailOver={true}
+              showIndex={true}
+            />
           </div>
         </div>
       </div>
