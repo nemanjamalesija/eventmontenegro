@@ -1,6 +1,4 @@
-import baloni1 from './large/baloni1.jpg';
 import baloni2 from './large/baloni2.jpg';
-import baloni3 from './large/baloni3.jpg';
 import baloni4 from './large/baloni4.jpg';
 import baloni5 from './large/baloni5.jpg';
 import baloni6 from './large/baloni6.jpg';
@@ -8,11 +6,11 @@ import baloni7 from './large/baloni7.jpg';
 import baloni8 from './large/baloni8.jpg';
 import baloni9 from './large/baloni9.jpg';
 import baloni10 from './large/baloni10.jpg';
-import baloni11 from './large/baloni11.jpg';
+
 import baloni12 from './large/baloni12.jpg';
 import baloni13 from './large/baloni13.jpg';
 import baloni14 from './large/baloni14.jpg';
-import baloni15 from './large/baloni15.jpg';
+
 import baloni16 from './large/baloni16.jpg';
 import baloni17 from './large/baloni17.jpg';
 import baloni18 from './large/baloni18.jpg';
@@ -36,7 +34,6 @@ import baloni35 from './large/baloni35.jpg';
 /* thumbnails */
 
 import baloni2Thumb from './thumbnails/baloni2Thumb.jpg';
-import baloni3Thumb from './thumbnails/baloni3Thumb.jpg';
 import baloni4Thumb from './thumbnails/baloni4Thumb.jpg';
 import baloni5Thumb from './thumbnails/baloni5Thumb.jpg';
 import baloni6Thumb from './thumbnails/baloni6Thumb.jpg';
@@ -44,18 +41,18 @@ import baloni7Thumb from './thumbnails/baloni7Thumb.jpg';
 import baloni8Thumb from './thumbnails/baloni8Thumb.jpg';
 import baloni9Thumb from './thumbnails/baloni9Thumb.jpg';
 import baloni10Thumb from './thumbnails/baloni10Thumb.jpg';
-import baloni11Thumb from './thumbnails/baloni11Thumb.jpg';
+
 import baloni12Thumb from './thumbnails/baloni12Thumb.jpg';
 import baloni13Thumb from './thumbnails/baloni13Thumb.jpg';
 import baloni14Thumb from './thumbnails/baloni14Thumb.jpg';
-import baloni15Thumb from './thumbnails/baloni15Thumb.jpg';
+
 import baloni16Thumb from './thumbnails/baloni16Thumb.jpg';
 import baloni17Thumb from './thumbnails/baloni17Thumb.jpg';
 import baloni18Thumb from './thumbnails/baloni18Thumb.jpg';
 import baloni19Thumb from './thumbnails/baloni19Thumb.jpg';
 import baloni20Thumb from './thumbnails/baloni20Thumb.jpg';
 import baloni21Thumb from './thumbnails/baloni21Thumb.jpg';
-import baloni22Thumb from './thumbnails/baloni22Thumb.jpg';
+
 import baloni23Thumb from './thumbnails/baloni23Thumb.jpg';
 import baloni24Thumb from './thumbnails/baloni24Thumb.jpg';
 import baloni25Thumb from './thumbnails/baloni25Thumb.jpg';
@@ -74,10 +71,6 @@ export const balloonsImages = [
   {
     original: baloni2.src,
     thumbnail: baloni2Thumb.src,
-  },
-  {
-    original: baloni3.src,
-    thumbnail: baloni3Thumb.src,
   },
   {
     original: baloni4.src,
@@ -107,10 +100,7 @@ export const balloonsImages = [
     original: baloni10.src,
     thumbnail: baloni10Thumb.src,
   },
-  {
-    original: baloni11.src,
-    thumbnail: baloni11Thumb.src,
-  },
+
   {
     original: baloni12.src,
     thumbnail: baloni12Thumb.src,
@@ -123,10 +113,7 @@ export const balloonsImages = [
     original: baloni14.src,
     thumbnail: baloni14Thumb.src,
   },
-  {
-    original: baloni15.src,
-    thumbnail: baloni15Thumb.src,
-  },
+
   {
     original: baloni16.src,
     thumbnail: baloni16Thumb.src,
@@ -151,10 +138,7 @@ export const balloonsImages = [
     original: baloni21.src,
     thumbnail: baloni21Thumb.src,
   },
-  {
-    original: baloni22.src,
-    thumbnail: baloni22Thumb.src,
-  },
+
   {
     original: baloni23.src,
     thumbnail: baloni23Thumb.src,

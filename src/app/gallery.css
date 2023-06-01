@@ -36,7 +36,11 @@
 }
 @media (max-width: 768px) {
   .image-gallery-slide {
-    height: 360px;
+    height: 420px;
+  }
+
+  .image-gallery-image {
+    height: 100%;
   }
 
   .image-gallery-fullscreen-button,
