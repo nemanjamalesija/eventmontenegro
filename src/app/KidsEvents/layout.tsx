@@ -14,7 +14,7 @@ const layout = async ({ children }: LayoutProps) => {
         <h2
           className={clsx(
             josefinSans.className,
-            'text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-600 mb-4 lg:mb-8'
+            'text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-600 mb-4 lg:mb-6'
           )}
         >
           Dječije proslave
@@ -22,9 +22,9 @@ const layout = async ({ children }: LayoutProps) => {
 
         <div
           className='kids__img-box h-[40vh] w-full bg-blend-screen
-          bg-cover bg-center lg:bg-top mb-8'
+          bg-cover bg-center lg:bg-top mb-8 lg:mb-12'
         ></div>
-        <div className='kids__text-box flex flex-col lg:grid grid-cols-2 gap-x-20 gap-12'>
+        <div className='kids__text-box flex flex-col lg:grid grid-cols-2 gap-x-24 gap-12'>
           <div className='kids__text '>
             <div className='flex items-center gap-4 mb-4'>
               <div className='kids__icons-set flex items-center justify-center rounded-full h-14 w-14 lg:h-16 lg:w-16 bg-color-accent-main'>
