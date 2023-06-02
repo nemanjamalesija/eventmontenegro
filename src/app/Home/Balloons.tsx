@@ -73,17 +73,17 @@ const Balloons: FC = () => {
     <section className='py-24 lg:px-10 bg-color-lightest border-t-2 border-b-2 border-white'>
       <div className='mx-auto max-w-custom px-4 lg:px-0'>
         <div className='mb-8 lg:mb-12'>
-          <h2
+          <h3
             className={clsx(
               josefinSans.className,
               'text-base font-bold tracking-wide uppercase text-color-accent-main mb-3'
             )}
           >
             Baloni
-          </h2>
-          <h3 className='text-3xl md:text-4xl lg:text-5xl font-bold text-gray-700'>
-            Dekoracija, isporuka, ispuštanje i štampa balona
           </h3>
+          <h4 className='text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-700'>
+            Dekoracija, isporuka, ispuštanje i štampa balona
+          </h4>
         </div>
         <div
           className='balloons__img-box h-[40vh] w-full bg-blend-screen
@@ -113,7 +113,12 @@ const Balloons: FC = () => {
             <ul className='balloons__offer list-none flex flex-col'>
               {baloonsContent[categoryIndex].offer && (
                 <div className='balloons__offer-box flex flex-col gap-3'>
-                  <h4 className='text-2xl  font-bold text-gray-700'>
+                  <h4
+                    className={clsx(
+                      josefinSans.className,
+                      'text-2xl font-semibold text-gray-700'
+                    )}
+                  >
                     U ponudi imamo:
                   </h4>
                   {baloonsContent[categoryIndex]?.offer?.map((off, i) => (
@@ -130,14 +135,14 @@ const Balloons: FC = () => {
             </ul>
           </div>
           <div className='photo__gallery'>
-            <h2
+            <h3
               className={clsx(
                 josefinSans.className,
                 'text-base font-bold tracking-wide uppercase text-color-accent-main mb-3 lg:mb-6 text-center'
               )}
             >
               Foto Galerija
-            </h2>
+            </h3>
             <ImageGallery
               items={balloonsImages}
               showPlayButton={false}

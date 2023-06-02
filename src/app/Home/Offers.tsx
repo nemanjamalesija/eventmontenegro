@@ -8,17 +8,17 @@ const Offers: FC = () => {
     <section className='py-24 px-5 lg:px-10'>
       <div className='mx-auto max-w-custom px-5 lg:px-0 '>
         <div className='mb-16 lg:mb-24'>
-          <h2
+          <h3
             className={clsx(
               josefinSans.className,
               'text-base font-bold tracking-wide uppercase text-color-accent-main mb-3'
             )}
           >
             Proslave
-          </h2>
-          <h3 className='text-3xl md:text-4xl lg:text-5xl font-bold text-gray-700'>
-            Pretvorimo zajedno vašu viziju u stvarnost
           </h3>
+          <h4 className='text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-700'>
+            Pretvorimo zajedno vašu viziju u stvarnost
+          </h4>
         </div>
         <div className='flex flex-col gap-y-24 lg:grid lg:grid-cols-custom3fr lg:gap-x-20 '>
           <Card

@@ -9,17 +9,17 @@ const HowItWorks: FC = () => {
     <section id='howItWorks' className='py-24 bg-white'>
       <div className='mx-auto max-w-custom px-5 lg:px-0'>
         <div className='mb-16 lg:mb-24'>
-          <h2
+          <h3
             className={clsx(
               josefinSans.className,
               'text-base font-bold tracking-wide uppercase text-color-accent-main mb-3'
             )}
           >
             Kako radimo
-          </h2>
-          <h3 className='text-3xl md:text-4xl lg:text-5xl font-bold text-gray-700'>
-            Organizujte svoj projekat iz snova u 3 laka koraka
           </h3>
+          <h4 className='text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-700'>
+            Organizujte svoj projekat iz snova u 3 laka koraka
+          </h4>
         </div>
         <div className='step flex flex-col lg:grid lg:grid-cols-custom2fr items-center gap-12 lg:gap-24 mb-12 lg:mb-24'>
           <div className='step__text'>

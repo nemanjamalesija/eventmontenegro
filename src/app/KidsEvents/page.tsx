@@ -1,5 +1,5 @@
 const page = async ({}) => {
-  return <pre></pre>;
+  return <h1>Kids Events</h1>;
 };
 
 export default page;

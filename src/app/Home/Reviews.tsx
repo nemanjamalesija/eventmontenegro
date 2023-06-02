@@ -101,17 +101,17 @@ const Reviews: FC = () => {
       <div className='flex flex-col gap-y-24 lg:grid lg:grid-cols-custom2fr lg:gap-x-20 '>
         <div className='flex flex-col'>
           <div className='mb-16 lg:mb-24'>
-            <h2
+            <h3
               className={clsx(
                 josefinSans.className,
                 'text-base font-bold tracking-wide uppercase text-color-accent-main mb-3'
               )}
             >
               Utisci korisnika
-            </h2>
-            <h3 className='text-3xl md:text-4xl lg:text-5xl font-bold text-gray-700'>
-              Projekat ostvaren sa nama se ne zaboravlja
             </h3>
+            <h4 className='text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-700'>
+              Projekat ostvaren sa nama se ne zaboravlja
+            </h4>
           </div>
           <div className='reviews flex flex-col lg:grid lg:grid-cols-custom2fr gap-y-10  lg:gap-x-24 lg:gap-y-20'>
             {reviews.map((r, i) => {

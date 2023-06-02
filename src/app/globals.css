@@ -57,7 +57,7 @@ html {
 
 .card__picture--3 {
   background-image: linear-gradient(to right bottom, #e66b80, #f03e3e),
-    url('../../assets/img/cards/djecije.jpg');
+    url('../../assets/img/cards/kidsbirthday.jpg');
 }
 .card__picture--4 {
   background-image: linear-gradient(to right bottom, #e66b80, #f03e3e),
@@ -91,4 +91,11 @@ html {
 .rent__equipment {
   background-image: linear-gradient(to right bottom, #e66b80, #f03e3e),
     url('../../assets/img/rent.webp');
+}
+
+/* kids event */
+
+.kids__img-box {
+  background-image: linear-gradient(to right bottom, #e66b80, #f03e3e),
+    url('../../assets/img/cards/kidsbirthday.jpg');
 }

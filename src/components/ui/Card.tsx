@@ -21,7 +21,8 @@ const Card = ({ cardNumber, cardHeadingText, href }: CardProps) => {
   return (
     <div className='card'>
       <div
-        className={`relative h-60 lg:h-80 bg-blend-screen bg-cover card__picture--${cardNumber}`}
+        className={`relative h-60 lg:h-80 bg-blend-screen
+          bg-cover bg-center lg:bg-top card__picture--${cardNumber}`}
       >
         &nbsp;
         <h4 className='card__heading text-2xl  lg:text-[1.8rem] text-white absolute left-0 bottom-2 lg:bottom-3 text-left uppercase'>
