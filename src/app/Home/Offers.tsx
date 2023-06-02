@@ -14,7 +14,7 @@ const Offers: FC = () => {
               'text-base font-bold tracking-wide uppercase text-color-accent-main mb-3'
             )}
           >
-            Ponude
+            Proslave
           </h2>
           <h3 className='text-3xl md:text-4xl lg:text-5xl font-bold text-gray-700'>
             Pretvorimo zajedno vašu viziju u stvarnost

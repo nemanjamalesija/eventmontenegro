@@ -107,13 +107,13 @@ const Balloons: FC = () => {
               );
             })}
           </div>
-          <div className='balloons__text mx-auto mb-8 '>
+          <div className='balloons__text mx-auto mb-8'>
             <p className='text-base lg:text-lg text-gray-700 mb-6 lg:mb-10'>
               {baloonsContent[categoryIndex].categoryContent}
             </p>
-            <ul className='balloons__offer list-none '>
+            <ul className='balloons__offer list-none flex flex-col'>
               {baloonsContent[categoryIndex].offer && (
-                <div className='balloons__offer-box flex flex-col gap-5'>
+                <div className='balloons__offer-box flex flex-col gap-3'>
                   <h4 className='text-2xl lg:text-3xl font-bold text-gray-700'>
                     U ponudi imamo:
                   </h4>

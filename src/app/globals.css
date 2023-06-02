@@ -87,4 +87,8 @@ html {
     url('../../assets/img/baloni.jpg');
 }
 
-/*////////////////////////////////////////////////////////// */
+/* rent equpment */
+.rent__equipment {
+  background-image: linear-gradient(to right bottom, #e66b80, #f03e3e),
+    url('../../assets/img/rent.jpg');
+}
