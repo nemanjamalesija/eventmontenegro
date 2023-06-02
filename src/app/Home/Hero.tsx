@@ -8,6 +8,7 @@ import Image from 'next/image';
 import hero from '../../../assets/img/hero.png';
 import { useAppContext } from '@/Provider/appContext';
 
+
 const Hero: FC = () => {
   const { heroRef, navRef } = useAppContext();
 

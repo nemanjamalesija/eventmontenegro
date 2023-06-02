@@ -86,9 +86,8 @@ const Balloons: FC = () => {
           </h3>
         </div>
         <div
-          className='balloons__img-box h-[40vh] w-full bg-blend-screen bg-cover'
-          bg-blend-screen
-          bg-cover
+          className='balloons__img-box h-[40vh] w-full bg-blend-screen
+          bg-cover'
         ></div>
         <div className='balloons__content'>
           <div className='balloons__buttons flex items-center justify-between lg:justify-center gap-0 lg:gap-10 -translate-y-6 mb-4 lg:mb-8'>

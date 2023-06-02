@@ -49,9 +49,8 @@ const RentEquipment: FC = () => {
           </h3>
         </div>
         <div
-          className='rent__equipment h-[40vh] w-full bg-blend-screen bg-cover mb-4 lg:mb-8'
-          bg-blend-screen
-          bg-cover
+          className='rent__equipment h-[40vh] w-full mb-4 lg:mb-8 bg-blend-screen
+          bg-cover'
         ></div>
         <p className='text-base lg:text-lg text-gray-700 mb-6 lg:mb-10'>
           Ukoliko se odlučite da sami organizujete vjenčanje, poslovni događaj,
@@ -131,10 +130,3 @@ const RentEquipment: FC = () => {
 };
 
 export default RentEquipment;
-
-/*
-e za proslave
- 
-
-
-Sve z */

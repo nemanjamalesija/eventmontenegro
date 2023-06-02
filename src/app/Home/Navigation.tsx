@@ -84,12 +84,17 @@ const Navigation: FC = () => {
           </li>
           <li className='nav__ul--item'>
             {' '}
-            <a href='#'> Iznajmi opremu</a>
+            <a href='#'>Baloni</a>
           </li>
           <li className='nav__ul--item'>
             {' '}
             <a href='#'>Proslave</a>
           </li>
+          <li className='nav__ul--item'>
+            {' '}
+            <a href='#'> Iznajmi opremu</a>
+          </li>
+
           <li className='nav__ul--item'>
             <CustomLink href='#' className='py-2 px-5 text-xl font-semibold'>
               Kontakt
