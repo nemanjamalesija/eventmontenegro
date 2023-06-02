@@ -45,7 +45,7 @@ const RentEquipment: FC = () => {
             Iznajmjivanje opreme
           </h2>
           <h3 className='text-3xl md:text-4xl lg:text-5xl font-bold text-gray-700'>
-            Sve što je potrebno za vaš projekat
+            Sve što je potrebno za Vaš projekat
           </h3>
         </div>
         <div
@@ -59,10 +59,10 @@ const RentEquipment: FC = () => {
           bogatog asortimana mobilijara, opreme i dekorativnih elemenata moći
           izabrati upravo ono što Vam je potrebno.
         </p>
-        <h4 className='text-2xl lg:text-3xl font-bold text-gray-700 mb-3'>
+        <h4 className='text-2xl  font-bold text-gray-700 mb-3'>
           Sve za proslave
         </h4>
-        <ul className='list-none flex flex-col gap-2 lg:flex-row lg:justify-between mb-8'>
+        <ul className='list-none flex flex-col gap-2 lg:flex-row lg:justify-between mb-8 lg:mb-10'>
           <div className='flex flex-col gap-2'>
             {rentOffer1.map((off, i) => (
               <li

@@ -114,7 +114,7 @@ const Balloons: FC = () => {
             <ul className='balloons__offer list-none flex flex-col'>
               {baloonsContent[categoryIndex].offer && (
                 <div className='balloons__offer-box flex flex-col gap-3'>
-                  <h4 className='text-2xl lg:text-3xl font-bold text-gray-700'>
+                  <h4 className='text-2xl  font-bold text-gray-700'>
                     U ponudi imamo:
                   </h4>
                   {baloonsContent[categoryIndex]?.offer?.map((off, i) => (
