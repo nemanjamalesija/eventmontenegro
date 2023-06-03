@@ -17,7 +17,7 @@ const baloonsContent = [
       'Stubove od balona',
       'Balon eksploziju',
       'Zid od balona',
-      'Pravljenje raznih figura i oblika od balona',
+      'Pravljenje figura i oblika od balona',
       'Bukete od balona',
       'Uslužno punjenje balona',
       'Pakovanje poklona u balon',
@@ -88,43 +88,45 @@ const Balloons: FC = () => {
               );
             })}
           </div>
-          <div className='balloons__text mx-auto mb-12 lg:mb-16'>
-            <p className='text-base lg:text-lg text-gray-700 mb-6 lg:mb-10'>
+          <div className=' balloons__text mx-auto mb-12 lg:mb-16'>
+            <p className='text-base lg:text-lg text-gray-700 mb-12 lg:mb-16'>
               {baloonsContent[categoryIndex].categoryContent}
             </p>
-            <ul className='balloons__offer list-none flex flex-col'>
+            <ul className=' balloons__offer list-none flex flex-col'>
               {baloonsContent[categoryIndex].offer && (
-                <div className='balloons__offer-box flex flex-col gap-3'>
+                <div className='flex flex-col justify-center items-center'>
                   <h4
                     className={clsx(
                       josefinSans.className,
-                      'text-2xl font-semibold text-gray-700'
+                      'text-lg lg:text-2xl font-semibold text-color-accent-main mb-3'
                     )}
                   >
                     U ponudi imamo:
                   </h4>
-                  {baloonsContent[categoryIndex]?.offer?.map((off, i) => (
-                    <li
-                      key={i}
-                      className='list__item flex items-center gap-2 text-center text-gray-700 text-base lg:text-lg'
-                    >
-                      <Check className='stroke-color-accent-main' />
-                      {off}
-                    </li>
-                  ))}
+                  <div className='balloons__offer-box modal py-6 px-8 rounded-md w-fit lg:w-full flex flex-col gap-3 lg:grid grid-cols-3 lg:justify-between'>
+                    {baloonsContent[categoryIndex]?.offer?.map((off, i) => (
+                      <li
+                        key={i}
+                        className='list__item flex items-center gap-2 text-center text-color-accent-darkest text-base lg:text-lg'
+                      >
+                        <Check className='stroke-color-accent-main' />
+                        {off}
+                      </li>
+                    ))}
+                  </div>
                 </div>
               )}
             </ul>
           </div>
           <div className='photo__gallery'>
-            <h3
+            <h4
               className={clsx(
                 josefinSans.className,
-                'text-base font-bold tracking-wide uppercase text-color-accent-main mb-3 lg:mb-6 text-center'
+                'text-lg lg:text-2xl font-semibold text-color-accent-main mb-3 lg:mb-6 text-center'
               )}
             >
-              Foto Galerija
-            </h3>
+              Foto galerija
+            </h4>
             <ImageGallery
               items={balloonsImages}
               showPlayButton={false}

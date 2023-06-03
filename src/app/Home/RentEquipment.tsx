@@ -59,69 +59,73 @@ const RentEquipment: FC = () => {
           izabrati upravo ono što Vam je potrebno.
         </p>
 
-        <h4
-          className={clsx(
-            josefinSans.className,
-            'text-2xl font-semibold text-gray-700 mb-3'
-          )}
-        >
-          Sve za proslave
-        </h4>
-        <ul className='list-none flex flex-col gap-2 lg:flex-row lg:justify-between mb-12 lg:mb-16'>
-          <div className='flex flex-col gap-2'>
-            {rentOffer1.map((off, i) => (
-              <li
-                key={i}
-                className='list__item flex items-center gap-2 text-center text-gray-700 text-base lg:text-lg'
-              >
-                <Check className='stroke-color-accent-main' />
-                {off}
-              </li>
-            ))}
-          </div>
-          <div className='flex flex-col gap-2'>
-            {rentOffer2.map((off, i) => (
-              <li
-                key={i}
-                className='list__item flex items-center gap-2 text-center text-gray-700 text-base lg:text-lg'
-              >
-                <Check className='stroke-color-accent-main' />
-                {off}
-              </li>
-            ))}
-          </div>
-          <div className='flex flex-col gap-2'>
-            {rentOffer3.map((off, i) => (
-              <li
-                key={i}
-                className='list__item flex items-center gap-2 text-center text-gray-700 text-base lg:text-lg'
-              >
-                <Check className='stroke-color-accent-main' />
-                {off}
-              </li>
-            ))}
-          </div>
-          <div className='flex flex-col gap-2'>
-            {rentOffer4.map((off, i) => (
-              <li
-                key={i}
-                className='list__item flex items-center gap-2 text-center text-gray-700 text-base lg:text-lg'
-              >
-                <Check className='stroke-color-accent-main' />
-                {off}
-              </li>
-            ))}
-          </div>
-        </ul>
-        <div className='photo__gallery'>
-          <h2
+        <div className='flex flex-col items-center justify-center mb-12 lg:mb-16'>
+          <h4
             className={clsx(
               josefinSans.className,
-              'text-base font-bold tracking-wide uppercase text-color-accent-main mb-3 lg:mb-6 text-center'
+              'text-lg lg:text-2xl font-semibold text-color-accent-main mb-3'
+            )}
+          >
+            Sve za proslave
+          </h4>
+          <div className='modal py-6 px-8 rounded-md w-fit lg:w-full'>
+            <ul className='list-none flex flex-col gap-2 lg:flex-row lg:justify-between'>
+              <div className='flex flex-col gap-2'>
+                {rentOffer1.map((off, i) => (
+                  <li
+                    key={i}
+                    className='list__item flex items-center gap-2 text-center text-accent-darkest text-base lg:text-lg'
+                  >
+                    <Check className='stroke-color-accent-main' />
+                    {off}
+                  </li>
+                ))}
+              </div>
+              <div className='flex flex-col gap-2'>
+                {rentOffer2.map((off, i) => (
+                  <li
+                    key={i}
+                    className='list__item flex items-center gap-2 text-center text-color-accent-darkest text-base lg:text-lg'
+                  >
+                    <Check className='stroke-color-accent-main' />
+                    {off}
+                  </li>
+                ))}
+              </div>
+              <div className='flex flex-col gap-2'>
+                {rentOffer3.map((off, i) => (
+                  <li
+                    key={i}
+                    className='list__item flex items-center gap-2 text-center text-color-accent-darkest text-base lg:text-lg'
+                  >
+                    <Check className='stroke-color-accent-main' />
+                    {off}
+                  </li>
+                ))}
+              </div>
+              <div className='flex flex-col gap-2'>
+                {rentOffer4.map((off, i) => (
+                  <li
+                    key={i}
+                    className='list__item flex items-center gap-2 text-center text-color-accent-darkest text-base lg:text-lg'
+                  >
+                    <Check className='stroke-color-accent-main' />
+                    {off}
+                  </li>
+                ))}
+              </div>
+            </ul>
+          </div>
+        </div>
+        <div className='photo__gallery'>
+          <h4
+            className={clsx(
+              josefinSans.className,
+              'text-lg lg:text-2xl font-semibold text-color-accent-main mb-3 lg:mb-6 text-center'
             )}
           >
             Foto Galerija
-          </h2>
+          </h4>
           <ImageGallery
             items={rentImages}
             showPlayButton={false}

@@ -93,7 +93,7 @@ const layout = async () => {
             <h5
               className={clsx(
                 josefinSans.className,
-                'text-2xl text-color-accent-main font-semibold lg:mb-3 text-center'
+                'text-lg lg:text-2xl text-color-accent-main font-semibold lg:mb-3 text-center'
               )}
             >
               Animacije
@@ -110,7 +110,7 @@ const layout = async () => {
             <h5
               className={clsx(
                 josefinSans.className,
-                'text-2xl text-color-accent-main font-semibold mb-5 lg:mb-3 text-center '
+                'text-lg lg:text-2xl text-color-accent-main font-semibold mb-5 lg:mb-3 text-center '
               )}
             >
               Rođendani
