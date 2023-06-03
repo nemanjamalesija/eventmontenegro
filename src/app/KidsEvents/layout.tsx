@@ -8,6 +8,7 @@ import OfferToDisplay from './OfferToDisplay';
 import { animationImages } from '../../../assets/img/kidsEvents/animations/animationsImages';
 import ImageGallery from 'react-image-gallery';
 import '../gallery.css';
+import { birthdayImages } from '../../../assets/img/kidsEvents/birthdays/birthdaysImages';
 
 const layout = async () => {
   return (
@@ -24,7 +25,7 @@ const layout = async () => {
 
         <div
           className='kids__img-box h-[40vh] w-full bg-blend-screen
-          bg-cover bg-center lg:bg-top mb-8 lg:mb-12'
+          bg-cover bg-center lg:bg-top mb-12 lg:mb-16'
         ></div>
         <div className='kids__text-box flex flex-col lg:grid grid-cols-2 gap-x-24 gap-8 mb-12 lg:mb-16'>
           <div className='kids__text '>
@@ -88,21 +89,40 @@ const layout = async () => {
           <OfferToDisplay />
         </div>
         <div className='kids__galleries'>
-          <h5
-            className={clsx(
-              josefinSans.className,
-              'text-2xl text-color-accent-main font-semibold lg:mb-3 text-center'
-            )}
-          >
-            Animacije
-          </h5>
-          <ImageGallery
-            items={animationImages}
-            showPlayButton={false}
-            showFullscreenButton={false}
-            slideOnThumbnailOver={true}
-            showIndex={true}
-          />
+          <div className='gallery__wrapper mb-12 lg:mb-16'>
+            <h5
+              className={clsx(
+                josefinSans.className,
+                'text-2xl text-color-accent-main font-semibold lg:mb-3 text-center'
+              )}
+            >
+              Animacije
+            </h5>
+            <ImageGallery
+              items={animationImages}
+              showPlayButton={false}
+              showFullscreenButton={false}
+              slideOnThumbnailOver={true}
+              showIndex={true}
+            />
+          </div>
+          <div className='gallery__wrapper mb-12 lg:mb-16'>
+            <h5
+              className={clsx(
+                josefinSans.className,
+                'text-2xl text-color-accent-main font-semibold mb-5 lg:mb-3 text-center '
+              )}
+            >
+              Rođendani
+            </h5>
+            <ImageGallery
+              items={birthdayImages}
+              showPlayButton={false}
+              showFullscreenButton={false}
+              slideOnThumbnailOver={true}
+              showIndex={true}
+            />
+          </div>
         </div>
       </div>
     </section>
