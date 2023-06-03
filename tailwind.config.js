@@ -12,8 +12,9 @@ module.exports = {
         'color-shade-main': '#cf6073',
         'ring-color-primary': '#ee97a6',
         'color-lightest': '#fdf2f3',
+        'color-accent-darkest': '#2e151a',
 
-        'color-gray-light-1': '#fdf2f3',
+        'color-gray-light-1': '#ffdde1',
       },
 
       height: {
