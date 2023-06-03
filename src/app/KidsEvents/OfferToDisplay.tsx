@@ -20,7 +20,7 @@ const OfferToDisplay: FC = () => {
   }, [currentCategory]);
 
   return (
-    <div className='flex flex-col lg:grid grid-cols-2 gap-x-24 gap-12 mb-8'>
+    <div className='flex flex-col lg:grid grid-cols-2 gap-x-24 gap-5 mb-12 lg:mb-16'>
       <div
         className={clsx(
           'modal grid grid-cols-2 gap-y-[10px] py-2 px-4  rounded-md justify-between'

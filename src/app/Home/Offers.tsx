@@ -5,7 +5,7 @@ import clsx from 'clsx';
 
 const Offers: FC = () => {
   return (
-    <section className='py-24 px-5 lg:px-10'>
+    <section className='py-24 px-5 lg:px-10  '>
       <div className='mx-auto max-w-custom px-5 lg:px-0 '>
         <div className='mb-8 lg:mb-12'>
           <h3

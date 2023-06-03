@@ -67,7 +67,7 @@ const RentEquipment: FC = () => {
         >
           Sve za proslave
         </h4>
-        <ul className='list-none flex flex-col gap-2 lg:flex-row lg:justify-between mb-8 lg:mb-10'>
+        <ul className='list-none flex flex-col gap-2 lg:flex-row lg:justify-between mb-12 lg:mb-16'>
           <div className='flex flex-col gap-2'>
             {rentOffer1.map((off, i) => (
               <li

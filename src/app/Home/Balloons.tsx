@@ -47,30 +47,12 @@ const baloonsContent = [
   },
 ];
 
-const images = [
-  {
-    original:
-      'https://www.eventmontenegro.com/files/images/1584044803-44355567_714906348902690_8794103107347153634_n%20-%20Copy.jpg',
-    thumbnail: 'https://picsum.photos/id/1018/250/150/',
-  },
-  {
-    original:
-      'https://www.eventmontenegro.com/files/images/1584039225-1573405957-20190822_172836_resize.jpg',
-    thumbnail: 'https://picsum.photos/id/1015/250/150/',
-  },
-  {
-    original:
-      'https://www.eventmontenegro.com/files/images/1584039263-DSC_0180%20(2).JPG',
-    thumbnail: 'https://picsum.photos/id/1019/250/150/',
-  },
-];
-
 const baloonCategories = ['Dekoracija', 'Isporuka', 'Ispuštanje', 'Štampa'];
 
 const Balloons: FC = () => {
   const [categoryIndex, setCategoryIndex] = useState(0);
   return (
-    <section className='py-24 lg:px-10 bg-color-lightest border-t-2 border-b-2 border-white'>
+    <section className='py-24 lg:px-10 border-t-2 border-b-2 border-white'>
       <div className='mx-auto max-w-custom px-4 lg:px-0'>
         <div className='mb-8 lg:mb-12'>
           <h3
@@ -106,7 +88,7 @@ const Balloons: FC = () => {
               );
             })}
           </div>
-          <div className='balloons__text mx-auto mb-8'>
+          <div className='balloons__text mx-auto mb-12 lg:mb-16'>
             <p className='text-base lg:text-lg text-gray-700 mb-6 lg:mb-10'>
               {baloonsContent[categoryIndex].categoryContent}
             </p>

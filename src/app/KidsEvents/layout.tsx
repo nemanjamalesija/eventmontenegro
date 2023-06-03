@@ -1,18 +1,15 @@
 'use client';
 
 import clsx from 'clsx';
-import { ReactNode, useEffect, useState } from 'react';
+import { ReactNode } from 'react';
 import { Flower, PartyPopper } from 'lucide-react';
 import { josefinSans } from '../../../utils/fonts';
-import { kidsOffers } from './kidsOffers';
 import OfferToDisplay from './OfferToDisplay';
-import { Cat, Wand, VenetianMask, Gitlab, Zap, Anchor } from 'lucide-react';
+import { animationImages } from '../../../assets/img/kidsEvents/animations/animationsImages';
+import ImageGallery from 'react-image-gallery';
+import '../gallery.css';
 
-type LayoutProps = {
-  children: ReactNode;
-};
-
-const layout = async ({ children }: LayoutProps) => {
+const layout = async () => {
   return (
     <section className='py-24 lg:px-10 bg-color-lightest border-t-2 border-b-2 border-white'>
       <div className='mx-auto max-w-custom px-4 lg:px-0 mt-6'>
@@ -29,7 +26,7 @@ const layout = async ({ children }: LayoutProps) => {
           className='kids__img-box h-[40vh] w-full bg-blend-screen
           bg-cover bg-center lg:bg-top mb-8 lg:mb-12'
         ></div>
-        <div className='kids__text-box flex flex-col lg:grid grid-cols-2 gap-x-24  mb-16'>
+        <div className='kids__text-box flex flex-col lg:grid grid-cols-2 gap-x-24 gap-8 mb-12 lg:mb-16'>
           <div className='kids__text '>
             <div className='flex items-center gap-4 mb-4'>
               <div className='kids__icons-set flex items-center justify-center rounded-full h-14 w-14 lg:h-16 lg:w-16 bg-color-accent-main'>
@@ -79,16 +76,33 @@ const layout = async ({ children }: LayoutProps) => {
             </p>
           </div>
         </div>
-        <div className='kids__celeb-categories'>
+        <div className='kids__celeb-categories mb-12 lg:mb-16'>
           <h5
             className={clsx(
               josefinSans.className,
-              'text-color-accent-main text-lg lg:text-xl font-bold mb-3'
+              'text-xl text-color-accent-main font-semibold mb-3'
             )}
           >
-            U ponudi imamo
+            Saznajte više:
           </h5>
           <OfferToDisplay />
+        </div>
+        <div className='kids__galleries'>
+          <h5
+            className={clsx(
+              josefinSans.className,
+              'text-2xl text-color-accent-main font-semibold lg:mb-3 text-center'
+            )}
+          >
+            Animacije
+          </h5>
+          <ImageGallery
+            items={animationImages}
+            showPlayButton={false}
+            showFullscreenButton={false}
+            slideOnThumbnailOver={true}
+            showIndex={true}
+          />
         </div>
       </div>
     </section>
