@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import { FC } from 'react';
 import { kidsOffers } from './kidsOffers';
 import clsx from 'clsx';
+import { cn } from '../../../utils/twinMerge';
 
 const OfferToDisplay: FC = () => {
   const [currentCategory, setCurrentCategory] = useState('Maskote');
@@ -22,13 +23,19 @@ const OfferToDisplay: FC = () => {
     <div className='flex flex-col lg:grid grid-cols-2 gap-x-24 gap-12 mb-8'>
       <div
         className={clsx(
-          'modal grid grid-cols-2 gap-y-4 p-1 text-color-gray-light-1 rounded-md justify-between bg-white'
+          'modal grid grid-cols-2 gap-y-[10px] p-1 text-color-gray-light-1 rounded-md justify-between bg-white'
         )}
       >
         {kidsOffers.map((c, i) => (
           <span
             key={i}
-            className='text-center text-base lg:text-lg  text-gray-600 font-semibold cursor-pointer'
+            className={clsx(
+              'text-center text-base lg:text-lg font-semibold cursor-pointer transition-all duration-300',
+              {
+                'text-color-accent-main': c.category === currentCategory,
+                'text-gray-600': c.category !== currentCategory,
+              }
+            )}
             onClick={() => setCurrentCategory(c.category)}
           >
             {c.category}
@@ -40,7 +47,7 @@ const OfferToDisplay: FC = () => {
           'modal p-1 text-color-gray-light-1 rounded-md justify-between'
         )}
       >
-        <p className='text-base lg:text-lg  text-gray-600 font-semibold'>
+        <p className={clsx('text-base lg:text-lg lg:leading-9 text-gray-600')}>
           {currentOffer.content}
         </p>
       </div>
