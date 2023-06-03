@@ -5,25 +5,13 @@ import { ReactNode, useEffect, useState } from 'react';
 import { Flower, PartyPopper } from 'lucide-react';
 import { josefinSans } from '../../../utils/fonts';
 import { kidsOffers } from './kidsOffers';
+import OfferToDisplay from './OfferToDisplay';
 
 type LayoutProps = {
   children: ReactNode;
 };
 
-const Layout = async ({ children }: LayoutProps) => {
-  const [currentCategory, setCurrentCategory] = useState('Maskote');
-  const [currentOffer, setCurrentOffer] = useState(kidsOffers[0]);
-
-  useEffect(() => {
-    const offerToDisplay = kidsOffers.filter(
-      (o) => o.category === currentCategory
-    );
-
-    const { category, content } = offerToDisplay[0];
-
-    setCurrentOffer({ category, content });
-  }, [currentCategory]);
-
+const layout = async ({ children }: LayoutProps) => {
   return (
     <section className='py-24 lg:px-10 bg-color-lightest border-t-2 border-b-2 border-white'>
       <div className='mx-auto max-w-custom px-4 lg:px-0 mt-6'>
@@ -99,36 +87,11 @@ const Layout = async ({ children }: LayoutProps) => {
           >
             U ponudi imamo
           </h5>
-          <div className='flex flex-col lg:grid grid-cols-2 gap-x-24 gap-12 mb-8'>
-            <div
-              className={clsx(
-                'modal grid grid-cols-2 gap-y-4 p-1 text-color-gray-light-1 rounded-md justify-between bg-white'
-              )}
-            >
-              {kidsOffers.map((c, i) => (
-                <span
-                  key={i}
-                  className='text-center text-base lg:text-lg  text-gray-600 font-semibold'
-                  onClick={() => setCurrentCategory(c.category)}
-                >
-                  {c.category}
-                </span>
-              ))}
-            </div>
-            <div
-              className={clsx(
-                'modal p-1 text-color-gray-light-1 rounded-md justify-between'
-              )}
-            >
-              <p className='text-base lg:text-lg  text-gray-600 font-semibold'>
-                {currentOffer.content}
-              </p>
-            </div>
-          </div>
+          <OfferToDisplay />
         </div>
       </div>
     </section>
   );
 };
 
-export default Layout;
+export default layout;
