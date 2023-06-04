@@ -21,6 +21,10 @@ import doroteaILuka22 from './doroteaILuka22.jpg';
 
 export const doroteaLukaImages = [
   {
+    original: doroteaILuka10.src,
+    thumbnail: doroteaILuka10.src,
+  },
+  {
     original: doroteaILuka1.src,
     thumbnail: doroteaILuka1.src,
   },
@@ -55,10 +59,6 @@ export const doroteaLukaImages = [
   {
     original: doroteaILuka9.src,
     thumbnail: doroteaILuka9.src,
-  },
-  {
-    original: doroteaILuka10.src,
-    thumbnail: doroteaILuka10.src,
   },
 
   {

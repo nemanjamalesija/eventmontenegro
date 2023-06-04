@@ -13,6 +13,10 @@ import jelenaVlado13 from './jelenaVlado13.jpg';
 
 export const jelenaVladoImages = [
   {
+    original: jelenaVlado4.src,
+    thumbnail: jelenaVlado4.src,
+  },
+  {
     original: jelenaVlado1.src,
     thumbnail: jelenaVlado1.src,
   },
@@ -24,10 +28,7 @@ export const jelenaVladoImages = [
     original: jelenaVlado3.src,
     thumbnail: jelenaVlado3.src,
   },
-  {
-    original: jelenaVlado4.src,
-    thumbnail: jelenaVlado4.src,
-  },
+
   {
     original: jelenaVlado5.src,
     thumbnail: jelenaVlado5.src,

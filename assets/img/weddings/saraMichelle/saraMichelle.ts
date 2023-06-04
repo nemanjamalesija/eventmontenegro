@@ -40,6 +40,10 @@ import saraMichelle42 from './saraMichelle42.jpg';
 
 export const saraMichelleImages = [
   {
+    original: saraMichelle13.src,
+    thumbnail: saraMichelle13.src,
+  },
+  {
     original: saraMichelle1.src,
     thumbnail: saraMichelle1.src,
   },
@@ -84,10 +88,7 @@ export const saraMichelleImages = [
     original: saraMichelle12.src,
     thumbnail: saraMichelle12.src,
   },
-  {
-    original: saraMichelle13.src,
-    thumbnail: saraMichelle13.src,
-  },
+
   {
     original: saraMichelle14.src,
     thumbnail: saraMichelle14.src,

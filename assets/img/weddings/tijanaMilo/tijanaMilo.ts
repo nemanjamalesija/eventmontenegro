@@ -29,6 +29,10 @@ import tijanaMilo31 from './tijanaMilo31.jpg';
 
 export const tijanaMiloImages = [
   {
+    original: tijanaMilo4.src,
+    thumbnail: tijanaMilo4.src,
+  },
+  {
     original: tijanaMilo1.src,
     thumbnail: tijanaMilo1.src,
   },
@@ -40,10 +44,7 @@ export const tijanaMiloImages = [
     original: tijanaMilo2.src,
     thumbnail: tijanaMilo2.src,
   },
-  {
-    original: tijanaMilo4.src,
-    thumbnail: tijanaMilo4.src,
-  },
+
   {
     original: tijanaMilo5.src,
     thumbnail: tijanaMilo5.src,
