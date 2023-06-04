@@ -1,105 +1,105 @@
-import doroteaILuka1 from './doroteaILuka1.jpg';
-import doroteaILuka2 from './doroteaILuka2.jpg';
-import doroteaILuka3 from './doroteaILuka3.jpg';
-import doroteaILuka4 from './doroteaILuka4.jpg';
-import doroteaILuka5 from './doroteaILuka5.jpg';
-import doroteaILuka6 from './doroteaILuka6.jpg';
-import doroteaILuka7 from './doroteaILuka7.jpg';
-import doroteaILuka8 from './doroteaILuka8.jpg';
-import doroteaILuka9 from './doroteaILuka9.jpg';
-import doroteaILuka10 from './doroteaILuka10.jpg';
-import doroteaILuka12 from './doroteaILuka12.jpg';
-import doroteaILuka13 from './doroteaILuka13.jpg';
-import doroteaILuka14 from './doroteaILuka14.jpg';
-import doroteaILuka16 from './doroteaILuka16.jpg';
-import doroteaILuka17 from './doroteaILuka17.jpg';
-import doroteaILuka18 from './doroteaILuka18.jpg';
-import doroteaILuka19 from './doroteaILuka19.jpg';
-import doroteaILuka20 from './doroteaILuka20.jpg';
-import doroteaILuka21 from './doroteaILuka21.jpg';
-import doroteaILuka22 from './doroteaILuka22.jpg';
+import doroteaIluka1 from './doroteaIluka1.jpg';
+import doroteaIluka2 from './doroteaIluka2.jpg';
+import doroteaIluka3 from './doroteaIluka3.jpg';
+import doroteaIluka4 from './doroteaIluka4.jpg';
+import doroteaIluka5 from './doroteaIluka5.jpg';
+import doroteaIluka6 from './doroteaIluka6.jpg';
+import doroteaIluka7 from './doroteaIluka7.jpg';
+import doroteaIluka8 from './doroteaIluka8.jpg';
+import doroteaIluka9 from './doroteaIluka9.jpg';
+import doroteaIluka10 from './doroteaIluka10.jpg';
+import doroteaIluka12 from './doroteaIluka12.jpg';
+import doroteaIluka13 from './doroteaIluka13.jpg';
+import doroteaIluka14 from './doroteaIluka14.jpg';
+import doroteaIluka16 from './doroteaIluka16.jpg';
+import doroteaIluka17 from './doroteaIluka17.jpg';
+import doroteaIluka18 from './doroteaIluka18.jpg';
+import doroteaIluka19 from './doroteaIluka19.jpg';
+import doroteaIluka20 from './doroteaIluka20.jpg';
+import doroteaIluka21 from './doroteaIluka21.jpg';
+import doroteaIluka22 from './doroteaIluka22.jpg';
 
 export const doroteaLukaImages = [
   {
-    original: doroteaILuka10.src,
-    thumbnail: doroteaILuka10.src,
+    original: doroteaIluka10.src,
+    thumbnail: doroteaIluka10.src,
   },
   {
-    original: doroteaILuka1.src,
-    thumbnail: doroteaILuka1.src,
+    original: doroteaIluka1.src,
+    thumbnail: doroteaIluka1.src,
   },
   {
-    original: doroteaILuka2.src,
-    thumbnail: doroteaILuka2.src,
+    original: doroteaIluka2.src,
+    thumbnail: doroteaIluka2.src,
   },
   {
-    original: doroteaILuka3.src,
-    thumbnail: doroteaILuka3.src,
+    original: doroteaIluka3.src,
+    thumbnail: doroteaIluka3.src,
   },
   {
-    original: doroteaILuka4.src,
-    thumbnail: doroteaILuka4.src,
+    original: doroteaIluka4.src,
+    thumbnail: doroteaIluka4.src,
   },
   {
-    original: doroteaILuka5.src,
-    thumbnail: doroteaILuka5.src,
+    original: doroteaIluka5.src,
+    thumbnail: doroteaIluka5.src,
   },
   {
-    original: doroteaILuka6.src,
-    thumbnail: doroteaILuka6.src,
+    original: doroteaIluka6.src,
+    thumbnail: doroteaIluka6.src,
   },
   {
-    original: doroteaILuka7.src,
-    thumbnail: doroteaILuka7.src,
+    original: doroteaIluka7.src,
+    thumbnail: doroteaIluka7.src,
   },
   {
-    original: doroteaILuka8.src,
-    thumbnail: doroteaILuka8.src,
+    original: doroteaIluka8.src,
+    thumbnail: doroteaIluka8.src,
   },
   {
-    original: doroteaILuka9.src,
-    thumbnail: doroteaILuka9.src,
-  },
-
-  {
-    original: doroteaILuka12.src,
-    thumbnail: doroteaILuka12.src,
-  },
-  {
-    original: doroteaILuka13.src,
-    thumbnail: doroteaILuka13.src,
-  },
-  {
-    original: doroteaILuka14.src,
-    thumbnail: doroteaILuka14.src,
+    original: doroteaIluka9.src,
+    thumbnail: doroteaIluka9.src,
   },
 
   {
-    original: doroteaILuka16.src,
-    thumbnail: doroteaILuka16.src,
+    original: doroteaIluka12.src,
+    thumbnail: doroteaIluka12.src,
   },
   {
-    original: doroteaILuka17.src,
-    thumbnail: doroteaILuka17.src,
+    original: doroteaIluka13.src,
+    thumbnail: doroteaIluka13.src,
   },
   {
-    original: doroteaILuka18.src,
-    thumbnail: doroteaILuka18.src,
+    original: doroteaIluka14.src,
+    thumbnail: doroteaIluka14.src,
+  },
+
+  {
+    original: doroteaIluka16.src,
+    thumbnail: doroteaIluka16.src,
   },
   {
-    original: doroteaILuka19.src,
-    thumbnail: doroteaILuka19.src,
+    original: doroteaIluka17.src,
+    thumbnail: doroteaIluka17.src,
   },
   {
-    original: doroteaILuka20.src,
-    thumbnail: doroteaILuka20.src,
+    original: doroteaIluka18.src,
+    thumbnail: doroteaIluka18.src,
   },
   {
-    original: doroteaILuka21.src,
-    thumbnail: doroteaILuka21.src,
+    original: doroteaIluka19.src,
+    thumbnail: doroteaIluka19.src,
   },
   {
-    original: doroteaILuka22.src,
-    thumbnail: doroteaILuka22.src,
+    original: doroteaIluka20.src,
+    thumbnail: doroteaIluka20.src,
+  },
+  {
+    original: doroteaIluka21.src,
+    thumbnail: doroteaIluka21.src,
+  },
+  {
+    original: doroteaIluka22.src,
+    thumbnail: doroteaIluka22.src,
   },
 ];
