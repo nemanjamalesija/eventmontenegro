@@ -1,12 +1,12 @@
-import { ReactNode } from 'react';
+'use client';
+
 import { josefinSans } from '../../../utils/fonts';
 import clsx from 'clsx';
+import { winterImages } from '../../../assets/img/businessEvents/winter/winter';
+import '../gallery.css';
+import ImageGallery from 'react-image-gallery';
 
-type LayoutProps = {
-  children: ReactNode;
-};
-
-const layout = async ({ children }: LayoutProps) => {
+const layout = async () => {
   return (
     <section className='py-24 lg:px-10 bg-color-lightest border-t-2 border-b-2 border-white'>
       <div className='mx-auto max-w-custom px-4 lg:px-0 mt-6'>
@@ -23,7 +23,7 @@ const layout = async ({ children }: LayoutProps) => {
           className='business-celebrations__img-box h-[40vh] w-full bg-blend-screen
           bg-cover bg-center lg:bg-top mb-12 lg:mb-16'
         ></div>
-        <div className='business-celebrations__text-box flex flex-col lg:grid grid-cols-2 gap-x-24 gap-8'>
+        <div className='business-celebrations__text-box flex flex-col lg:grid grid-cols-2 gap-x-24 gap-8 mb-12 lg:mb-16'>
           <p className='text-base lg:text-lg text-gray-700'>
             Event Montenegro ima dugogodišnje iskustvo u organizaciji poslovnih
             proslava, seminara i konferencija. Poslovni događaji su odličan
@@ -34,7 +34,7 @@ const layout = async ({ children }: LayoutProps) => {
             ili dodjele nagrada, postavićete na viši nivo.
           </p>
           <p className='text-base lg:text-lg text-gray-700'>
-            Možečo Vam pomoći u svim segmentima organizacije korporativne
+            Možemo Vam pomoći u svim segmentima organizacije korporativne
             proslave, od ideje, osmišljavanja dizajna i izrade koncepta programa
             proslave, do pronalaženja adekvatnog prostora za Vaš događaj,
             obezbjeđivanja tehničke i audio opreme, mobilijara i osoblja. Na dan
@@ -43,6 +43,25 @@ const layout = async ({ children }: LayoutProps) => {
             muzičko zabavni program, ketering, osmisliti biznis poklone,
             dekoraciju i specijalne efekte.
           </p>
+        </div>
+        <div className='gallery__wrapper mb-12 lg:mb-16'>
+          <h5
+            className={clsx(
+              josefinSans.className,
+              'text-lg lg:text-2xl text-color-accent-main font-semibold mb-5 lg:mb-3 text-center '
+            )}
+          >
+            Winterhalter
+          </h5>
+        </div>
+        <div className='business__celebrations-gallery-wrapper'>
+          <ImageGallery
+            items={winterImages}
+            showPlayButton={false}
+            showFullscreenButton={false}
+            slideOnThumbnailOver={true}
+            showIndex={true}
+          />
         </div>
       </div>
     </section>
