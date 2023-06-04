@@ -45,9 +45,10 @@ html {
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.05);
 }
 
-.card__picture--1 {
+.card__picture--1,
+.weddings__img-box {
   background-image: linear-gradient(to right bottom, #e66b80, #f03e3e),
-    url('../../assets/img/cards/vjencanja.jpg');
+    url('../../assets/img/cards/vjencanje.jpg');
 }
 
 .card__picture--2,
