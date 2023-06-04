@@ -1,3 +1,4 @@
+import doroteaIluka0 from './doroteaIluka0.jpg';
 import doroteaIluka1 from './doroteaIluka1.jpg';
 import doroteaIluka2 from './doroteaIluka2.jpg';
 import doroteaIluka3 from './doroteaIluka3.jpg';
@@ -20,6 +21,10 @@ import doroteaIluka21 from './doroteaIluka21.jpg';
 import doroteaIluka22 from './doroteaIluka22.jpg';
 
 export const doroteaLukaImages = [
+  {
+    original: doroteaIluka0.src,
+    thumbnail: doroteaIluka0.src,
+  },
   {
     original: doroteaIluka10.src,
     thumbnail: doroteaIluka10.src,

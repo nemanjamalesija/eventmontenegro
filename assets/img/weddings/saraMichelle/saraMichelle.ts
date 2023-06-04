@@ -1,3 +1,4 @@
+import saraMichelle0 from './saraMichelle0.jpg';
 import saraMichelle1 from './saraMichelle1.jpg';
 import saraMichelle2 from './saraMichelle2.jpg';
 import saraMichelle3 from './saraMichelle3.jpg';
@@ -39,6 +40,10 @@ import saraMichelle41 from './saraMichelle41.jpg';
 import saraMichelle42 from './saraMichelle42.jpg';
 
 export const saraMichelleImages = [
+  {
+    original: saraMichelle0.src,
+    thumbnail: saraMichelle0.src,
+  },
   {
     original: saraMichelle13.src,
     thumbnail: saraMichelle13.src,

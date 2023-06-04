@@ -1,3 +1,4 @@
+import tijanaMilo0 from './tijanaMilo0.jpg';
 import tijanaMilo1 from './tijanaMilo1.jpg';
 import tijanaMilo2 from './tijanaMilo2.jpg';
 import tijanaMilo3 from './tijanaMilo3.jpg';
@@ -31,6 +32,10 @@ export const tijanaMiloImages = [
   {
     original: tijanaMilo4.src,
     thumbnail: tijanaMilo4.src,
+  },
+  {
+    original: tijanaMilo0.src,
+    thumbnail: tijanaMilo0.src,
   },
   {
     original: tijanaMilo1.src,
