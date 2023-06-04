@@ -10,6 +10,7 @@ import { homeSystemsImages } from '../../../assets/img/businessEvents/homeSystem
 import { doroteaLukaImages } from '../../../assets/img/weddings/doroteaLuka/doroteaLuka';
 import { jelenaVladoImages } from '../../../assets/img/weddings/jelenaVlado/jeleVlado';
 import { saraMichelleImages } from '../../../assets/img/weddings/saraMichelle/saraMichelle';
+import { tijanaMiloImages } from '../../../assets/img/weddings/tijanaMilo/tijanaMilo';
 
 const layout = async () => {
   return (
@@ -79,7 +80,7 @@ const layout = async () => {
             Tijana & Milo
           </h5>
           <ImageGallery
-            items={volvoImages}
+            items={tijanaMiloImages}
             showPlayButton={false}
             showFullscreenButton={false}
             slideOnThumbnailOver={true}
