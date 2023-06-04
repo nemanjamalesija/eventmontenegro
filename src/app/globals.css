@@ -100,6 +100,12 @@ html {
     url('../../assets/img/cards/kidsbirthday.jpg');
 }
 
+/* other celebrations */
+.other-celebrations__img-box {
+  background-image: linear-gradient(to right bottom, #e66b80, #f03e3e),
+    url('../../assets/img/otherCelebrations.webp');
+}
+
 .modal {
   position: relative;
   /* Other modal styles */
