@@ -8,6 +8,7 @@ import ImageGallery from 'react-image-gallery';
 import { volvoImages } from '../../../assets/img/businessEvents/volvo/volvo';
 import { homeSystemsImages } from '../../../assets/img/businessEvents/homeSystems/homeSystems';
 import { doroteaLukaImages } from '../../../assets/img/weddings/doroteaLuka/doroteaLuka';
+import { jelenaVladoImages } from '../../../assets/img/weddings/jelenaVlado/jeleVlado';
 
 const layout = async () => {
   return (
@@ -111,7 +112,7 @@ const layout = async () => {
             Jelena & Vlado
           </h5>
           <ImageGallery
-            items={homeSystemsImages}
+            items={jelenaVladoImages}
             showPlayButton={false}
             showFullscreenButton={false}
             slideOnThumbnailOver={true}
