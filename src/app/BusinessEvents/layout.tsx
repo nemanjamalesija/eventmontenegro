@@ -5,6 +5,7 @@ import clsx from 'clsx';
 import { winterImages } from '../../../assets/img/businessEvents/winter/winter';
 import '../gallery.css';
 import ImageGallery from 'react-image-gallery';
+import { volvoImages } from '../../../assets/img/businessEvents/volvo/volvo';
 
 const layout = async () => {
   return (
@@ -48,15 +49,32 @@ const layout = async () => {
           <h5
             className={clsx(
               josefinSans.className,
-              'text-lg lg:text-2xl text-color-accent-main font-semibold mb-5 lg:mb-3 text-center '
+              'text-2xl text-color-accent-main font-semibold text-center '
             )}
           >
             Winterhalter
           </h5>
         </div>
-        <div className='business__celebrations-gallery-wrapper'>
+        <div className='business__celebrations-gallery-wrapper  mb-12 lg:mb-16'>
           <ImageGallery
             items={winterImages}
+            showPlayButton={false}
+            showFullscreenButton={false}
+            slideOnThumbnailOver={true}
+            showIndex={true}
+          />
+        </div>
+        <div className='business__celebrations-gallery-wrapper  mb-12 lg:mb-16'>
+          <h5
+            className={clsx(
+              josefinSans.className,
+              'text-2xl text-color-accent-main font-semibold mb-5 lg:mb-3 text-center '
+            )}
+          >
+            Volvo
+          </h5>
+          <ImageGallery
+            items={volvoImages}
             showPlayButton={false}
             showFullscreenButton={false}
             slideOnThumbnailOver={true}
