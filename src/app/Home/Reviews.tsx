@@ -22,23 +22,23 @@ import clsx from 'clsx';
 const reviews = [
   {
     image: useramar,
-    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita dolorem iusto quo maiores explicabo excepturi vero, ipsam quasi ',
-    author: 'Amar Smaković',
+    text: 'Oduševljen sam kako je Event Montenegro organizovao svečanost mog poslovnog događaja! Pažnja posvećena detaljima i besprekorna izvedba učinili su ga zaista izvanrednim i uspiješnim. Hvala vam na izuzetnom iskustvu!',
+    author: '- Amar Smaković',
   },
   {
     image: userelisa,
-    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita dolorem iusto quo maiores explicabo excepturi vero, ipsam quasi ',
+    text: 'Presrećna sam kako je ekipa Event Montenegro organizovala proslavu mog diplomiranja! Svaki detalj je bio besprekorno izveden, ostavljajući mi nezaboravnu noć punu slavlja i radosti. Hvala vam što ste je učinili zaista posebnom!',
     author: '- Elisa Vincent',
   },
   {
     image: usernebuska,
-    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita dolorem iusto quo maiores explicabo excepturi vero, ipsam quasi ',
+    text: 'Event Montenegro tim je premašio sva naša očekivanja kako bi se naš poseban odvio savršeno! Zahvalni smo na njihovoj izvanrednoj posvećenosti, stručnosti i brizi o detaljima.',
     author: '- Nebojša i Ena Bojić',
   },
 
   {
     image: usertanja,
-    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita dolorem iusto quo maiores explicabo excepturi vero, ipsam quasi ',
+    text: 'Nisam mogla da zamislim bolju proslavu svog 18. rođendana! Event Montenegro je sjajno organizovao svaki detalj, ostavljajući mi nezaboravne uspomene i veliki osmijeh na licu. Hvala vam!',
     author: '- Ivana Boljević',
   },
 ];

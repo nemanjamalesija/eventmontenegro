@@ -51,6 +51,23 @@ const layout = async () => {
             biste imali nezaboravno iskustvo sa porodicom i prijateljima.
           </p>
         </div>
+        <div className='business__celebrations-gallery-wrapper  mb-12 lg:mb-16'>
+          <h5
+            className={clsx(
+              josefinSans.className,
+              'text-2xl text-color-accent-main font-semibold mb-5 lg:mb-3 text-center '
+            )}
+          >
+            Jelena & Vlado
+          </h5>
+          <ImageGallery
+            items={jelenaVladoImages}
+            showPlayButton={false}
+            showFullscreenButton={false}
+            slideOnThumbnailOver={true}
+            showIndex={true}
+          />
+        </div>
         <div className='gallery__wrapper mb-12 lg:mb-16'>
           <h5
             className={clsx(
@@ -98,23 +115,6 @@ const layout = async () => {
           </h5>
           <ImageGallery
             items={saraMichelleImages}
-            showPlayButton={false}
-            showFullscreenButton={false}
-            slideOnThumbnailOver={true}
-            showIndex={true}
-          />
-        </div>
-        <div className='business__celebrations-gallery-wrapper  mb-12 lg:mb-16'>
-          <h5
-            className={clsx(
-              josefinSans.className,
-              'text-2xl text-color-accent-main font-semibold mb-5 lg:mb-3 text-center '
-            )}
-          >
-            Jelena & Vlado
-          </h5>
-          <ImageGallery
-            items={jelenaVladoImages}
             showPlayButton={false}
             showFullscreenButton={false}
             slideOnThumbnailOver={true}
