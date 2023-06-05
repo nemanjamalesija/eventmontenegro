@@ -3,7 +3,6 @@ import { useEffect, useState } from 'react';
 import { FC } from 'react';
 import { kidsOffers } from './kidsOffers';
 import clsx from 'clsx';
-import { cn } from '../../../utils/twinMerge';
 
 const OfferToDisplay: FC = () => {
   const [currentCategory, setCurrentCategory] = useState('Maskote');
