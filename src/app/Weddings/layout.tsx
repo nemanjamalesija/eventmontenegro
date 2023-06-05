@@ -2,11 +2,8 @@
 
 import { josefinSans } from '../../../utils/fonts';
 import clsx from 'clsx';
-import { winterImages } from '../../../assets/img/businessEvents/winter/winter';
 import '../gallery.css';
 import ImageGallery from 'react-image-gallery';
-import { volvoImages } from '../../../assets/img/businessEvents/volvo/volvo';
-import { homeSystemsImages } from '../../../assets/img/businessEvents/homeSystems/homeSystems';
 import { doroteaLukaImages } from '../../../assets/img/weddings/doroteaLuka/doroteaLuka';
 import { jelenaVladoImages } from '../../../assets/img/weddings/jelenaVlado/jeleVlado';
 import { saraMichelleImages } from '../../../assets/img/weddings/saraMichelle/saraMichelle';
