@@ -32,7 +32,7 @@ const reviews = [
   },
   {
     image: usernebuska,
-    text: 'Event Montenegro tim je premašio sva naša očekivanja kako bi se naš poseban odvio savršeno! Zahvalni smo na njihovoj izvanrednoj posvećenosti, stručnosti i brizi o detaljima.',
+    text: 'Event Montenegro tim je premašio sva naša očekivanja kako bi se naš poseban dan odvio savršeno! Zahvalni smo na njihovoj izvanrednoj posvećenosti, stručnosti i brizi o detaljima.',
     author: '- Nebojša i Ena Bojić',
   },
 
