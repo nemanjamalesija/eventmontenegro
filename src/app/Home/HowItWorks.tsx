@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import { icons } from '../../../assets/svg/Icons';
 import clsx from 'clsx';
-import { josefinSans, nunito } from '../../../utils/fonts';
+import { josefinSans } from '../../../utils/fonts';
 import LetUsKnow from '@/components/ui/LetUsKnow';
 
 const HowItWorks: FC = () => {

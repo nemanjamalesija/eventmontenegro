@@ -1,12 +1,9 @@
-'use client';
-
 import { josefinSans } from '../../../utils/fonts';
 import clsx from 'clsx';
 import { winterImages } from '../../../assets/img/businessEvents/winter/winter';
-import '../gallery.css';
-import ImageGallery from 'react-image-gallery';
 import { volvoImages } from '../../../assets/img/businessEvents/volvo/volvo';
 import { homeSystemsImages } from '../../../assets/img/businessEvents/homeSystems/homeSystems';
+import Gallery from '@/components/ui/Gallery';
 
 const layout = async () => {
   return (
@@ -57,13 +54,7 @@ const layout = async () => {
           </h5>
         </div>
         <div className='business__celebrations-gallery-wrapper  mb-12 lg:mb-16'>
-          <ImageGallery
-            items={winterImages}
-            showPlayButton={false}
-            showFullscreenButton={false}
-            slideOnThumbnailOver={true}
-            showIndex={true}
-          />
+          <Gallery images={winterImages} />
         </div>
         <div className='business__celebrations-gallery-wrapper  mb-12 lg:mb-16'>
           <h5
@@ -74,13 +65,7 @@ const layout = async () => {
           >
             Volvo
           </h5>
-          <ImageGallery
-            items={volvoImages}
-            showPlayButton={false}
-            showFullscreenButton={false}
-            slideOnThumbnailOver={true}
-            showIndex={true}
-          />
+          <Gallery images={volvoImages} />
         </div>
         <div className='business__celebrations-gallery-wrapper  mb-12 lg:mb-16'>
           <h5
@@ -91,13 +76,7 @@ const layout = async () => {
           >
             Home systems
           </h5>
-          <ImageGallery
-            items={homeSystemsImages}
-            showPlayButton={false}
-            showFullscreenButton={false}
-            slideOnThumbnailOver={true}
-            showIndex={true}
-          />
+          <Gallery images={homeSystemsImages} />
         </div>
       </div>
     </section>

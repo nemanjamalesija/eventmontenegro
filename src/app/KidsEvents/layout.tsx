@@ -1,14 +1,11 @@
-'use client';
-
 import clsx from 'clsx';
-import { ReactNode } from 'react';
 import { Flower, PartyPopper } from 'lucide-react';
 import { josefinSans } from '../../../utils/fonts';
 import OfferToDisplay from './OfferToDisplay';
 import { animationImages } from '../../../assets/img/kidsEvents/animations/animationsImages';
 import ImageGallery from 'react-image-gallery';
-import '../gallery.css';
 import { birthdayImages } from '../../../assets/img/kidsEvents/birthdays/birthdaysImages';
+import Gallery from '@/components/ui/Gallery';
 
 const layout = async () => {
   return (
@@ -115,13 +112,7 @@ const layout = async () => {
             >
               Rođendani
             </h5>
-            <ImageGallery
-              items={birthdayImages}
-              showPlayButton={false}
-              showFullscreenButton={false}
-              slideOnThumbnailOver={true}
-              showIndex={true}
-            />
+            <Gallery images={birthdayImages} />
           </div>
         </div>
       </div>

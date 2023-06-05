@@ -1,11 +1,8 @@
-'use client';
-import { ReactNode } from 'react';
 import { josefinSans } from '../../../utils/fonts';
 import clsx from 'clsx';
 import OfferToDispay from './OfferToDisplay';
 import { otherOfferImages } from '../../../assets/img/otherOffers/otherOffers';
-import ImageGallery from 'react-image-gallery';
-import '../gallery.css';
+import Gallery from '@/components/ui/Gallery';
 
 const layout = async () => {
   return (
@@ -36,13 +33,7 @@ const layout = async () => {
         >
           Foto galerija
         </h5>
-        <ImageGallery
-          items={otherOfferImages}
-          showPlayButton={false}
-          showFullscreenButton={false}
-          slideOnThumbnailOver={true}
-          showIndex={true}
-        />
+        <Gallery images={otherOfferImages} />
       </div>
     </section>
   );

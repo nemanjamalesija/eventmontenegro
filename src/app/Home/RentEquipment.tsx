@@ -1,12 +1,9 @@
-'use client';
-
 import { FC } from 'react';
 import { josefinSans } from '../../../utils/fonts';
 import clsx from 'clsx';
 import { Check } from 'lucide-react';
-import ImageGallery from 'react-image-gallery';
 import { rentImages } from '../../../assets/img/rent/rentImages';
-import '../gallery.css';
+import Gallery from '@/components/ui/Gallery';
 
 const rentOffer1 = [
   'Tiffany stolice',
@@ -33,7 +30,7 @@ const rentOffer4 = ['Tron fotelje za mladence', 'Vaze za cvijeće'];
 
 const RentEquipment: FC = () => {
   return (
-    <section className='py-24 lg:px-10 bg-color-lightest border-t-2 border-b-2 border-white'>
+    <section className='py-24 lg:px-10 bg-color-lightest  border-b-2 border-white'>
       <div className='mx-auto max-w-custom px-4 lg:px-0'>
         <div className='mb-8 lg:mb-12'>
           <h3
@@ -126,13 +123,7 @@ const RentEquipment: FC = () => {
           >
             Foto Galerija
           </h4>
-          <ImageGallery
-            items={rentImages}
-            showPlayButton={false}
-            showFullscreenButton={false}
-            slideOnThumbnailOver={true}
-            showIndex={true}
-          />
+          <Gallery images={rentImages} />
         </div>
       </div>
     </section>
