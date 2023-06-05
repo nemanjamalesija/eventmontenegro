@@ -4,29 +4,12 @@ import clsx from 'clsx';
 import { Check } from 'lucide-react';
 import { rentImages } from '../../../assets/img/rent/rentImages';
 import Gallery from '@/components/ui/Gallery';
-
-const rentOffer1 = [
-  'Tiffany stolice',
-  'Konferencijske stolice',
-  'Navlake za stolice',
-  'Mašne za stolice',
-];
-
-const rentOffer2 = [
-  'Barski stolovi',
-  'Banket okrugli stolovi',
-  'Pravougaoni stolovi',
-  'Stolnjaci',
-];
-
-const rentOffer3 = [
-  'Svjećnjaci',
-  'Stubići sa kanapom',
-  'Bijeli golubovi',
-  'Uniforme za hostese',
-];
-
-const rentOffer4 = ['Tron fotelje za mladence', 'Vaze za cvijeće'];
+import {
+  rentOffer1,
+  rentOffer2,
+  rentOffer3,
+  rentOffer4,
+} from '../../../assets/data/rentEquipment';
 
 const RentEquipment: FC = () => {
   return (
