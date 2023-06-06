@@ -25,9 +25,19 @@ html {
   cursor: pointer;
 }
 
+.hero__container {
+  background-image: url('../../assets/img/heroruzni.png');
+  background-position: center;
+  object-fit: cover;
+}
+
 .ghost:hover,
 .card__link:hover {
   box-shadow: inset 0 0 0 3px #fff;
+}
+
+.nav__header {
+  background-image: url('../../assets/img/navbg.png');
 }
 
 .nav__header.sticky {

@@ -38,9 +38,12 @@ const Hero: FC = () => {
   }, [heroRef, navRef]);
 
   return (
-    <section className='pt-24 sm:pt-32 px-5 mb-24' ref={heroRef}>
-      <div className='flex flex-col lg:grid lg:grid-cols-custom2fr lg:items-start gap-20 lg:gap-24 mx-auto max-w-7xl'>
-        <div className='mt-4 sm:mt-20'>
+    <section
+      className='hero__container h-screen pt-24 sm:pt-32 mt-5 absolute top-0 right-0 w-full px-2 lg:px-0'
+      ref={heroRef}
+    >
+      <div className=' flex flex-col lg:grid lg:grid-cols-custom2fr lg:items-center gap-20 lg:gap-24 mx-auto max-w-[1366px]'>
+        <div className='mt-6 sm:mt-20'>
           <h1
             className={clsx(
               josefinSans.className,
@@ -52,7 +55,7 @@ const Hero: FC = () => {
           <p
             className={clsx(
               nunito.className,
-              'text-lg md:text-hero-p leading-7 lg:leading-9 text-center lg:text-start  text-gray-700 font-normal  mt-4 sm:mt-6'
+              'text-lg md:text-hero-p leading-7 lg:leading-9 text-center lg:text-start  text-gray-700 font-semibold lg:font-normal mt-4 sm:mt-6'
             )}
           >
             Iznajmljivanje opreme, organizacija i koordinacija proslava.
@@ -73,16 +76,6 @@ const Hero: FC = () => {
               Saznajte više &darr;
             </CustomLink>
           </div>
-        </div>
-        <div className='relative '>
-          <picture className='hero__image'>
-            <Image
-              src={hero}
-              alt='Hero image'
-              className='w-full h-full object-cover'
-              priority={true}
-            />
-          </picture>
         </div>
       </div>
     </section>
