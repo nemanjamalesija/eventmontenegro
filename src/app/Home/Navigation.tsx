@@ -33,7 +33,7 @@ const Navigation: FC = () => {
   return (
     <header
       ref={navRef}
-      className='nav__header absolute top-0 left-0 w-full flex justify-between items-center h-20 sm:px-20 px-6 z-5'
+      className='nav__header absolute top-0 left-0 w-full flex justify-between items-center h-20 sm:px-20 px-6 z-50'
     >
       <div className='logo flex gap-2 items-center z-40'>
         <Image
