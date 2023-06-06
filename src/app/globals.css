@@ -76,7 +76,7 @@ html {
   );
 }
 
-.card__buttons {
+.card__cta {
   background-image: linear-gradient(to right bottom, #e66b80, #f03e3e);
 }
 
