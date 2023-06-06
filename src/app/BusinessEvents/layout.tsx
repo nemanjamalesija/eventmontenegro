@@ -1,9 +1,5 @@
 import { josefinSans } from '../../../utils/fonts';
 import clsx from 'clsx';
-import { winterImages } from '../../../assets/img/businessEvents/winter/winter';
-import { volvoImages } from '../../../assets/img/businessEvents/volvo/volvo';
-import { homeSystemsImages } from '../../../assets/img/businessEvents/homeSystems/homeSystems';
-import Gallery from '@/components/ui/Gallery';
 
 const layout = async () => {
   return (
@@ -54,7 +50,7 @@ const layout = async () => {
           </h5>
         </div>
         <div className='business__celebrations-gallery-wrapper  mb-12 lg:mb-16'>
-          <Gallery images={winterImages} />
+          {/* GALLERY HERE */}
         </div>
         <div className='business__celebrations-gallery-wrapper  mb-12 lg:mb-16'>
           <h5
@@ -65,7 +61,7 @@ const layout = async () => {
           >
             Volvo
           </h5>
-          <Gallery images={volvoImages} />
+          {/* GALLERY HERE */}
         </div>
         <div className='business__celebrations-gallery-wrapper  mb-12 lg:mb-16'>
           <h5
@@ -76,7 +72,7 @@ const layout = async () => {
           >
             Home systems
           </h5>
-          <Gallery images={homeSystemsImages} />
+          {/* GALLERY HERE */}
         </div>
       </div>
     </section>

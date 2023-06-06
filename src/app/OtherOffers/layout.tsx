@@ -1,8 +1,6 @@
 import { josefinSans } from '../../../utils/fonts';
 import clsx from 'clsx';
 import OfferToDispay from './OfferToDisplay';
-import { otherOfferImages } from '../../../assets/img/otherOffers/otherOffers';
-import Gallery from '@/components/ui/Gallery';
 
 const layout = async () => {
   return (
@@ -33,7 +31,7 @@ const layout = async () => {
         >
           Foto galerija
         </h5>
-        <Gallery images={otherOfferImages} />
+        {/* GALLERY HERE */}
       </div>
     </section>
   );

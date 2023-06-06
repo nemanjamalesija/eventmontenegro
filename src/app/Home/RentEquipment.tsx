@@ -2,8 +2,7 @@ import { FC } from 'react';
 import { josefinSans } from '../../../utils/fonts';
 import clsx from 'clsx';
 import { Check } from 'lucide-react';
-import { rentImages } from '../../../assets/img/rent/rentImages';
-import Gallery from '@/components/ui/Gallery';
+
 import {
   rentOffer1,
   rentOffer2,
@@ -106,7 +105,7 @@ const RentEquipment: FC = () => {
           >
             Foto Galerija
           </h4>
-          <Gallery images={rentImages} />
+          {/* GALLERY HERE */}
         </div>
       </div>
     </section>

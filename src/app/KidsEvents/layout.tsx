@@ -2,9 +2,6 @@ import clsx from 'clsx';
 import { Flower, PartyPopper } from 'lucide-react';
 import { josefinSans } from '../../../utils/fonts';
 import OfferToDisplay from './OfferToDisplay';
-import { animationImages } from '../../../assets/img/kidsEvents/animations/animationsImages';
-import { birthdayImages } from '../../../assets/img/kidsEvents/birthdays/birthdaysImages';
-import Gallery from '@/components/ui/Gallery';
 
 const layout = async () => {
   return (
@@ -94,7 +91,7 @@ const layout = async () => {
             >
               Animacije
             </h5>
-            <Gallery images={animationImages} />
+            {/* / GALLERY HERE */}
           </div>
           <div className='gallery__wrapper mb-12 lg:mb-16'>
             <h5
@@ -105,7 +102,7 @@ const layout = async () => {
             >
               Rođendani
             </h5>
-            <Gallery images={birthdayImages} />
+            {/* / GALLERY HERE */}
           </div>
         </div>
       </div>

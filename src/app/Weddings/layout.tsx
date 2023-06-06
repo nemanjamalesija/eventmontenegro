@@ -1,10 +1,5 @@
 import { josefinSans } from '../../../utils/fonts';
 import clsx from 'clsx';
-import { doroteaLukaImages } from '../../../assets/img/weddings/doroteaLuka/doroteaLuka';
-import { jelenaVladoImages } from '../../../assets/img/weddings/jelenaVlado/jeleVlado';
-import { saraMichelleImages } from '../../../assets/img/weddings/saraMichelle/saraMichelle';
-import { tijanaMiloImages } from '../../../assets/img/weddings/tijanaMilo/tijanaMilo';
-import Gallery from '@/components/ui/Gallery';
 
 const layout = async () => {
   return (
@@ -54,7 +49,7 @@ const layout = async () => {
           >
             Jelena & Vlado
           </h5>
-          <Gallery images={jelenaVladoImages} />
+          {/* GALLERY HERE */}
         </div>
         <div className='gallery__wrapper mb-12 lg:mb-16'>
           <h5
@@ -67,7 +62,7 @@ const layout = async () => {
           </h5>
         </div>
         <div className='business__celebrations-gallery-wrapper  mb-12 lg:mb-16'>
-          <Gallery images={doroteaLukaImages} />
+          {/* GALLERY HERE */}
         </div>
         <div className='business__celebrations-gallery-wrapper  mb-12 lg:mb-16'>
           <h5
@@ -78,7 +73,7 @@ const layout = async () => {
           >
             Tijana & Milo
           </h5>
-          <Gallery images={tijanaMiloImages} />
+          {/* GALLERY HERE */}
         </div>
         <div className='business__celebrations-gallery-wrapper  mb-12 lg:mb-16'>
           <h5
@@ -89,7 +84,7 @@ const layout = async () => {
           >
             Sara & Michelle
           </h5>
-          <Gallery images={saraMichelleImages} />
+          {/* GALLERY HERE */}
         </div>
       </div>
     </section>
