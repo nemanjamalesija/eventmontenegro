@@ -3,7 +3,6 @@ import { Flower, PartyPopper } from 'lucide-react';
 import { josefinSans } from '../../../utils/fonts';
 import OfferToDisplay from './OfferToDisplay';
 import { animationImages } from '../../../assets/img/kidsEvents/animations/animationsImages';
-import ImageGallery from 'react-image-gallery';
 import { birthdayImages } from '../../../assets/img/kidsEvents/birthdays/birthdaysImages';
 import Gallery from '@/components/ui/Gallery';
 
@@ -95,13 +94,7 @@ const layout = async () => {
             >
               Animacije
             </h5>
-            <ImageGallery
-              items={animationImages}
-              showPlayButton={false}
-              showFullscreenButton={false}
-              slideOnThumbnailOver={true}
-              showIndex={true}
-            />
+            <Gallery images={animationImages} />
           </div>
           <div className='gallery__wrapper mb-12 lg:mb-16'>
             <h5
