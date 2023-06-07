@@ -4,6 +4,8 @@ import Link from 'next/link';
 import Image, { StaticImageData } from 'next/image';
 import logoSub from '../../../assets/img/logo-sub.png';
 import { useAppContext } from '@/Provider/appContext';
+import clsx from 'clsx';
+import { josefinSans } from '../../../utils/fonts';
 
 type CardProps = {
   cardNumber: number;
@@ -16,11 +18,17 @@ const Card = ({ cardNumber, cardHeadingText, href }: CardProps) => {
 
   const removeNavSticky = () => {
     navRef.current?.classList.remove('sticky');
+    navRef.current?.classList.add('regular');
   };
 
   return (
     <div className='card '>
-      <h4 className='card__heading text-lg sm:text-xl font-medium tracking-wide uppercase text-color-accent-main mb-3'>
+      <h4
+        className={clsx(
+          josefinSans.className,
+          'text-lg text-center font-medium uppercase text-color-accent-main mb-3'
+        )}
+      >
         {cardHeadingText}
       </h4>
       <div
@@ -33,7 +41,7 @@ const Card = ({ cardNumber, cardHeadingText, href }: CardProps) => {
       <div className='btn'>
         <Link href={href}>
           <button
-            className='card__link active:scale-95 transition-all, duration-300 block items-center justify-center font-semibold transition-color focus:outline-none focus:ring-8 focus:ring-ring-color-primary focus:ring-offset-2 cursor-pointer px-7 py-4  w-full bg-white hover:bg-color-gray-light-1  border-color-accent-main  text-white text-base sm:text-lg uppercase'
+            className='card__link active:scale-95 transition-all, duration-300 block items-center justify-center font-semibold transition-color focus:outline-none focus:ring-8 focus:ring-ring-color-primary focus:ring-offset-2 cursor-pointer px-7 py-4  w-full bg-color-accent-main hover:bg-color-shade-main border-color-accent-main  text-white text-base sm:text-lg uppercase'
             onClick={removeNavSticky}
           >
             Saznajte više

@@ -39,10 +39,10 @@ const Hero: FC = () => {
 
   return (
     <section
-      className='hero__container pt-24 h-screen sm:pt-32 mt-5  px-2 lg:px-0'
+      className='hero__container pt-24 h-screen sm:pt-32  px-2 lg:px-0'
       ref={heroRef}
     >
-      <div className=' flex flex-col lg:grid lg:grid-cols-custom2fr lg:items-center gap-20 lg:gap-24 mx-auto max-w-[1366px]'>
+      <div className=' flex flex-col lg:grid lg:grid-cols-custom2fr lg:items-center gap-20 lg:gap-24 mx-auto max-w-[1300px]'>
         <div className='mt-6 sm:mt-20'>
           <h1
             className={clsx(

@@ -36,23 +36,14 @@ html {
   box-shadow: inset 0 0 0 3px #fff;
 }
 
-.nav__header {
-  background-image: url('../../assets/img/navbg.png');
-}
-
 .nav__header.sticky {
   position: fixed;
   background-color: rgba(255, 255, 255, 0.95);
   box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
-  background-image: none;
 }
 
 .nav__header.sticky .nav {
   background-color: rgba(255, 255, 255, 0.95);
-}
-
-/* cards */
-.card {
 }
 
 .card__picture--1,
@@ -78,39 +69,11 @@ html {
   background-image: url('../../assets/img/cards/dodatne.jpg');
 }
 
-.card {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.card-photo {
-  grid-column: 1 / -1;
-}
-
-.card__heading {
-  grid-column: 1 / -1;
-  width: 100%;
-  font-family: 'Josefin Sans', sans-serif;
-  text-align: center;
-}
-
 /* 
     'color-lightest': '#fdf2f3',
         'color-accent-darkest': '#2e151a',
 
         'color-gray-light-1': '#ffdde1', */
-
-.btn {
-  grid-column: 1 / -1;
-}
-
-.btn button {
-  background-image: linear-gradient(
-    to right bottom,
-    rgba(230, 107, 128, 0.85),
-    rgba(240, 62, 62, 0.85)
-  );
-}
 
 /* balloons  */
 .balloons__img-box {

@@ -6,7 +6,7 @@ import { Pointer, PartyPopper, HeartHandshake } from 'lucide-react';
 
 const HowItWorks: FC = () => {
   return (
-    <section className='py-24 lg:px-10 bg-color-lightest border-t-2 border-b-2 border-white'>
+    <section className='py-24 lg:px-10 bg-color-lightest border-b-2 border-white'>
       <div className='mx-auto max-w-custom px-4 lg:px-0'>
         <div className='mb-16 lg:mb-24'>
           <h3
@@ -30,7 +30,7 @@ const HowItWorks: FC = () => {
               <h3
                 className={clsx(
                   josefinSans.className,
-                  'text-xl text-color-accent-main font-normal'
+                  'text-xl text-color-accent-main'
                 )}
               >
                 Recite nam šta volite
