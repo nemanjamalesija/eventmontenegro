@@ -7,7 +7,7 @@ const Offers: FC = () => {
   return (
     <section className='py-24 px-5 lg:px-10  '>
       <div className='mx-auto max-w-custom px-5 lg:px-0 '>
-        <div className='mb-8 lg:mb-12'>
+        <div className='mb-16 lg:mb-24'>
           <h3
             className={clsx(
               josefinSans.className,

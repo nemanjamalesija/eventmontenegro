@@ -28,7 +28,7 @@ html {
 .hero__container {
   background-image: url('../../assets/img/heroruzni.png');
   background-position: center;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .ghost:hover,
