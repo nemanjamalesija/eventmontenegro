@@ -75,27 +75,49 @@ const Navigation: FC = () => {
         )}
       >
         <ul className='flex flex-col lg:flex-row  gap-11 lg:gap-16 items-center mt-48 lg:mt-0  text-gray-600 font-bold  lg:font-normal text-2xl lg:text-xl'>
-          <li className='nav__ul--item'>
-            <a href='#'> Početna</a>
+          <li className='transition-all duration-300'>
+            <a className='hover:text-color-shade-main cursor-pointer' href='#'>
+              {' '}
+              Početna
+            </a>
           </li>
-          <li className='nav__ul--item'>
+          <li className='transition-all duration-300'>
             {' '}
-            <a href='#'>Kako radimo</a>
+            <a
+              className='hover:text-color-shade-main cursor-pointer'
+              href='#howItWorks'
+            >
+              Kako radimo
+            </a>
           </li>
-          <li className='nav__ul--item'>
-            {' '}
-            <a href='#'>Baloni</a>
+          <li className='transition-all duration-300'>
+            <a
+              className='hover:text-color-shade-main cursor-pointer'
+              href='#offers'
+            >
+              Proslave
+            </a>
           </li>
-          <li className='nav__ul--item'>
+          <li className='transition-all duration-300'>
             {' '}
-            <a href='#'>Proslave</a>
+            <a
+              className='hover:text-color-shade-main cursor-pointer'
+              href='#rentEquipment'
+            >
+              Iznajmi opremu{' '}
+            </a>
           </li>
-          <li className='nav__ul--item'>
+          <li className='transition-all duration-300'>
             {' '}
-            <a href='#'> Iznajmi opremu</a>
+            <a
+              className='hover:text-color-shade-main cursor-pointer'
+              href='#balloons'
+            >
+              Baloni
+            </a>
           </li>
 
-          <li className='nav__ul--item'>
+          <li className='cursor-pointer'>
             <CustomLink href='#' className='py-2 px-5 text-xl font-semibold'>
               Kontakt
             </CustomLink>

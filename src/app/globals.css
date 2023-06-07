@@ -21,10 +21,6 @@ html {
   box-sizing: border-box;
 }
 
-.nav__ul--item {
-  cursor: pointer;
-}
-
 .hero__container {
   background-image: url('../../assets/img/heroruzni.png');
   background-position: center;

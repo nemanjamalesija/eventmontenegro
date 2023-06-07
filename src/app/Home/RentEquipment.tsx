@@ -12,7 +12,10 @@ import {
 
 const RentEquipment: FC = () => {
   return (
-    <section className='py-24 lg:px-10 bg-color-lightest  border-b-2 border-white'>
+    <section
+      id='rentEquipment'
+      className='py-24 lg:px-10 bg-color-lightest  border-b-2 border-white'
+    >
       <div className='mx-auto max-w-custom px-4 lg:px-0'>
         <div className='mb-8 lg:mb-12'>
           <h3

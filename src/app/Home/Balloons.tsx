@@ -15,7 +15,10 @@ import Gallery from '@/components/ui/Gallery';
 const Balloons: FC = () => {
   const [categoryIndex, setCategoryIndex] = useState(0);
   return (
-    <section className='py-24 lg:px-10 border-t-2 border-b-2 border-white'>
+    <section
+      id='balloons'
+      className='py-24 lg:px-10 border-t-2 border-b-2 border-white'
+    >
       <div className='mx-auto max-w-custom px-4 lg:px-0'>
         <div className='mb-8 lg:mb-12'>
           <h3
