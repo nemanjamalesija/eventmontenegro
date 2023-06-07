@@ -8,6 +8,7 @@ import { X, AlignJustify } from 'lucide-react';
 import { useAppContext } from '@/Provider/appContext';
 import { cn } from '../../../utils/twinMerge';
 import CustomLink from '@/components/ui/CustomLink';
+import Link from 'next/link';
 
 const Navigation: FC = () => {
   const { isNavVisible, setIsNavVissible, navRef } = useAppContext();
@@ -76,45 +77,44 @@ const Navigation: FC = () => {
       >
         <ul className='flex flex-col lg:flex-row  gap-11 lg:gap-16 items-center mt-48 lg:mt-0  text-gray-600 font-bold  lg:font-normal text-2xl lg:text-xl'>
           <li className='transition-all duration-300'>
-            <a className='hover:text-color-shade-main cursor-pointer' href='#'>
-              {' '}
+            <Link
+              href='#home'
+              className='hover:text-color-shade-main cursor-pointer'
+            >
               Početna
-            </a>
+            </Link>
           </li>
           <li className='transition-all duration-300'>
-            {' '}
-            <a
+            <Link
               className='hover:text-color-shade-main cursor-pointer'
               href='#howItWorks'
             >
               Kako radimo
-            </a>
+            </Link>
           </li>
           <li className='transition-all duration-300'>
-            <a
+            <Link
               className='hover:text-color-shade-main cursor-pointer'
               href='#offers'
             >
               Proslave
-            </a>
+            </Link>
           </li>
           <li className='transition-all duration-300'>
-            {' '}
-            <a
+            <Link
               className='hover:text-color-shade-main cursor-pointer'
               href='#rentEquipment'
             >
-              Iznajmi opremu{' '}
-            </a>
+              Iznajmi opremu
+            </Link>
           </li>
           <li className='transition-all duration-300'>
-            {' '}
-            <a
+            <Link
               className='hover:text-color-shade-main cursor-pointer'
               href='#balloons'
             >
               Baloni
-            </a>
+            </Link>
           </li>
 
           <li className='cursor-pointer'>

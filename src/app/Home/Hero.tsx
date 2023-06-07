@@ -39,6 +39,7 @@ const Hero: FC = () => {
 
   return (
     <section
+      id='home'
       className='hero__container pt-24 h-screen sm:pt-32  px-2 lg:px-0'
       ref={heroRef}
     >

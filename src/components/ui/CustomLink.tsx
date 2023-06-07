@@ -3,7 +3,7 @@ import { cva, VariantProps } from 'class-variance-authority';
 import { AnchorHTMLAttributes, FC } from 'react';
 
 export const CustomLinkVariants = cva(
-  'active:scale-95 transition-all, duration-300 rounded-full inline-flex items-center justify-center font-semibold transition-color focus:outline-none focus:ring-8 focus:ring-ring-color-primary focus:ring-offset-2 cursor-pointer text-white',
+  'active:scale-95 transition-all, duration-300 rounded-full inline-flex items-center justify-center font-semibold transition-color focus:outline-none cursor-pointer text-white',
   {
     variants: {
       variant: {
