@@ -9,10 +9,10 @@ import saraMichelle34 from './saraMichelle34.jpg';
 import saraMichelle0 from './saraMichelle0.jpg';
 
 export const srcImagesSaraMichelle = [
-  saraMichelle12.src,
+  saraMichelle20.src,
   saraMichelle1.src,
   saraMichelle5.src,
-  saraMichelle20.src,
+  saraMichelle12.src,
   saraMichelle29.src,
   saraMichelle30.src,
   saraMichelle34.src,

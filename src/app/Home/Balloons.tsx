@@ -10,37 +10,7 @@ import {
   balloonsContent,
 } from '../../../assets/data/balloons';
 import Gallery from '@/components/ui/Gallery';
-import { ballons } from '../../../assets/img/baloni/baloniImages';
-import Image from 'next/image';
-
-const srcArray = [
-  ballons.baloni2.src,
-  ballons.baloni35.src,
-  ballons.baloni5.src,
-  ballons.baloni6.src,
-  ballons.baloni7.src,
-  ballons.baloni8.src,
-  ballons.baloni9.src,
-  ballons.baloni10.src,
-  ballons.baloni12.src,
-  ballons.baloni13.src,
-  ballons.baloni14.src,
-  ballons.baloni16.src,
-  ballons.baloni4.src,
-  ballons.baloni18.src,
-  ballons.baloni19.src,
-  ballons.baloni29.src,
-  ballons.baloni28.src,
-  ballons.baloni23.src,
-  ballons.baloni24.src,
-  ballons.baloni25.src,
-  ballons.baloni26.src,
-  ballons.baloni27.src,
-  ballons.baloni21.src,
-  ballons.baloni20.src,
-  ballons.baloni30.src,
-  ballons.baloni31.src,
-];
+import { srcArrayBallons } from '../../../assets/img/baloni/baloniImages';
 
 const Balloons: FC = () => {
   const [categoryIndex, setCategoryIndex] = useState(0);
@@ -84,7 +54,7 @@ const Balloons: FC = () => {
               );
             })}
           </div>
-          <div className=' balloons__text mx-auto mb-12 lg:mb-16'>
+          <div className=' balloons__text mx-auto mb-16 lg:mb-24'>
             <p className='text-base lg:text-lg text-gray-700 mb-12 lg:mb-16'>
               {balloonsContent[categoryIndex].categoryContent}
             </p>
@@ -126,7 +96,7 @@ const Balloons: FC = () => {
           </div>
         </div>
       </div>
-      <Gallery srcArray={srcArray} />;
+      <Gallery srcArray={srcArrayBallons} />;
     </section>
   );
 };
