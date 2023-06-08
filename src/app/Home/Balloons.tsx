@@ -65,7 +65,7 @@ const Balloons: FC = () => {
                   <h4
                     className={clsx(
                       josefinSans.className,
-                      'text-lg lg:text-2xl font-semibold text-color-accent-main mb-3'
+                      'text-lg lg:text-2xl font-medium text-color-accent-main mb-3'
                     )}
                   >
                     U ponudi imamo:
@@ -89,7 +89,7 @@ const Balloons: FC = () => {
             <h4
               className={clsx(
                 josefinSans.className,
-                'text-lg lg:text-2xl font-semibold text-color-accent-main mb-3 lg:mb-6 text-center'
+                'text-lg lg:text-2xl font-medium text-color-accent-main mb-3 lg:mb-6 text-center'
               )}
             >
               Foto galerija
