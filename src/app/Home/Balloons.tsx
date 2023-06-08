@@ -13,6 +13,35 @@ import Gallery from '@/components/ui/Gallery';
 import { ballons } from '../../../assets/img/baloni/baloniImages';
 import Image from 'next/image';
 
+const srcArray = [
+  ballons.baloni2.src,
+  ballons.baloni35.src,
+  ballons.baloni5.src,
+  ballons.baloni6.src,
+  ballons.baloni7.src,
+  ballons.baloni8.src,
+  ballons.baloni9.src,
+  ballons.baloni10.src,
+  ballons.baloni12.src,
+  ballons.baloni13.src,
+  ballons.baloni14.src,
+  ballons.baloni16.src,
+  ballons.baloni4.src,
+  ballons.baloni18.src,
+  ballons.baloni19.src,
+  ballons.baloni29.src,
+  ballons.baloni28.src,
+  ballons.baloni23.src,
+  ballons.baloni24.src,
+  ballons.baloni25.src,
+  ballons.baloni26.src,
+  ballons.baloni27.src,
+  ballons.baloni21.src,
+  ballons.baloni20.src,
+  ballons.baloni30.src,
+  ballons.baloni31.src,
+];
+
 const Balloons: FC = () => {
   const [categoryIndex, setCategoryIndex] = useState(0);
   return (
@@ -97,34 +126,7 @@ const Balloons: FC = () => {
           </div>
         </div>
       </div>
-      <Gallery
-        src1={ballons.baloni2.src}
-        src2={ballons.baloni35.src}
-        src3={ballons.baloni5.src}
-        src4={ballons.baloni6.src}
-        src5={ballons.baloni7.src}
-        src6={ballons.baloni8.src}
-        src7={ballons.baloni9.src}
-        src8={ballons.baloni10.src}
-        src9={ballons.baloni12.src}
-        src10={ballons.baloni13.src}
-        src11={ballons.baloni14.src}
-        src12={ballons.baloni16.src}
-        src13={ballons.baloni4.src}
-        src14={ballons.baloni18.src}
-        src15={ballons.baloni19.src}
-        src16={ballons.baloni29.src}
-        src17={ballons.baloni28.src}
-        src18={ballons.baloni23.src}
-        src19={ballons.baloni24.src}
-        src20={ballons.baloni25.src}
-        src21={ballons.baloni26.src}
-        src22={ballons.baloni27.src}
-        src23={ballons.baloni21.src}
-        src24={ballons.baloni20.src}
-        src25={ballons.baloni30.src}
-        src26={ballons.baloni31.src}
-      />
+      <Gallery srcArray={srcArray} />;
     </section>
   );
 };
