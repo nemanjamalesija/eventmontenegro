@@ -17,7 +17,6 @@ export const srcArrayTijanaMilo = [
   tijanaMilo7.src,
   tijanaMilo13.src,
   tijanaMilo18.src,
-
   tijanaMilo2.src,
   tijanaMilo19.src,
   tijanaMilo21.src,
