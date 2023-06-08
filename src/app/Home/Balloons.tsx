@@ -97,217 +97,34 @@ const Balloons: FC = () => {
           </div>
         </div>
       </div>
-      <div className='gallery grid '>
-        <figure className='gallery__item gallery__item--1 relative'>
-          <Image
-            src={ballons.baloni2.src}
-            alt='gallery image 1'
-            className='gallery__img block object-cover'
-            fill
-          />
-        </figure>
-        <figure className='gallery__item gallery__item--2 relative'>
-          <Image
-            src={ballons.baloni35.src}
-            alt='gallery image 2'
-            className='gallery__img block object-cover'
-            fill
-          />
-        </figure>
-        <figure className='gallery__item gallery__item--3 relative'>
-          <Image
-            src={ballons.baloni5.src}
-            alt='gallery image 2'
-            className='gallery__img block object-cover'
-            fill
-          />
-        </figure>
-        <figure className='gallery__item gallery__item--4 relative'>
-          <Image
-            src={ballons.baloni6.src}
-            alt='gallery image 2'
-            className='gallery__img block object-cover'
-            fill
-          />
-        </figure>
-        <figure className='gallery__item gallery__item--5 relative'>
-          <Image
-            src={ballons.baloni7.src}
-            alt='gallery image 2'
-            className='gallery__img block object-cover'
-            fill
-          />
-        </figure>
-        <figure className='gallery__item gallery__item--6 relative'>
-          <Image
-            src={ballons.baloni8.src}
-            alt='gallery image 2'
-            className='gallery__img block object-cover'
-            fill
-          />
-        </figure>
-        <figure className='gallery__item gallery__item--7 relative'>
-          <Image
-            src={ballons.baloni9.src}
-            alt='gallery image 2'
-            className='gallery__img block object-cover'
-            fill
-          />
-        </figure>
-        <figure className='gallery__item gallery__item--8 relative'>
-          <Image
-            src={ballons.baloni10.src}
-            alt='gallery image 2'
-            className='gallery__img block object-cover'
-            fill
-          />
-        </figure>
-        <figure className='gallery__item gallery__item--9 relative'>
-          <Image
-            src={ballons.baloni12.src}
-            alt='gallery image 2'
-            className='gallery__img block object-cover '
-            fill
-          />
-        </figure>
-        <figure className='gallery__item gallery__item--10 relative'>
-          <Image
-            src={ballons.baloni13.src}
-            alt='gallery image 2'
-            className='gallery__img block object-cover'
-            fill
-          />
-        </figure>
-        <figure className='gallery__item gallery__item--11 relative'>
-          <Image
-            src={ballons.baloni14.src}
-            alt='gallery image 2'
-            className='gallery__img block object-cover'
-            fill
-          />
-        </figure>
-        <figure className='gallery__item gallery__item--12 relative'>
-          <Image
-            src={ballons.baloni16.src}
-            alt='gallery image 2'
-            className='gallery__img block object-cover'
-            fill
-          />
-        </figure>
-        <figure className='gallery__item gallery__item--13 relative'>
-          <Image
-            src={ballons.baloni4.src}
-            alt='gallery image 2'
-            className='gallery__img block object-cover'
-            fill
-          />
-        </figure>
-        <figure className='gallery__item gallery__item--14 relative'>
-          <Image
-            src={ballons.baloni18.src}
-            alt='gallery image 2'
-            className='gallery__img block object-cover'
-            fill
-          />
-        </figure>
-
-        <figure className='gallery__item gallery__item--15 relative'>
-          <Image
-            src={ballons.baloni19.src}
-            alt='gallery image 1'
-            className='gallery__img block object-cover'
-            fill
-          />
-        </figure>
-        <figure className='gallery__item gallery__item--16 relative'>
-          <Image
-            src={ballons.baloni29.src}
-            alt='gallery image 2'
-            className='gallery__img block object-cover'
-            fill
-          />
-        </figure>
-        <figure className='gallery__item gallery__item--17 relative'>
-          <Image
-            src={ballons.baloni28.src}
-            alt='gallery image 2'
-            className='gallery__img block object-cover'
-            fill
-          />
-        </figure>
-        <figure className='gallery__item gallery__item--18 relative'>
-          <Image
-            src={ballons.baloni23.src}
-            alt='gallery image 2'
-            className='gallery__img block object-cover'
-            fill
-          />
-        </figure>
-        <figure className='gallery__item gallery__item--19 relative'>
-          <Image
-            src={ballons.baloni24.src}
-            alt='gallery image 2'
-            className='gallery__img block object-cover'
-            fill
-          />
-        </figure>
-        <figure className='gallery__item gallery__item--20 relative'>
-          <Image
-            src={ballons.baloni25.src}
-            alt='gallery image 2'
-            className='gallery__img block object-cover'
-            fill
-          />
-        </figure>
-        <figure className='gallery__item gallery__item--21 relative'>
-          <Image
-            src={ballons.baloni26.src}
-            alt='gallery image 2'
-            className='gallery__img block object-cover'
-            fill
-          />
-        </figure>
-        <figure className='gallery__item gallery__item--22 relative'>
-          <Image
-            src={ballons.baloni27.src}
-            alt='gallery image 2'
-            className='gallery__img block object-cover'
-            fill
-          />
-        </figure>
-        <figure className='gallery__item gallery__item--23 relative'>
-          <Image
-            src={ballons.baloni21.src}
-            alt='gallery image 2'
-            className='gallery__img block object-cover '
-            fill
-          />
-        </figure>
-        <figure className='gallery__item gallery__item--24 relative'>
-          <Image
-            src={ballons.baloni20.src}
-            alt='gallery image 2'
-            className='gallery__img block object-cover'
-            fill
-          />
-        </figure>
-        <figure className='gallery__item gallery__item--25 relative'>
-          <Image
-            src={ballons.baloni30.src}
-            alt='gallery image 2'
-            className='gallery__img block object-cover'
-            fill
-          />
-        </figure>
-        <figure className='gallery__item gallery__item--26 relative'>
-          <Image
-            src={ballons.baloni31.src}
-            alt='gallery image 2'
-            className='gallery__img block object-cover'
-            fill
-          />
-        </figure>
-      </div>
+      <Gallery
+        src1={ballons.baloni2.src}
+        src2={ballons.baloni35.src}
+        src3={ballons.baloni5.src}
+        src4={ballons.baloni6.src}
+        src5={ballons.baloni7.src}
+        src6={ballons.baloni8.src}
+        src7={ballons.baloni9.src}
+        src8={ballons.baloni10.src}
+        src9={ballons.baloni12.src}
+        src10={ballons.baloni13.src}
+        src11={ballons.baloni14.src}
+        src12={ballons.baloni16.src}
+        src13={ballons.baloni4.src}
+        src14={ballons.baloni18.src}
+        src15={ballons.baloni19.src}
+        src16={ballons.baloni29.src}
+        src17={ballons.baloni28.src}
+        src18={ballons.baloni23.src}
+        src19={ballons.baloni24.src}
+        src20={ballons.baloni25.src}
+        src21={ballons.baloni26.src}
+        src22={ballons.baloni27.src}
+        src23={ballons.baloni21.src}
+        src24={ballons.baloni20.src}
+        src25={ballons.baloni30.src}
+        src26={ballons.baloni31.src}
+      />
     </section>
   );
 };
