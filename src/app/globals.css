@@ -168,7 +168,9 @@ html {
   transform: scale(3);
 }
 
-.gallery__item--8:hover {
+.gallery__item--8:hover,
+.gallery__item--28:hover,
+.gallery__item--30:hover {
   transform: scale(1.6);
 }
 
