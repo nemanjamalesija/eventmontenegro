@@ -10,7 +10,7 @@ const Gallery: FC<GalleryProps> = ({ srcArray }) => {
     <div className='gallery grid'>
       {srcArray.map((src, index) => (
         <figure
-          className={`gallery__item gallery__item--${index + 1} relative`}
+          className={`gallery__item gallery__item--${index + 1} relative `}
           key={index}
         >
           <Image

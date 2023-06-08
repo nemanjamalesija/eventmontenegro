@@ -1,10 +1,22 @@
+import Gallery from '@/components/ui/Gallery';
+import { srcArrayDoroteaLuka } from '../../../assets/img/weddings/doroteaLuka/doroteaLuka';
+import { srcArrayJelenaVlado } from '../../../assets/img/weddings/jelenaVlado/jeleVlado';
+import { srcImagesSaraMichelle } from '../../../assets/img/weddings/saraMichelle/saraMichelle';
+import { srcArrayTijanaMilo } from '../../../assets/img/weddings/tijanaMilo/tijanaMilo';
 import { josefinSans } from '../../../utils/fonts';
 import clsx from 'clsx';
+
+const srcArrayWeddings = [
+  ...srcArrayDoroteaLuka,
+  ...srcArrayJelenaVlado,
+  ...srcArrayTijanaMilo,
+  ...srcImagesSaraMichelle,
+];
 
 const layout = async () => {
   return (
     <section className='py-24 lg:px-10 bg-color-lightest border-t-2 border-b-2 border-white'>
-      <div className='mx-auto max-w-custom px-4 lg:px-0 mt-6'>
+      <div className='mx-auto max-w-custom px-4 lg:px-0 mt-6 mb-16 lg:mb-24'>
         <h2
           className={clsx(
             josefinSans.className,
@@ -40,52 +52,17 @@ const layout = async () => {
             biste imali nezaboravno iskustvo sa porodicom i prijateljima.
           </p>
         </div>
-        <div className='business__celebrations-gallery-wrapper  mb-12 lg:mb-16'>
-          <h5
-            className={clsx(
-              josefinSans.className,
-              'text-2xl text-color-accent-main font-semibold mb-5 lg:mb-3 text-center '
-            )}
-          >
-            Jelena & Vlado
-          </h5>
-          {/* GALLERY HERE */}
-        </div>
-        <div className='gallery__wrapper mb-12 lg:mb-16'>
-          <h5
-            className={clsx(
-              josefinSans.className,
-              'text-2xl text-color-accent-main font-semibold text-center '
-            )}
-          >
-            Dorotea & Luka
-          </h5>
-        </div>
-        <div className='business__celebrations-gallery-wrapper  mb-12 lg:mb-16'>
-          {/* GALLERY HERE */}
-        </div>
-        <div className='business__celebrations-gallery-wrapper  mb-12 lg:mb-16'>
-          <h5
-            className={clsx(
-              josefinSans.className,
-              'text-2xl text-color-accent-main font-semibold mb-5 lg:mb-3 text-center '
-            )}
-          >
-            Tijana & Milo
-          </h5>
-          {/* GALLERY HERE */}
-        </div>
-        <div className='business__celebrations-gallery-wrapper  mb-12 lg:mb-16'>
-          <h5
-            className={clsx(
-              josefinSans.className,
-              'text-2xl text-color-accent-main font-semibold mb-5 lg:mb-3 text-center '
-            )}
-          >
-            Sara & Michelle
-          </h5>
-          {/* GALLERY HERE */}
-        </div>
+      </div>
+      <div>
+        <h5
+          className={clsx(
+            josefinSans.className,
+            'text-2xl text-color-accent-main font-semibold mb-5 lg:mb-3 text-center '
+          )}
+        >
+          Foto galerija
+        </h5>
+        <Gallery srcArray={srcArrayWeddings} />
       </div>
     </section>
   );

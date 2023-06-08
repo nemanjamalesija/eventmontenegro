@@ -184,7 +184,6 @@ html {
 
 .gallery__item--12:hover,
 .gallery__item--17:hover,
-.gallery__item--24:hover,
 .gallery__item--3:hover {
   transform: scale(2.2);
 }
@@ -241,12 +240,12 @@ html {
 }
 
 .gallery__item--23 {
-  grid-column: span 3;
+  grid-column: span 2;
   grid-row: 13 / 15;
 }
 
 .gallery__item--24 {
-  grid-row: span 2;
+  grid-row: span 4;
 }
 
 .gallery__item--25 {
@@ -257,6 +256,29 @@ html {
 .gallery__item--26 {
   grid-column: span 2;
   grid-row: span 2;
+}
+
+.gallery__item--27 {
+  grid-row: 15 / 28;
+  grid-column: span 2;
+}
+
+.gallery__item--28 {
+  grid-row: 15 / 28;
+}
+
+.gallery__item--29 {
+  grid-row: 15 / 28;
+  grid-column: span 2;
+}
+
+.gallery__item--30 {
+  grid-row: 15 / 28;
+}
+
+.gallery__item--31 {
+  grid-row: 15 / 28;
+  grid-column: span 2;
 }
 
 @media (max-width: 690px) {

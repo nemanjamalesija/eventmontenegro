@@ -1,16 +1,15 @@
-// import jelenaVlado0 from './jelenaVlado0.jpg';
-// import jelenaVlado1 from './jelenaVlado1.jpg';
-// import jelenaVlado2 from './jelenaVlado2.jpg';
-// import jelenaVlado3 from './jelenaVlado3.jpg';
-// import jelenaVlado4 from './jelenaVlado4.jpg';
-// import jelenaVlado5 from './jelenaVlado5.jpg';
-// import jelenaVlado6 from './jelenaVlado6.jpg';
-// import jelenaVlado7 from './jelenaVlado7.jpg';
-// import jelenaVlado8 from './jelenaVlado8.jpg';
-// import jelenaVlado9 from './jelenaVlado9.jpg';
-// import jelenaVlado10 from './jelenaVlado10.jpg';
-// import jelenaVlado12 from './jelenaVlado12.jpg';
-// import jelenaVlado13 from './jelenaVlado13.jpg';
+import jelenaVlado2 from './jelenaVlado2.jpg';
+import jelenaVlado4 from './jelenaVlado4.jpg';
+
+import jelenaVlado7 from './jelenaVlado7.jpg';
+import jelenaVlado11 from './jelenaVlado11.jpg';
+
+export const srcArrayJelenaVlado = [
+  jelenaVlado2.src,
+  jelenaVlado4.src,
+  jelenaVlado7.src,
+  jelenaVlado11.src,
+];
 
 // export const jelenaVladoImages = [
 //   {
