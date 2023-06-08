@@ -104,14 +104,13 @@ html {
 }
 
 .gallery {
-  background-color: #f9f7f6;
   grid-row: 5;
   grid-column: 2 / -1;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(14, 5vw);
-  grid-gap: 1.5rem;
-  padding: 1.5rem;
+  grid-gap: 1rem;
+  padding: 1rem;
 }
 .gallery__item--1 {
   grid-row: 1 / span 2;

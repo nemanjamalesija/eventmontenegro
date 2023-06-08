@@ -35,7 +35,7 @@ const Balloons: FC = () => {
           </h4>
         </div>
         <div
-          className='balloons__Image-box h-[40vh] w-full bg-blend-screen
+          className='balloons__img-box h-[40vh] w-full bg-blend-screen
           bg-cover'
         ></div>
         <div className='balloons__content'>
@@ -97,7 +97,7 @@ const Balloons: FC = () => {
           </div>
         </div>
       </div>
-      <div className='gallery'>
+      <div className='gallery grid '>
         <figure className='gallery__item gallery__item--1 relative'>
           <Image
             src={ballons.baloni2.src}
