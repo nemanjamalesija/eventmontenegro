@@ -88,6 +88,7 @@ const Navigation: FC = () => {
             <Link
               className='hover:text-color-shade-main cursor-pointer'
               href='#howItWorks'
+              scroll={true}
             >
               Kako radimo
             </Link>

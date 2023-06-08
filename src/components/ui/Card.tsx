@@ -26,7 +26,7 @@ const Card = ({ cardNumber, cardHeadingText, href }: CardProps) => {
       <h4
         className={clsx(
           josefinSans.className,
-          'text-lg text-center font-medium uppercase text-color-accent-main mb-3'
+          'text-lg text-center font-medium uppercase  text-color-accent-main mb-3'
         )}
       >
         {cardHeadingText}
