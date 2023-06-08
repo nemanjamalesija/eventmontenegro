@@ -264,4 +264,8 @@ html {
     grid-gap: 0.5rem;
     padding: 0.5rem;
   }
+
+  .gallery__item:hover {
+    transform: none;
+  }
 }
