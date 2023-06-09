@@ -73,7 +73,7 @@ const layout = async () => {
             </p>
           </div>
         </div>
-        <div className='kids__celeb-categories mb-12 lg:mb-16'>
+        <div className='kids__celeb-categories  mb-16 lg:mb-24'>
           <h5
             className={clsx(
               josefinSans.className,
@@ -85,7 +85,7 @@ const layout = async () => {
           <OfferToDisplay />
         </div>
         <div className='kids__galleries'>
-          <div className='photo__gallery mb-12 lg:mb-16'>
+          <div className='photo__gallery mb-16 lg:mb-24'>
             <h5
               className={clsx(
                 josefinSans.className,
@@ -97,7 +97,7 @@ const layout = async () => {
             <Gallery srcArray={srcArrayAnimations} />
           </div>
         </div>
-        <div className='photo__gallery mb-12 lg:mb-16'>
+        <div className='photo__gallery'>
           <h5
             className={clsx(
               josefinSans.className,
