@@ -5,6 +5,9 @@ import OfferToDisplay from './OfferToDisplay';
 import Gallery from '@/components/ui/Gallery';
 import { srcArrayAnimations } from '../../../assets/img/kidsEvents/animations/animationsImages';
 import { srcArrayBirthdays } from '../../../assets/img/kidsEvents/birthdays/birthdaysImages';
+import rodjendanDisplay from '../../../assets/img/kidsEvents/birthdays/rodjendanDisplay.jpg';
+import animacijeDisplay from '../../../assets/img/kidsEvents/animations/animacijeDisplay.jpg';
+import Image from 'next/image';
 
 const layout = async () => {
   return (
@@ -21,10 +24,11 @@ const layout = async () => {
 
         <div
           className='kids__img-box h-[40vh] w-full bg-blend-screen
-          bg-cover bg-center lg:bg-top mb-12 lg:mb-16'
+          bg-cover bg-center lg:bg-top mb-16 lg:mb-24'
         ></div>
-        <div className='kids__text-box flex flex-col lg:grid grid-cols-2 gap-x-24 gap-8 mb-12 lg:mb-16'>
-          <div className='kids__text '>
+
+        <div className='step flex flex-col lg:grid lg:grid-cols-2 items-center gap-12 lg:gap-24 mb-12 lg:mb-24'>
+          <div className='kids__text'>
             <div className='flex items-center gap-4 mb-4'>
               <div className='kids__icons-set flex items-center justify-center rounded-full h-14 w-14 lg:h-16 lg:w-16 bg-color-accent-main'>
                 {<Flower className='stroke-color-gray-light-1' />}
@@ -38,7 +42,7 @@ const layout = async () => {
                 Dekoracija
               </h3>
             </div>
-            <p className='text-base lg:text-lg text-gray-700'>
+            <p className='lg:leading-9 text-base lg:text-lg text-gray-700'>
               Izaberite temu rođendana ili druge diječije proslave, a mi ćemo
               kreirati dekoraciju koja će oduševiti sve prisutne. Slatki sto
               predstavlja centralni dio dekoracije, zato se trudimo da svaki
@@ -47,7 +51,26 @@ const layout = async () => {
               uljepšamo Vaš poseban dan i učinimo ga neponovljivim.
             </p>
           </div>
-
+          <figure className='relative'>
+            <Image
+              src={rodjendanDisplay}
+              alt='Photo showing decoration example'
+              className='block object-cover rounded-md'
+              width={500}
+              height={500}
+            />
+          </figure>
+        </div>
+        <div className='step flex flex-col lg:grid lg:grid-cols-2 place-items-center items-center gap-12 lg:gap-24 mb-16 lg:mb-24'>
+          <figure className='relative'>
+            <Image
+              src={animacijeDisplay}
+              alt='Photo showing decoration example'
+              className='block object-cover rounded-md'
+              width={500}
+              height={500}
+            />
+          </figure>
           <div className='kids__text'>
             <div className='flex items-center gap-4 mb-4'>
               <div className='kids__icons-set flex items-center justify-center rounded-full h-14 w-14 lg:h-16 lg:w-16 bg-color-accent-main'>
@@ -62,7 +85,8 @@ const layout = async () => {
                 Animacija
               </h3>
             </div>
-            <p className='text-base lg:text-lg  text-gray-700'>
+
+            <p className='lg:leading-9  text-base lg:text-lg  text-gray-700'>
               Animacija djece je odlično rješenje za sve vrste proslava u kojima
               prisustvuju djeca. Naši animatori osmišljavaju program koji je
               zabavan, veseo i prilagođen Vašoj proslavi. Gdje god da pravite
@@ -73,6 +97,7 @@ const layout = async () => {
             </p>
           </div>
         </div>
+
         <div className='kids__celeb-categories  mb-16 lg:mb-24'>
           <h5
             className={clsx(
@@ -132,45 +157,7 @@ export default layout;
             Organizujte svoj projekat iz snova u 3 laka koraka
           </h4>
         </div>
-        <div className='step flex flex-col lg:grid lg:grid-cols-custom2fr items-center gap-12 lg:gap-24 mb-12 lg:mb-24'>
-          <div className='step__text'>
-            <p className='text-5xl md:text-6xl lg:text-7xl text-gray-300 font-bold mb-3'>
-              01
-            </p>
-            <h4 className='text-gray-700 text-2xl lg:text-3xl font-bold mb-4 lg:mb-6'>
-              Recite nam šta volite (a šta ne){' '}
-            </h4>
-            <p className='text-base md:text-lg text-gray-700'>
-              Recite nam o Vašem projektu iz snova. Bilo da se radi o dječijem
-              događaju, vjenčanju, rođendanskoj proslavi ili balonijadi,
-              podijelite svoje želje i posebne zahtjeve sa nama. Daćemo sve od
-              sebe kako bismo razumjeli Vašu viziju i kreirali jedinstveno
-              iskustvo.
-            </p>
-          </div>
-
-          <div className='step__icon'>{icons.choose}</div>
-        </div>
-        <LetUsKnow />
-        <div className='step flex flex-col lg:grid lg:grid-cols-custom2fr items-center gap-12 lg:gap-24'>
-          <div className='step__text'>
-            <p className='text-5xl md:text-6xl lg:text-7xl text-gray-300 font-bold mb-3'>
-              03
-            </p>
-            <h4 className='text-gray-700 text-2xl lg:text-3xl font-bold mb-4 lg:mb-6'>
-              Opustite se i uživajte u Vašem slavlju
-            </h4>
-            <p className='text-base md:text-lg text-gray-700'>
-              Prepustite se i uživajte u bezbrižnom i nezaboravnom slavlju, dok
-              mi brinemo o svim detaljima. Naš tim će Vam pružiti podršku i
-              obezbijediti vrhunsku opremu za Vaš događaj. Bez obzira da li se
-              odlučite za rentiranje opreme ili nam povjerite i organizaciju, mi
-              smo tu da pružimo sve što Vam je potrebno za nezaboravno iskustvo.
-            </p>
-          </div>
-
-          <div className=''>{icons.relax}</div>
-        </div>
+      
       </div>
     </section>
 
