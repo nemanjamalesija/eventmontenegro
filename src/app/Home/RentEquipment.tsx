@@ -9,6 +9,8 @@ import {
   rentOffer3,
   rentOffer4,
 } from '../../../assets/data/rentEquipment';
+import Gallery from '@/components/ui/Gallery';
+import { srcArrayRentEquipment } from '../../../assets/img/rent/rentImages';
 
 const RentEquipment: FC = () => {
   return (
@@ -41,7 +43,7 @@ const RentEquipment: FC = () => {
           izabrati upravo ono što Vam je potrebno.
         </p>
 
-        <div className='flex flex-col items-center justify-center mb-12 lg:mb-16'>
+        <div className='flex flex-col items-center justify-center mb-16 lg:mb-24'>
           <h4
             className={clsx(
               josefinSans.className,
@@ -99,17 +101,17 @@ const RentEquipment: FC = () => {
             </ul>
           </div>
         </div>
-        <div className='photo__gallery'>
-          <h4
-            className={clsx(
-              josefinSans.className,
-              'text-lg lg:text-2xl font-semibold text-color-accent-main mb-3 lg:mb-6 text-center'
-            )}
-          >
-            Foto Galerija
-          </h4>
-          {/* GALLERY HERE */}
-        </div>
+      </div>
+      <div className='photo__gallery'>
+        <h4
+          className={clsx(
+            josefinSans.className,
+            'text-lg lg:text-2xl font-semibold text-color-accent-main mb-3 lg:mb-6 text-center'
+          )}
+        >
+          Foto Galerija
+        </h4>
+        <Gallery srcArray={srcArrayRentEquipment} />
       </div>
     </section>
   );
