@@ -9,9 +9,15 @@ import { useAppContext } from '@/Provider/appContext';
 import { cn } from '../../../utils/twinMerge';
 import CustomLink from '@/components/ui/CustomLink';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 
 const Navigation: FC = () => {
   const { isNavVisible, setIsNavVissible, navRef } = useAppContext();
+  const router = useRouter();
+
+  const handleBackHome = () => {
+    router.push('/');
+  };
 
   useEffect(() => {
     if (window.innerWidth >= 1000 && !isNavVisible) setIsNavVissible(true);
@@ -40,13 +46,15 @@ const Navigation: FC = () => {
         <Image
           src={logo}
           alt='Picture of the author'
-          className='cursor-pointer  h-14 w-auto'
+          className='cursor-pointer  h-16 w-auto'
           priority={true}
+          onClick={handleBackHome}
         />
         <Image
           src={logoSub}
           alt='Picture of the author'
-          className='cursor-pointer   h-12 w-auto'
+          className='cursor-pointer   h-14 w-auto'
+          onClick={handleBackHome}
         />
       </div>
       {!isNavVisible ? (
@@ -78,7 +86,7 @@ const Navigation: FC = () => {
         <ul className='flex flex-col lg:flex-row  gap-11 lg:gap-16 items-center mt-48 lg:mt-0  text-gray-600 font-bold  lg:font-normal text-2xl lg:text-xl'>
           <li className='transition-all duration-300'>
             <Link
-              href='#home'
+              href='/'
               className='hover:text-color-shade-main cursor-pointer'
             >
               Početna
