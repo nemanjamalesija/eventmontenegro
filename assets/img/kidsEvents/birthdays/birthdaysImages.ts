@@ -31,47 +31,46 @@ import rodjendan57 from './rodjendan57.jpg';
 import rodjendan60 from './rodjendan60.jpg';
 
 export const srcArrayBirthdays = [
-  rodjendan12.src,
+  rodjendan60.src,
   rodjendan15.src,
-  rodjendan13.src,
+  rodjendan39.src,
   rodjendan14.src,
-
   rodjendan29.src,
-  rodjendan12.src,
+
   rodjendan13.src,
-  rodjendan14.src,
+  rodjendan28.src,
   rodjendan16.src,
-  rodjendan17.src,
+
+  rodjendan48.src,
+  rodjendan26.src,
 
   rodjendan21.src,
-
-  rodjendan26.src,
   rodjendan27.src,
-  rodjendan28.src,
+
+  rodjendan17.src,
+  rodjendan37.src,
+  rodjendan36.src,
+
+  rodjendan35.src,
 
   rodjendan34.src,
-  rodjendan35.src,
-  rodjendan36.src,
-  rodjendan37.src,
-
-  rodjendan39.src,
   rodjendan40.src,
   rodjendan41.src,
+
   rodjendan42.src,
-  rodjendan43.src,
-  rodjendan44.src,
-  rodjendan45.src,
-  rodjendan46.src,
   rodjendan47.src,
-  rodjendan48.src,
+
+  rodjendan44.src,
+
+  rodjendan45.src,
+  rodjendan56.src,
+  rodjendan46.src,
+
+  rodjendan12.src,
 
   rodjendan50.src,
   rodjendan51.src,
-
   rodjendan54.src,
-
-  rodjendan56.src,
+  rodjendan43.src,
   rodjendan57.src,
-
-  rodjendan60.src,
 ];

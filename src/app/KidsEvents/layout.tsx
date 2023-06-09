@@ -96,17 +96,17 @@ const layout = async () => {
             </h5>
             <Gallery srcArray={srcArrayAnimations} />
           </div>
-          <div className='photo__gallery mb-12 lg:mb-16'>
-            <h5
-              className={clsx(
-                josefinSans.className,
-                'text-2xl text-color-accent-main font-semibold mb-5 lg:mb-3 text-center '
-              )}
-            >
-              Rođendani
-            </h5>
-            <Gallery srcArray={srcArrayBirthdays} />
-          </div>
+        </div>
+        <div className='photo__gallery mb-12 lg:mb-16'>
+          <h5
+            className={clsx(
+              josefinSans.className,
+              'text-2xl text-color-accent-main font-semibold mb-5 lg:mb-3 text-center '
+            )}
+          >
+            Rođendani
+          </h5>
+          <Gallery srcArray={srcArrayBirthdays} />
         </div>
       </div>
     </section>
