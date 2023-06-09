@@ -1,10 +1,20 @@
+import Gallery from '@/components/ui/Gallery';
+import { srcArrayHomeSystems } from '../../../assets/img/businessEvents/homeSystems/homeSystems';
+import { srcArrayVolvo } from '../../../assets/img/businessEvents/volvo/volvo';
+import { srcArrayWinter } from '../../../assets/img/businessEvents/winter/winter';
 import { josefinSans } from '../../../utils/fonts';
 import clsx from 'clsx';
+
+const srcArrayGallery = [
+  ...srcArrayVolvo,
+  ...srcArrayHomeSystems,
+  ...srcArrayWinter,
+];
 
 const layout = async () => {
   return (
     <section className='py-24 lg:px-10 bg-color-lightest border-t-2 border-b-2 border-white'>
-      <div className='mx-auto max-w-custom px-4 lg:px-0 mt-6'>
+      <div className='mx-auto max-w-custom px-4 lg:px-0 mt-6 mb-16 lg:mb-24'>
         <h2
           className={clsx(
             josefinSans.className,
@@ -39,42 +49,18 @@ const layout = async () => {
             dekoraciju i specijalne efekte.
           </p>
         </div>
-        <div className='gallery__wrapper mb-12 lg:mb-16'>
-          <h5
-            className={clsx(
-              josefinSans.className,
-              'text-2xl text-color-accent-main font-semibold text-center '
-            )}
-          >
-            Winterhalter
-          </h5>
-        </div>
-        <div className='business__celebrations-gallery-wrapper  mb-12 lg:mb-16'>
-          {/* GALLERY HERE */}
-        </div>
-        <div className='business__celebrations-gallery-wrapper  mb-12 lg:mb-16'>
-          <h5
-            className={clsx(
-              josefinSans.className,
-              'text-2xl text-color-accent-main font-semibold mb-5 lg:mb-3 text-center '
-            )}
-          >
-            Volvo
-          </h5>
-          {/* GALLERY HERE */}
-        </div>
-        <div className='business__celebrations-gallery-wrapper  mb-12 lg:mb-16'>
-          <h5
-            className={clsx(
-              josefinSans.className,
-              'text-2xl text-color-accent-main font-semibold mb-5 lg:mb-3 text-center '
-            )}
-          >
-            Home systems
-          </h5>
-          {/* GALLERY HERE */}
-        </div>
       </div>
+      <div className='photo-gallery'>
+        <h5
+          className={clsx(
+            josefinSans.className,
+            'text-2xl text-color-accent-main font-semibold mb-5 lg:mb-3 text-center '
+          )}
+        >
+          Foto galerija
+        </h5>
+      </div>
+      <Gallery srcArray={srcArrayGallery} />
     </section>
   );
 };
