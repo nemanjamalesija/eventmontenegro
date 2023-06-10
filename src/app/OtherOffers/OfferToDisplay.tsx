@@ -19,7 +19,7 @@ const OfferToDispay: FC = () => {
   }, [currentCategory]);
 
   return (
-    <div className='flex flex-col lg:grid grid-cols-2 gap-x-24 gap-5 mb-12 lg:mb-16'>
+    <div className='flex flex-col lg:grid grid-cols-2 gap-x-24 gap-5 mb-16 lg:mb-20'>
       <div
         className={clsx(
           'modal grid grid-cols-2 gap-y-[10px] py-2 px-4  lg:flex lg:flex-col rounded-md justify-between lg:h-48'

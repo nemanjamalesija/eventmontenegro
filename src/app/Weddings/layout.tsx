@@ -57,7 +57,7 @@ const layout = async () => {
         <h5
           className={clsx(
             josefinSans.className,
-            'text-2xl text-color-accent-main font-semibold mb-5 lg:mb-3 text-center '
+            'text-2xl lg:text-3xl text-color-accent-main font-semibold mb-4 lg:mb-5 text-center'
           )}
         >
           Foto galerija

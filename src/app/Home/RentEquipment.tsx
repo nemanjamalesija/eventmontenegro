@@ -102,11 +102,11 @@ const RentEquipment: FC = () => {
           </div>
         </div>
       </div>
-      <div className='photo__gallery'>
+      <div className='p__gallery'>
         <h4
           className={clsx(
             josefinSans.className,
-            'text-lg lg:text-2xl font-semibold text-color-accent-main mb-3 lg:mb-6 text-center'
+            'text-lg lg:text-2xl font-semibold text-color-accent-main mb-5 lg:mb-8  text-center'
           )}
         >
           Foto Galerija

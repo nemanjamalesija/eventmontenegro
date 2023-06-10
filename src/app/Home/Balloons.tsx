@@ -84,19 +84,19 @@ const Balloons: FC = () => {
               )}
             </ul>
           </div>
-          <div className='photo__gallery'>
-            <h4
-              className={clsx(
-                josefinSans.className,
-                'text-lg lg:text-2xl font-medium text-color-accent-main mb-3 lg:mb-6 text-center'
-              )}
-            >
-              Foto galerija
-            </h4>
-          </div>
+        </div>
+        <div className='p__gallery'>
+          <h4
+            className={clsx(
+              josefinSans.className,
+              'text-lg lg:text-2xl font-medium text-color-accent-main mb-5 lg:mb-8  text-center'
+            )}
+          >
+            Foto galerija
+          </h4>
+          <Gallery srcArray={srcArrayBallons} />;
         </div>
       </div>
-      <Gallery srcArray={srcArrayBallons} />;
     </section>
   );
 };

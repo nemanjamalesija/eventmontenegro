@@ -97,24 +97,13 @@ const layout = async () => {
             </p>
           </div>
         </div>
-
-        <div className='kids__celeb-categories  mb-16 lg:mb-24'>
-          <h5
-            className={clsx(
-              josefinSans.className,
-              'text-xl text-color-accent-main font-semibold mb-3'
-            )}
-          >
-            Saznajte više:
-          </h5>
-          <OfferToDisplay />
-        </div>
+        <OfferToDisplay />
         <div className='kids__galleries'>
           <div className='photo__gallery mb-16 lg:mb-24'>
             <h5
               className={clsx(
                 josefinSans.className,
-                'text-lg lg:text-2xl text-color-accent-main font-semibold lg:mb-3 text-center'
+                'text-2xl lg:text-3xl text-color-accent-main font-semibold mb-4 lg:mb-5 text-center'
               )}
             >
               Animacije
@@ -122,15 +111,16 @@ const layout = async () => {
             <Gallery srcArray={srcArrayAnimations} />
           </div>
         </div>
-        <div className='photo__gallery'>
+        <div className='p__gallery'>
           <h5
             className={clsx(
               josefinSans.className,
-              'text-2xl text-color-accent-main font-semibold mb-5 lg:mb-3 text-center '
+              'text-2xl lg:text-3xl text-color-accent-main font-semibold mb-4 lg:mb-5 text-center'
             )}
           >
             Rođendani
           </h5>
+
           <Gallery srcArray={srcArrayBirthdays} />
         </div>
       </div>
