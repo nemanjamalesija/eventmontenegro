@@ -31,12 +31,6 @@ const ContactForm: FC = () => {
                   required
                   id='email'
                 />
-                <label
-                  htmlFor='email'
-                  className='book-form__label text-xs lg:text-sm ml-5'
-                >
-                  E mail
-                </label>
               </div>
               <div className='book-form__group mb-5'>
                 <textarea

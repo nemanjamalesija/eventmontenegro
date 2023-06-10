@@ -338,13 +338,6 @@ html {
   color: #444;
 }
 
-.book-form__label {
-  font-weight: 700;
-  margin-top: 0.2rem;
-  display: block;
-  transition: all 0.3s;
-}
-
 .heading-secondary {
   display: inline-block;
   transition: all 0.2s;
