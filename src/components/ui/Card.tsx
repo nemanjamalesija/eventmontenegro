@@ -41,7 +41,7 @@ const Card = ({ cardNumber, cardHeadingText, href }: CardProps) => {
       <div className='btn'>
         <Link href={href}>
           <button
-            className='card__link active:scale-95 transition-all, duration-300 block font-semibold transition-color focus:outline-none cursor-pointer px-7 py-4 w-full bg-color-accent-main hover:bg-color-shade-main text-white text-base sm:text-lg uppercase'
+            className='btnY active:scale-95 transition-all, duration-300 block font-semibold transition-color focus:outline-none cursor-pointer px-7 py-4 w-full bg-color-accent-main hover:bg-color-shade-main text-white text-base sm:text-lg uppercase'
             onClick={removeNavSticky}
           >
             Saznajte više

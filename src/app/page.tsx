@@ -1,4 +1,5 @@
 import Balloons from './Home/Balloons';
+import ContactForm from './Home/ContactForm';
 import Hero from './Home/Hero';
 import HowItWorks from './Home/HowItWorks';
 import Offers from './Home/Offers';
@@ -11,9 +12,10 @@ export default function Home() {
       <Hero />
       <HowItWorks />
       <Offers />
-      <Balloons />
       <RentEquipment />
+      <Balloons />
       <Reviews />
+      <ContactForm />
     </main>
   );
 }
