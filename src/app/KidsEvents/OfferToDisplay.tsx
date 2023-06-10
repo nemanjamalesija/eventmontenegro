@@ -24,7 +24,7 @@ const OfferToDisplay: FC = () => {
     <div className='flex flex-col lg:grid lg:grid-cols-2 items-center gap-12 lg:gap-24 mb-12 lg:mb-24'>
       <div
         className={clsx(
-          'p-1 text-color-gray-light-1 rounded-md justify-between py-2 px-4'
+          'text-color-gray-light-1 rounded-md justify-between py-2'
         )}
       >
         <p className={clsx('text-base lg:text-lg lg:leading-9 text-gray-600')}>
@@ -43,7 +43,7 @@ const OfferToDisplay: FC = () => {
 
         <div
           className={clsx(
-            'modal grid grid-cols-2 gap-y-[10px] py-2 px-4  rounded-md justify-between'
+            'modal grid grid-cols-2 gap-y-[10px] py-2 px-4 rounded-md justify-between'
           )}
         >
           {kidsOffers.map((c, i) => (

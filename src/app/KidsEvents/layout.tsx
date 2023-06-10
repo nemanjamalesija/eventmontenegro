@@ -11,12 +11,12 @@ import Image from 'next/image';
 
 const layout = async () => {
   return (
-    <section className='py-24 mt-12 lg:mt-16'>
-      <div className='mx-auto max-w-custom'>
+    <section className='py-24'>
+      <div className='mx-auto max-w-custom px-5 lg:px-0 mt-10 lg:mt-14'>
         <h2
           className={clsx(
             josefinSans.className,
-            'text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-600 mb-4 lg:mb-6'
+            'text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-600 mb-4 lg:mb-6 '
           )}
         >
           Dječije proslave
@@ -27,7 +27,7 @@ const layout = async () => {
           bg-cover bg-center lg:bg-top mb-16 lg:mb-24'
         ></div>
 
-        <div className='step flex flex-col lg:grid lg:grid-cols-2 items-center gap-12 lg:gap-24 mb-12 lg:mb-24'>
+        <div className='step flex flex-col lg:grid lg:grid-cols-2 justify-between items-center gap-12 lg:gap-24 mb-12 lg:mb-24'>
           <div className='kids__text'>
             <div className='flex items-center gap-4 mb-4'>
               <div className='kids__icons-set flex items-center justify-center rounded-full h-14 w-14 lg:h-16 lg:w-16 bg-color-accent-main'>
@@ -51,7 +51,7 @@ const layout = async () => {
               uljepšamo Vaš poseban dan i učinimo ga neponovljivim.
             </p>
           </div>
-          <figure className='relative'>
+          <figure className='relative lg:flex lg:justify-end'>
             <Image
               src={rodjendanDisplay}
               alt='Photo showing decoration example'
@@ -61,8 +61,8 @@ const layout = async () => {
             />
           </figure>
         </div>
-        <div className='step flex flex-col lg:grid lg:grid-cols-2 place-items-center items-center gap-12 lg:gap-24 mb-16 lg:mb-24'>
-          <figure className='relative'>
+        <div className='step flex flex-col lg:grid lg:grid-cols-2 items-center gap-12 lg:gap-30 mb-16 lg:mb-24'>
+          <figure className='relative lg:flex justify-start'>
             <Image
               src={animacijeDisplay}
               alt='Photo showing decoration example'
