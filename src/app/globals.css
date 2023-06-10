@@ -305,39 +305,28 @@ html {
       rgba(255, 255, 255, 0.9) 50%,
       transparent 50%
     ),
-    url('../../assets/img/weddings/doroteaLuka/doroteaIluka9.jpg');
+    url('../../assets/img/weddings/tijanaMilo/tijanaMilo13.jpg');
   background-size: 100%;
   border-radius: 3px;
   -webkit-box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
-}
-
-.book-form {
-  width: 50%;
-  padding: 60px;
-}
-
-.book-form__group:not(:last-child) {
-  margin-bottom: 20px;
+  background-position: center;
 }
 
 .book-form__input {
-  font-size: 15px;
   font-family: inherit;
   color: inherit;
-  padding: 15px 20px;
-  border-radius: 2px;
   background-color: #fff;
   border: none;
   border-bottom: 3px solid transparent;
-  width: 90%;
   display: block;
   transition: all 0.3s;
+  width: 90%;
 }
 
 .book-form__input:focus {
   outline: none;
-  box-shadow: 0 1rem 20px rgba(rgba 0 0 0, 0.1);
+  box-shadow: 0 0.6rem 1.25rem rgba(rgba 0 0 0, 0.1);
   border-bottom: 3px solid #28b485;
 }
 
@@ -350,79 +339,15 @@ html {
 }
 
 .book-form__label {
-  font-size: 12px;
   font-weight: 700;
-  margin-left: 20px;
   margin-top: 0.2rem;
   display: block;
   transition: all 0.3s;
 }
 
-.book-form__input:placeholder-shown + .book-form__label {
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(-4rem);
-}
-
-/* radio buttons */
-
-.book-form__radio-group {
-  width: 50%;
-  display: inline-block;
-}
-
-.book-form__radio-input {
-  display: none;
-}
-
-.book-form__radio-label {
-  font-size: 16px;
-  position: relative;
-  padding-left: 5rem;
-  cursor: pointer;
-}
-
-.book-form__radio-button {
-  height: 30px;
-  width: 30px;
-  border: 5px solid #ee9ca7;
-  border-radius: 50%;
-  display: inline-block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform: translate(-50%, -50%);
-}
-
-.book-form__radio-button::after {
-  content: '';
-  height: 13px;
-  width: 13px;
-  border-radius: 50%;
-  background-color: #ee9ca7;
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-.book-form__radio-input:checked
-  + .book-form__radio-label
-  > .book-form__radio-button::after {
-  opacity: 1;
-}
-
 .heading-secondary {
-  text-transform: uppercase;
-  font-weight: 700;
-
+  display: inline-block;
   transition: all 0.2s;
-}
-
-.heading {
   background-image: -webkit-gradient(
     linear,
     left top,
@@ -430,10 +355,7 @@ html {
     from(#ee9ca7),
     to(#cf6073)
   );
-}
 
-.heading {
-  display: inline-block;
   -webkit-transition: all 0.2s;
   -webkit-background-clip: text;
   color: transparent;
@@ -444,5 +366,5 @@ html {
 }
 
 .btnY {
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.6rem 1.25rem rgba(0, 0, 0, 0.2);
 }
