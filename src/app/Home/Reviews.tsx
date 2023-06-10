@@ -6,8 +6,8 @@ import Image from 'next/image';
 
 const Reviews: FC = () => {
   return (
-    <section className='py-24 px-5 lg:px-10 bg-color-lightest'>
-      <div className='flex flex-col gap-y-24 lg:grid lg:grid-cols-custom2fr lg:gap-x-20 '>
+    <section className='py-24 bg-color-lightest'>
+      <div className='flex flex-col gap-y-24 lg:grid lg:grid-cols-custom2fr lg:gap-x-20 px-5 lg:px-8 mb-16 lg:mb-20'>
         <div className='flex flex-col'>
           <div className='mb-16 lg:mb-24'>
             <h3
@@ -44,20 +44,20 @@ const Reviews: FC = () => {
             })}
           </div>
         </div>
-        <div className='images grid grid-cols-custom3fr gap-x-2 gap-y-2 lg:gap-x-4 lg:gap-y-4 h-[640px] lg:h-auto'>
-          {gallery1.map((img, i) => {
-            return (
-              <div key={i} className='img__box relative overflow-hidden'>
-                <Image
-                  src={img.image}
-                  alt={img.description}
-                  fill={true}
-                  className='object-cover block transform hover:scale-110 transition-all duration-500 h-full w-full'
-                />
-              </div>
-            );
-          })}
-        </div>
+      </div>
+      <div className='images grid grid-cols-custom3fr gap-x-2 gap-y-2 lg:gap-x-4 lg:gap-y-4 h-[580px] lg:h-auto px-5 lg:px-8'>
+        {gallery1.map((img, i) => {
+          return (
+            <div key={i} className='img__box relative overflow-hidden'>
+              <Image
+                src={img.image}
+                alt={img.description}
+                fill={true}
+                className='object-cover block transform hover:scale-110 transition-all duration-500 h-full w-full'
+              />
+            </div>
+          );
+        })}
       </div>
     </section>
   );

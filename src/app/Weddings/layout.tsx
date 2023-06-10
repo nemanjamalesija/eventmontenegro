@@ -15,8 +15,8 @@ const srcArrayWeddings = [
 
 const layout = async () => {
   return (
-    <section className='py-24 lg:px-10 bg-color-lightest border-t-2 border-b-2 border-white'>
-      <div className='mx-auto max-w-custom px-4 lg:px-0 mt-6 mb-16 lg:mb-24'>
+    <section className='py-24 border-t-2 border-b-2 border-white'>
+      <div className='mx-auto max-w-custom px-5 lg:px-10 '>
         <h2
           className={clsx(
             josefinSans.className,
@@ -53,7 +53,7 @@ const layout = async () => {
           </p>
         </div>
       </div>
-      <div>
+      <div className='p__gallery px-2 lg:px-8'>
         <h5
           className={clsx(
             josefinSans.className,

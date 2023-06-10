@@ -106,7 +106,6 @@ html {
 .gallery {
   grid-row: 5;
   grid-column: 2 / -1;
-  display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(14, 5vw);
   grid-gap: 1rem;

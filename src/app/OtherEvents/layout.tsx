@@ -10,8 +10,8 @@ type LayoutProps = {
 
 const layout = async ({ children }: LayoutProps) => {
   return (
-    <section className='py-24 lg:px-10 bg-color-lightest border-t-2 border-b-2 border-white'>
-      <div className='mx-auto max-w-custom px-4 lg:px-0 mt-6'>
+    <section className='py-24 border-t-2 border-b-2 border-white'>
+      <div className='mx-auto max-w-custom px-5 lg:px-10 '>
         <h2
           className={clsx(
             josefinSans.className,

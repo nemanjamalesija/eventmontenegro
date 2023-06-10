@@ -16,9 +16,9 @@ const RentEquipment: FC = () => {
   return (
     <section
       id='rentEquipment'
-      className='py-24 lg:px-10 bg-color-lightest  border-b-2 border-white'
+      className='py-24 border-t-2 border-b-2 border-white'
     >
-      <div className='mx-auto max-w-custom px-4 lg:px-0'>
+      <div className='mx-auto max-w-custom px-5 lg:px-10 '>
         <div className='mb-8 lg:mb-12'>
           <h3
             className={clsx(
@@ -102,7 +102,7 @@ const RentEquipment: FC = () => {
           </div>
         </div>
       </div>
-      <div className='p__gallery'>
+      <div className='p__gallery px-2 lg:px-8'>
         <h4
           className={clsx(
             josefinSans.className,

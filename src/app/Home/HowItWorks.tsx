@@ -6,11 +6,8 @@ import { Pointer, PartyPopper, HeartHandshake } from 'lucide-react';
 
 const HowItWorks: FC = () => {
   return (
-    <section
-      id='howItWorks'
-      className='py-24 lg:px-10 bg-color-lightest border-b-2 border-white'
-    >
-      <div className='mx-auto max-w-custom px-4 lg:px-0'>
+    <section id='balloons' className='py-24 border-t-2 border-b-2 border-white'>
+      <div className='mx-auto max-w-custom px-5 lg:px-10 '>
         <div className='mb-16 lg:mb-24'>
           <h3
             className={clsx(

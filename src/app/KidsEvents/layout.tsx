@@ -11,8 +11,8 @@ import Image from 'next/image';
 
 const layout = async () => {
   return (
-    <section className='py-24 lg:px-10 bg-color-lightest border-t-2 border-b-2 border-white'>
-      <div className='mx-auto max-w-custom px-4 lg:px-0 mt-6'>
+    <section className='py-24 mt-12 lg:mt-16'>
+      <div className='mx-auto max-w-custom'>
         <h2
           className={clsx(
             josefinSans.className,
@@ -99,29 +99,31 @@ const layout = async () => {
         </div>
         <OfferToDisplay />
         <div className='kids__galleries'>
-          <div className='photo__gallery mb-16 lg:mb-24'>
+          <div className='p__gallery'>
+            <div className='photo__gallery mb-16 lg:mb-24'>
+              <h5
+                className={clsx(
+                  josefinSans.className,
+                  'text-2xl lg:text-3xl text-color-accent-main font-semibold mb-4 lg:mb-5 text-center'
+                )}
+              >
+                Animacije
+              </h5>
+              <Gallery srcArray={srcArrayAnimations} />
+            </div>
+          </div>
+          <div className='p__gallery'>
             <h5
               className={clsx(
                 josefinSans.className,
                 'text-2xl lg:text-3xl text-color-accent-main font-semibold mb-4 lg:mb-5 text-center'
               )}
             >
-              Animacije
+              Rođendani
             </h5>
-            <Gallery srcArray={srcArrayAnimations} />
-          </div>
-        </div>
-        <div className='p__gallery'>
-          <h5
-            className={clsx(
-              josefinSans.className,
-              'text-2xl lg:text-3xl text-color-accent-main font-semibold mb-4 lg:mb-5 text-center'
-            )}
-          >
-            Rođendani
-          </h5>
 
-          <Gallery srcArray={srcArrayBirthdays} />
+            <Gallery srcArray={srcArrayBirthdays} />
+          </div>
         </div>
       </div>
     </section>
@@ -129,27 +131,3 @@ const layout = async () => {
 };
 
 export default layout;
-
-/* 
-
-    <section id='howItWorks' className='py-24 bg-white'>
-      <div className='mx-auto max-w-custom px-5 lg:px-0'>
-        <div className='mb-16 lg:mb-24'>
-          <h3
-            className={clsx(
-              josefinSans.className,
-              'text-base font-bold tracking-wide uppercase text-color-accent-main mb-3'
-            )}
-          >
-            Kako radimo
-          </h3>
-          <h4 className='text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-700'>
-            Organizujte svoj projekat iz snova u 3 laka koraka
-          </h4>
-        </div>
-      
-      </div>
-    </section>
-
-
-*/

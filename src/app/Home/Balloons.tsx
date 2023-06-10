@@ -15,11 +15,8 @@ import { srcArrayBallons } from '../../../assets/img/baloni/baloniImages';
 const Balloons: FC = () => {
   const [categoryIndex, setCategoryIndex] = useState(0);
   return (
-    <section
-      id='balloons'
-      className='py-24 lg:px-10 border-t-2 border-b-2 border-white'
-    >
-      <div className='mx-auto max-w-custom px-4 lg:px-0'>
+    <section id='balloons' className='py-24 border-t-2 border-b-2 border-white'>
+      <div className='mx-auto max-w-custom px-5 lg:px-10 '>
         <div className='mb-8 lg:mb-12'>
           <h3
             className={clsx(
@@ -85,17 +82,17 @@ const Balloons: FC = () => {
             </ul>
           </div>
         </div>
-        <div className='p__gallery'>
-          <h4
-            className={clsx(
-              josefinSans.className,
-              'text-lg lg:text-2xl font-medium text-color-accent-main mb-5 lg:mb-8  text-center'
-            )}
-          >
-            Foto galerija
-          </h4>
-          <Gallery srcArray={srcArrayBallons} />;
-        </div>
+      </div>
+      <div className='p__gallery px-2 lg:px-8'>
+        <h4
+          className={clsx(
+            josefinSans.className,
+            'text-lg lg:text-2xl font-medium text-color-accent-main mb-5 lg:mb-8  text-center'
+          )}
+        >
+          Foto galerija
+        </h4>
+        <Gallery srcArray={srcArrayBallons} />;
       </div>
     </section>
   );
