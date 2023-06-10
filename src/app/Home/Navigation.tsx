@@ -129,7 +129,7 @@ const Navigation: FC = () => {
           <li className='cursor-pointer'>
             <CustomLink
               href='#'
-              className='btn py-2 px-5 text-xl font-semibold'
+              className='btn py-2 px-7 text-xl font-semibold'
             >
               Kontakt
             </CustomLink>
