@@ -23,9 +23,8 @@ html {
 }
 
 .hero__container {
-  background-image: url('../../assets/img/heroruzni.png');
+  background-image: url('../../assets/img/heroruzni2.png');
   background-position: center;
-  object-fit: contain;
 }
 
 .ghost:hover,

@@ -6,8 +6,8 @@ import Image from 'next/image';
 
 const Reviews: FC = () => {
   return (
-    <section className='py-24 px-5 lg:px-8 bg-color-lightest'>
-      <div className='flex flex-col gap-y-24 lg:grid lg:grid-cols-custom2fr lg:gap-x-20 '>
+    <section className='py-24 px-5 lg:px-8 bg-color-lightest border-b-2 border-white'>
+      <div className='flex flex-col gap-y-24 lg:grid lg:grid-cols-2 lg:gap-x-20  lg:px-8 '>
         <div className='flex flex-col'>
           <div className='mb-16 lg:mb-24'>
             <h3
@@ -44,7 +44,7 @@ const Reviews: FC = () => {
             })}
           </div>
         </div>
-        <div className='images grid grid-cols-custom3fr gap-x-2 gap-y-2 lg:gap-x-4 lg:gap-y-4 h-[640px] lg:h-auto px-5 lg:px-8'>
+        <div className='images grid grid-cols-3 gap-x-2 gap-y-2 lg:gap-x-4 lg:gap-y-4 h-[640px] lg:h-auto  lg:px-8'>
           {gallery1.map((img, i) => {
             return (
               <div key={i} className='img__box relative overflow-hidden'>

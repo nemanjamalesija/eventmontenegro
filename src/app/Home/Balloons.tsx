@@ -15,7 +15,7 @@ import { srcArrayBallons } from '../../../assets/img/baloni/baloniImages';
 const Balloons: FC = () => {
   const [categoryIndex, setCategoryIndex] = useState(0);
   return (
-    <section id='balloons' className='py-24 border-t-2 border-b-2 border-white'>
+    <section id='balloons' className='py-24  border-b-2 border-white'>
       <div className='mx-auto max-w-custom px-5 lg:px-10 '>
         <div className='mb-8 lg:mb-12'>
           <h3

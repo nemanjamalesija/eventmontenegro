@@ -14,10 +14,7 @@ import { srcArrayRentEquipment } from '../../../assets/img/rent/rentImages';
 
 const RentEquipment: FC = () => {
   return (
-    <section
-      id='rentEquipment'
-      className='py-24 border-t-2 border-b-2 border-white'
-    >
+    <section id='rentEquipment' className='py-24  border-b-2 border-white'>
       <div className='mx-auto max-w-custom px-5 lg:px-10 '>
         <div className='mb-8 lg:mb-12'>
           <h3
