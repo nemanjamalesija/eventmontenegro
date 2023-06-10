@@ -38,10 +38,10 @@ const Card = ({ cardNumber, cardHeadingText, href }: CardProps) => {
         &nbsp;
       </div>
       <div className='card__cta bg-center  bg-no-repeat flex items-center justify-center '></div>
-      <div className='btn'>
+      <div>
         <Link href={href}>
           <button
-            className='btnY active:scale-95 transition-all, duration-300 block font-semibold transition-color focus:outline-none cursor-pointer px-7 py-4 w-full bg-color-accent-main hover:bg-color-shade-main text-white text-base sm:text-lg uppercase'
+            className='btnY active:scale-95 hover:scale-y-110 transition-all duration-300 block font-semibold transition-color focus:outline-none cursor-pointer px-7 py-4 w-full bg-color-accent-main hover:bg-color-shade-main text-white text-base sm:text-lg uppercase'
             onClick={removeNavSticky}
           >
             Saznajte više

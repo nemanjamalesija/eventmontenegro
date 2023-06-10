@@ -338,11 +338,11 @@ html {
 .book-form__input:focus {
   outline: none;
   box-shadow: 0 1rem 20px rgba(rgba 0 0 0, 0.1);
-  border-bottom: 3px solid blue;
+  border-bottom: 3px solid #28b485;
 }
 
 .book-form__input:focus:invalid {
-  border-bottom: 3px solid red;
+  border-bottom: 3px solid #fa5252;
 }
 
 .book-form__input::-webkit-input-placeholder {
@@ -441,14 +441,8 @@ html {
 
 .btn:hover {
   transform: scale(1.05);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .btnY {
-  transition: all 0.3s;
-}
-
-.btnY:hover {
-  transform: scaleY(1.05);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }

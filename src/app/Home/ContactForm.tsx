@@ -18,22 +18,10 @@ const ContactForm: FC = () => {
                 >
                   Počni svoj projekat odmah
                 </h2>
-                <p className='mb-16 text-lg text-gray-700'>
-                  Pošaljite nam e mail, i neko iz našeg tima će Vam posvetiti
+                <p className='mb-16 text-base text-gray-700'>
+                  Pošaljite nam e mail i neko iz našeg tima će Vam posvetiti
                   pažnju u roku ne dužem od 24h.
                 </p>
-              </div>
-              <div className='book-form__group'>
-                <input
-                  type='text'
-                  className='book-form__input'
-                  placeholder='Full Name'
-                  required
-                  id='name'
-                />
-                <label htmlFor='name' className='book-form__label'>
-                  Full Name
-                </label>
               </div>
               <div className='book-form__group'>
                 <input
@@ -47,6 +35,16 @@ const ContactForm: FC = () => {
                   E mail
                 </label>
               </div>
+              <div className='book-form__group'>
+                <input
+                  type='text'
+                  className='book-form__input'
+                  placeholder='Vaša poruka'
+                  required
+                  id='poruka'
+                />
+              </div>
+
               <button
                 type='submit'
                 className='btn active:scale-95 transition-all, duration-300 rounded-full inline-flex items-center justify-center transition-color focus:outline-none cursor-pointer bg-color-accent-main hover:bg-color-shade-main text-white py-4 px-10 text-xl font-semibold'
