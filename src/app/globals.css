@@ -398,3 +398,7 @@ html {
   left: 50%;
   transform: translate(-35%, -20%);
 }
+
+#overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+}

@@ -40,9 +40,9 @@ const Navigation: FC = () => {
   return (
     <header
       ref={navRef}
-      className='nav__header absolute top-0 left-0 w-full flex justify-between items-center h-20 sm:px-20 px-6 z-50'
+      className='nav__header absolute top-0 left-0 w-full flex justify-between items-center h-20 sm:px-20 px-6 z-20'
     >
-      <div className='logo flex gap-2 items-center z-40'>
+      <div className='logo flex gap-2 items-center z-30'>
         <Image
           src={logo}
           alt='Picture of the author'
@@ -59,14 +59,14 @@ const Navigation: FC = () => {
       </div>
       {!isNavVisible ? (
         <button
-          className='lg:hidden absolute top-5 right-10 z-50 block'
+          className='lg:hidden absolute top-5 right-10 z-30 block'
           onClick={() => setIsNavVissible(!isNavVisible)}
         >
           <AlignJustify className='h-9 w-9 stroke-slate-700' />
         </button>
       ) : (
         <button
-          className='lg:hidden absolute top-5 right-10 z-50 block '
+          className='lg:hidden absolute top-5 right-10 z-30 block '
           onClick={() => setIsNavVissible(!isNavVisible)}
         >
           <X className='h-9 w-9 stroke-slate-700' />
@@ -74,7 +74,7 @@ const Navigation: FC = () => {
       )}
       <nav
         className={cn(
-          'nav absolute top-0 left-0 lg:static w-full h-[calc(100vh+1000px)] lg:h-full  lg:w-auto  bg-white lg:bg-inherit lg:backdropbackdrop-blur-0 flex items-start lg:items-center justify-center  z-40  transition-all ease-in duration-500 lg:transition-none opacity-1  backdrop-blur-md translate-x-0',
+          'nav absolute top-0 left-0 lg:static w-full h-[calc(100vh+1000px)] lg:h-full  lg:w-auto  bg-white lg:bg-inherit lg:backdropbackdrop-blur-0 flex items-start lg:items-center justify-center  z-20  transition-all ease-in duration-500 lg:transition-none opacity-1  backdrop-blur-md translate-x-0',
           {
             'opacity-0 translate-x-full pointer-events-none invisible':
               !isNavVisible,

@@ -104,6 +104,12 @@ const ContactForm: FC = () => {
           />
         )}
       </div>
+      {status !== '' && (
+        <div
+          id='overlay'
+          className='fixed w-full h-full top-0 left-0 right-0 bottom-0 z-40'
+        ></div>
+      )}
     </section>
   );
 };
