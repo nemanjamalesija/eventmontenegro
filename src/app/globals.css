@@ -406,3 +406,16 @@ html {
 #overlay {
   background-color: rgba(0, 0, 0, 0.5);
 }
+
+.footer__logo {
+  width: 160px;
+  height: 160px;
+  background-color: #ffdde1;
+  display: inline-block;
+  -webkit-mask: url('../../assets/img/logo.png') center / contain no-repeat;
+  mask: url('../../assets/img/logo.png') center / contain no-repeat;
+}
+
+.imgs {
+  background-color: blue;
+}
