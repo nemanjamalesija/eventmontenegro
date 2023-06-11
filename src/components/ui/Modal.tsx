@@ -9,7 +9,7 @@ const Modal: FC<ModalPropsType> = ({ statusMessage }) => {
     <div
       id='popup-modal'
       tabIndex={-1}
-      className='p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full'
+      className='p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full z-50'
     >
       <div className='relative w-full max-w-md max-h-full'>
         <div className='relative bg-white rounded-lg shadow dark:bg-gray-700'>
@@ -39,14 +39,14 @@ const Modal: FC<ModalPropsType> = ({ statusMessage }) => {
                 fill='none'
                 className='mx-auto mb-4 text-emerald-400 w-14 h-14 dark:text-emerald-200'
                 stroke='currentColor'
-                stroke-width='1.5'
+                strokeWidth='1.5'
                 viewBox='0 0 24 24'
                 xmlns='http://www.w3.org/2000/svg'
                 aria-hidden='true'
               >
                 <path
-                  stroke-linecap='round'
-                  stroke-linejoin='round'
+                  strokeLinecap='round'
+                  strokeLinejoin='round'
                   d='M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z'
                 ></path>
               </svg>
@@ -60,9 +60,9 @@ const Modal: FC<ModalPropsType> = ({ statusMessage }) => {
                 xmlns='http://www.w3.org/2000/svg'
               >
                 <path
-                  stroke-linecap='round'
-                  stroke-linejoin='round'
-                  stroke-width='2'
+                  strokeLinecap='round'
+                  strokeLinejoin='round'
+                  strokeWidth='2'
                   d='M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z'
                 ></path>
               </svg>

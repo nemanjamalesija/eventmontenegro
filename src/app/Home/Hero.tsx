@@ -65,7 +65,7 @@ const Hero: FC = () => {
           <div className='mt-10 flex justify-center lg:justify-start gap-4 lg:gap-6'>
             <CustomLink
               href='#'
-              className='btn px-4 py-2 sm:py-3 sm:px-6 sm:text-xl'
+              className='btn px-4 py-2 sm:py-3 sm:px-6 text-lg sm:text-xl'
             >
               Počnite projekat
             </CustomLink>

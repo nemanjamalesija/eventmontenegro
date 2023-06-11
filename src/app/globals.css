@@ -88,7 +88,7 @@ html {
   position: relative;
   /* Other modal styles */
   background: linear-gradient(to right bottom, #ee9ca7, #ffdde1);
-  z-index: 40;
+  z-index: 10;
 }
 
 .modal::before {
@@ -98,7 +98,7 @@ html {
   top: -45px;
   right: -19px;
   font-size: 64px;
-  z-index: 50;
+  z-index: 15;
 }
 
 .gallery {
@@ -310,6 +310,37 @@ html {
   background-position: center;
 }
 
+@media only screen and (max-width: 75em) {
+  .book {
+    background-image: linear-gradient(
+        105deg,
+        rgba(255, 255, 255, 0.9) 0%,
+        rgba(255, 255, 255, 0.9) 65%,
+        transparent 65%
+      ),
+      url(../../assets/img/weddings/tijanaMilo/tijanaMilo13.jpg);
+    background-size: cover;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .book {
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        from(rgba(255, 255, 255, 0.9)),
+        to(rgba(255, 255, 255, 0.9))
+      ),
+      url(../../assets/img/weddings/tijanaMilo/tijanaMilo13.jpg);
+    background-image: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0.9) 0%,
+        rgba(255, 255, 255, 0.9) 100%
+      ),
+      url(../../assets/img/weddings/tijanaMilo/tijanaMilo13.jpg);
+  }
+}
+
 .book-form__input {
   font-family: inherit;
   color: inherit;
@@ -359,44 +390,17 @@ html {
   box-shadow: 0 0.6rem 1.25rem rgba(0, 0, 0, 0.2);
 }
 
-/* /**/
-
-@media only screen and (max-width: 75em) {
-  .book {
-    background-image: linear-gradient(
-        105deg,
-        rgba(255, 255, 255, 0.9) 0%,
-        rgba(255, 255, 255, 0.9) 65%,
-        transparent 65%
-      ),
-      url(../../assets/img/weddings/tijanaMilo/tijanaMilo13.jpg);
-    background-size: cover;
-  }
-}
-@media only screen and (max-width: 56.25em) {
-  .book {
-    background-image: -webkit-gradient(
-        linear,
-        left top,
-        right top,
-        from(rgba(255, 255, 255, 0.9)),
-        to(rgba(255, 255, 255, 0.9))
-      ),
-      url(../../assets/img/weddings/tijanaMilo/tijanaMilo13.jpg);
-    background-image: linear-gradient(
-        to right,
-        rgba(255, 255, 255, 0.9) 0%,
-        rgba(255, 255, 255, 0.9) 100%
-      ),
-      url(../../assets/img/weddings/tijanaMilo/tijanaMilo13.jpg);
-  }
-}
-
 #popup-modal {
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-35%, -20%);
+}
+
+@media only screen and (max-width: 56.25em) {
+  #popup-modal {
+    transform: translate(-50%, -20%);
+  }
 }
 
 #overlay {

@@ -18,6 +18,7 @@ const Gallery: FC<GalleryProps> = ({ srcArray }) => {
             alt={`gallery__image gallery__image--${index + 1}`}
             className='gallery__img block object-cover'
             fill
+            sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
           />
         </figure>
       ))}

@@ -42,7 +42,7 @@ const Navigation: FC = () => {
       ref={navRef}
       className='nav__header absolute top-0 left-0 w-full flex justify-between items-center h-20 sm:px-20 px-6 z-20'
     >
-      <div className='logo flex gap-2 items-center z-30'>
+      <div className='logo flex gap-2 items-center z-20'>
         <Image
           src={logo}
           alt='Picture of the author'
@@ -141,7 +141,7 @@ const Navigation: FC = () => {
           >
             <Link
               href='#contact'
-              className='btn py-2 px-7 text-xl font-semibold btn active:scale-95 transition-all, duration-300 rounded-full inline-flex items-center justify-center transition-color focus:outline-none cursor-pointer bg-color-accent-main hover:bg-color-shade-main text-white'
+              className='btn py-2 px-5 lg:px-7 font-semibold btn active:scale-95 transition-all, duration-300 rounded-full inline-flex items-center justify-center transition-color focus:outline-none cursor-pointer bg-color-accent-main hover:bg-color-shade-main text-white text-lg sm:text-xl'
             >
               Kontakt
             </Link>

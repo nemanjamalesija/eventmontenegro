@@ -50,6 +50,7 @@ const ContactForm: FC = () => {
           <div className='book__form--container'>
             <form
               action='https://formspree.io/f/xayzgroq'
+              method='POST'
               className='book-form p-8 lg:p-16 lg:w-1/2 relative'
               onSubmit={handleSubmit}
             >
@@ -81,14 +82,14 @@ const ContactForm: FC = () => {
                 <textarea
                   id='message'
                   name='message'
-                  className='book-form__input py-4 px-5 block p-2.5 w-full text-sm lg:text-base text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'
+                  className='book-form__input py-4 px-5 block p-2.5 w-full text-sm lg:text-base text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-emerald-500 focus:border-emerald-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-emerald-500 dark:focus:border-emerald-500'
                   placeholder='Vaša poruka...'
                 ></textarea>
               </div>
 
               <button
                 type='submit'
-                className='btn active:scale-95 transition-all, duration-300 rounded-full inline-flex items-center justify-center transition-color focus:outline-none cursor-pointer bg-color-accent-main hover:bg-color-shade-main text-white py-3 px-7  text-lg lg:text-xl font-semibold'
+                className='btn active:scale-95 transition-all, duration-300 rounded-full inline-flex items-center justify-center transition-color focus:outline-none cursor-pointer bg-color-accent-main hover:bg-color-shade-main text-white py-2 px-5 lg:py-3 lg:px-7  text-lg lg:text-xl font-semibold'
               >
                 Sledeći korak &rarr;
               </button>
@@ -100,7 +101,7 @@ const ContactForm: FC = () => {
         )}
         {status === 'FAILURE' && (
           <Modal
-            statusMessage={'Došlo je do greške! Molimo pokušajte ponovo'}
+            statusMessage={'Došlo je do greške! Molimo pokušajte ponovo.'}
           />
         )}
       </div>
