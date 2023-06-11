@@ -45,14 +45,14 @@ const Navigation: FC = () => {
       <div className='logo flex gap-2 items-center z-20'>
         <Image
           src={logo}
-          alt='Picture of the author'
+          alt='Logo photo'
           className='cursor-pointer  h-16 w-auto'
           priority={true}
           onClick={handleBackHome}
         />
         <Image
           src={logoSub}
-          alt='Picture of the author'
+          alt='Logo text'
           className='cursor-pointer   h-14 w-auto'
           onClick={handleBackHome}
         />

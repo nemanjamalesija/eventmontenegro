@@ -3,6 +3,7 @@ import { nunito } from '../../utils/fonts';
 import Navigation from './Home/Navigation';
 import './globals.css';
 import { AppProvider } from '@/Provider/appContext';
+import Footer from './Home/Footer';
 
 export const metadata = {
   title: 'Event Montenegro',
@@ -22,6 +23,7 @@ export default function RootLayout({
         <AppProvider>
           <Navigation />
           {children}
+          <Footer />
         </AppProvider>
       </body>
     </html>
