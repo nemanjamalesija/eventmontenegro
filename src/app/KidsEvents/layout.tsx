@@ -12,7 +12,7 @@ import Image from 'next/image';
 const layout = async () => {
   return (
     <section className='py-24'>
-      <div className='mx-auto max-w-custom px-5 lg:px-0 mt-10 lg:mt-14'>
+      <div className='mx-auto max-w-custom mt-10 lg:mt-14'>
         <h2
           className={clsx(
             josefinSans.className,

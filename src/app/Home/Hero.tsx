@@ -40,10 +40,10 @@ const Hero: FC = () => {
   return (
     <section
       id='home'
-      className='hero__container pt-20 h-screen sm:pt-32  px-2 lg:px-0'
+      className='hero__container pt-20 h-screen sm:pt-32 px-2 lg:px-0'
       ref={heroRef}
     >
-      <div className='flex flex-col lg:grid lg:grid-cols-custom2fr lg:items-center gap-20 lg:gap-24 mx-auto max-w-[1380px]'>
+      <div className='flex flex-col lg:grid lg:grid-cols-custom2fr lg:items-center gap-20 lg:gap-24 mx-auto max-w-7xl '>
         <div className='mt-10 sm:mt-20'>
           <h1
             className={clsx(
