@@ -4,7 +4,10 @@ import { josefinSans } from '../../../utils/fonts';
 
 const ContactForm: FC = () => {
   return (
-    <section className='section-book py-24  border-b-2 border-white'>
+    <section
+      id='contact'
+      className='section-book py-24  border-b-2 border-white'
+    >
       <div className='row mx-auto max-w-custom px-5 lg:px-10'>
         <div className='book'>
           <div className='book__form--container'>

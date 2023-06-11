@@ -84,7 +84,10 @@ const Navigation: FC = () => {
         )}
       >
         <ul className='flex flex-col lg:flex-row  gap-11 lg:gap-16 items-center mt-48 lg:mt-0  text-gray-600 font-bold  lg:font-normal text-2xl lg:text-xl'>
-          <li className='transition-all duration-300'>
+          <li
+            className='transition-all duration-300'
+            onClick={() => setIsNavVissible(false)}
+          >
             <Link
               href='/'
               className='hover:text-color-shade-main cursor-pointer'
@@ -92,7 +95,10 @@ const Navigation: FC = () => {
               Početna
             </Link>
           </li>
-          <li className='transition-all duration-300'>
+          <li
+            className='transition-all duration-300'
+            onClick={() => setIsNavVissible(false)}
+          >
             <Link
               className='hover:text-color-shade-main cursor-pointer'
               href='#howItWorks'
@@ -105,6 +111,7 @@ const Navigation: FC = () => {
             <Link
               className='hover:text-color-shade-main cursor-pointer'
               href='#offers'
+              onClick={() => setIsNavVissible(false)}
             >
               Proslave
             </Link>
@@ -113,6 +120,7 @@ const Navigation: FC = () => {
             <Link
               className='hover:text-color-shade-main cursor-pointer'
               href='#rentEquipment'
+              onClick={() => setIsNavVissible(false)}
             >
               Iznajmi opremu
             </Link>
@@ -121,18 +129,22 @@ const Navigation: FC = () => {
             <Link
               className='hover:text-color-shade-main cursor-pointer'
               href='#balloons'
+              onClick={() => setIsNavVissible(false)}
             >
               Baloni
             </Link>
           </li>
 
-          <li className='cursor-pointer'>
-            <CustomLink
-              href='#'
-              className='btn py-2 px-7 text-xl font-semibold'
+          <li
+            className='cursor-pointer'
+            onClick={() => setIsNavVissible(false)}
+          >
+            <Link
+              href='#contact'
+              className='btn py-2 px-7 text-xl font-semibold btn active:scale-95 transition-all, duration-300 rounded-full inline-flex items-center justify-center transition-color focus:outline-none cursor-pointer bg-color-accent-main hover:bg-color-shade-main text-white'
             >
               Kontakt
-            </CustomLink>
+            </Link>
           </li>
         </ul>
       </nav>
