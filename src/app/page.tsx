@@ -8,7 +8,7 @@ import HowItWorks from './Home/HowItWorks';
 import Offers from './Home/Offers';
 import RentEquipment from './Home/RentEquipment';
 import Reviews from './Home/Reviews';
-import { contentEnglish } from '@/constants/howITWorksContent';
+import { contentEnglishHowItWorks, contentSerbianHowItWorks } from '@/constants/howITWorksContent';
 
 export default function Home() {
   const { isEnglish } = useAppContext();
@@ -21,7 +21,7 @@ export default function Home() {
         heroCta1='Plan the event'
         heroCta2='Learn more'
       />
-      <HowItWorks content={contentEnglish} />
+      <HowItWorks content={contentEnglishHowItWorks} />
       <Offers />
       <RentEquipment />
       <Balloons />
@@ -37,7 +37,7 @@ export default function Home() {
         heroCta1='Isplaniraj svoj događaj'
         heroCta2='Saznaj više'
       />
-      <HowItWorks />
+      <HowItWorks content={contentSerbianHowItWorks} />
       <Offers />
       <RentEquipment />
       <Balloons />
