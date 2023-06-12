@@ -7,11 +7,26 @@ import Image from 'next/image';
 import { X, AlignJustify } from 'lucide-react';
 import { useAppContext } from '@/Provider/appContext';
 import { cn } from '../../../utils/twinMerge';
-import CustomLink from '@/components/ui/CustomLink';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 
-const Navigation: FC = () => {
+type NavProps = {
+  link1: string;
+  link2: string;
+  link3: string;
+  link4: string;
+  link5: string;
+  linkCTA: string;
+};
+
+const Navigation: FC<NavProps> = ({
+  link1,
+  link2,
+  link3,
+  link4,
+  link5,
+  linkCTA,
+}) => {
   const { isNavVisible, setIsNavVissible, navRef } = useAppContext();
   const router = useRouter();
 
@@ -92,7 +107,7 @@ const Navigation: FC = () => {
               href='/'
               className='hover:text-color-shade-main cursor-pointer'
             >
-              Početna
+              {link1}
             </Link>
           </li>
           <li
@@ -104,7 +119,7 @@ const Navigation: FC = () => {
               href='#howItWorks'
               scroll={true}
             >
-              Kako radimo
+              {link2}
             </Link>
           </li>
           <li className='transition-all duration-300'>
@@ -113,7 +128,7 @@ const Navigation: FC = () => {
               href='#offers'
               onClick={() => setIsNavVissible(false)}
             >
-              Proslave
+              {link3}
             </Link>
           </li>
           <li className='transition-all duration-300'>
@@ -122,7 +137,7 @@ const Navigation: FC = () => {
               href='#rentEquipment'
               onClick={() => setIsNavVissible(false)}
             >
-              Iznajmi opremu
+              {link4}
             </Link>
           </li>
           <li className='transition-all duration-300'>
@@ -131,7 +146,7 @@ const Navigation: FC = () => {
               href='#balloons'
               onClick={() => setIsNavVissible(false)}
             >
-              Baloni
+              {link5}
             </Link>
           </li>
 
@@ -143,7 +158,7 @@ const Navigation: FC = () => {
               href='#contact'
               className='btn py-2 px-5 lg:px-7 font-semibold btn active:scale-95 transition-all, duration-300 rounded-full inline-flex items-center justify-center transition-color focus:outline-none cursor-pointer bg-color-accent-main hover:bg-color-shade-main text-white text-lg sm:text-xl'
             >
-              Kontakt
+              {linkCTA}
             </Link>
           </li>
         </ul>

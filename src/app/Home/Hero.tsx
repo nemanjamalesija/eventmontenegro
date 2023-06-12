@@ -2,7 +2,7 @@
 import { useEffect } from 'react';
 import { FC } from 'react';
 import clsx from 'clsx';
-import { josefinSans, nunito } from '../../../utils/fonts';
+import { josefinSans } from '../../../utils/fonts';
 import CustomLink from '@/components/ui/CustomLink';
 import { useAppContext } from '@/Provider/appContext';
 
@@ -54,19 +54,16 @@ const Hero: FC<HeroProps> = ({
       ref={heroRef}
     >
       <div className='flex flex-col lg:grid lg:grid-cols-custom2fr lg:items-center gap-20 lg:gap-24 mx-auto max-w-7xl '>
-        <div className='mt-10 sm:mt-20'>
+        <div className='mt-16 sm:mt-20'>
           <h1
             className={clsx(
               josefinSans.className,
               'heading-primary text-center lg:text-start text-4xl md:text-5xl font-bold text-gray-700'
             )}
           >
-            {/* Stvaramo nezaboravna sjećanja koja traju vječno */}
             {heroHeading}
           </h1>
           <p className='text-lg md:text-hero-p leading-7 lg:leading-9 text-center lg:text-start  text-gray-700 font-semibold lg:font-normal mt-4 sm:mt-6'>
-            {/* Iznajmljivanje opreme, organizacija i koordinacija proslava.
-            Prilagođeno Vašim ličnim potrebama i detaljnim željama. */}
             {heroDescription}
           </p>
           <div className='mt-10 flex justify-center lg:justify-start gap-4 lg:gap-6'>
