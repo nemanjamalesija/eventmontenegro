@@ -6,9 +6,9 @@ import { AppProvider } from '@/Provider/appContext';
 import Footer from './Home/Footer';
 
 export const metadata = {
-  title: 'Event Montenegro',
+  title: 'Event Montenegro | Luxury Weddings & Event Services',
   description:
-    'Organizacija dogadjaja i Iznajmjivanje opreme za proslave. Organisation of events and celebration equipment rental company',
+    'Event Montenegro offers luxury weddings, event equipment rental, organization & coordination, balloons, and kids birthday decorations in Montenegro.',
 };
 
 export default function RootLayout({
