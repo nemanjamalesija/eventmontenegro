@@ -4,8 +4,6 @@ import { FC } from 'react';
 import clsx from 'clsx';
 import { josefinSans, nunito } from '../../../utils/fonts';
 import CustomLink from '@/components/ui/CustomLink';
-import Image from 'next/image';
-import hero from '../../../assets/img/hero.png';
 import { useAppContext } from '@/Provider/appContext';
 
 const Hero: FC = () => {
