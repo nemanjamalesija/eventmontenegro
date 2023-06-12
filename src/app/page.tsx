@@ -8,20 +8,21 @@ import HowItWorks from './Home/HowItWorks';
 import Offers from './Home/Offers';
 import RentEquipment from './Home/RentEquipment';
 import Reviews from './Home/Reviews';
-import { contentEnglishHowItWorks, contentSerbianHowItWorks } from '@/constants/howITWorksContent';
+import {
+  howItWorksContentEnglish,
+  howItWorksContentSerbian,
+} from '@/constants/howITWorksContent';
+import {
+  heroContentEnglish,
+  heroContentSerbian,
+} from '@/constants/heroContent';
 
 export default function Home() {
   const { isEnglish } = useAppContext();
   return isEnglish ? (
     <main>
-      <Hero
-        heroHeading='Create unforgettable memories that last forever'
-        heroDescription='Equipment rental, event organization, and coordination.
-                        Customized to your personal needs and specific desires.'
-        heroCta1='Plan the event'
-        heroCta2='Learn more'
-      />
-      <HowItWorks content={contentEnglishHowItWorks} />
+      <Hero content={heroContentEnglish} />
+      <HowItWorks content={howItWorksContentEnglish} />
       <Offers />
       <RentEquipment />
       <Balloons />
@@ -30,14 +31,8 @@ export default function Home() {
     </main>
   ) : (
     <main>
-      <Hero
-        heroHeading='Stvaramo nezaboravna sjećanja koja traju vječno'
-        heroDescription='Iznajmljivanje opreme, organizacija i koordinacija proslava.
-            Prilagođeno Vašim ličnim potrebama i detaljnim željama'
-        heroCta1='Isplaniraj svoj događaj'
-        heroCta2='Saznaj više'
-      />
-      <HowItWorks content={contentSerbianHowItWorks} />
+      <Hero content={heroContentSerbian} />
+      <HowItWorks content={howItWorksContentSerbian} />
       <Offers />
       <RentEquipment />
       <Balloons />

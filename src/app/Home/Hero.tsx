@@ -7,18 +7,17 @@ import CustomLink from '@/components/ui/CustomLink';
 import { useAppContext } from '@/Provider/appContext';
 
 type HeroProps = {
-  heroHeading: string;
-  heroDescription: string;
-  heroCta1: string;
-  heroCta2: string;
+  content: {
+    heroHeading: string;
+    heroDescription: string;
+    heroCta1: string;
+    heroCta2: string;
+  };
 };
 
-const Hero: FC<HeroProps> = ({
-  heroHeading,
-  heroDescription,
-  heroCta1,
-  heroCta2,
-}) => {
+const Hero: FC<HeroProps> = ({ content }) => {
+  const { heroHeading, heroDescription, heroCta1, heroCta2 } = content;
+
   const { heroRef, navRef } = useAppContext();
 
   useEffect(() => {

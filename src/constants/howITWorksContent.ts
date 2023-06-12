@@ -1,4 +1,4 @@
-export const contentEnglishHowItWorks = {
+export const howItWorksContentEnglish = {
   heading0: 'How it works',
   heading1: 'Tell us what you like',
   heading2: 'Choose an offer',
@@ -13,7 +13,7 @@ export const contentEnglishHowItWorks = {
     'Select from our extensive range of premium equipment and event decorations and find the perfect elements to bring your event to life. Additionally, if you need assistance in event organization, our expert team can handle logistics, coordination, and other details.',
 };
 
-export const contentSerbianHowItWorks = {
+export const howItWorksContentSerbian = {
   heading0: 'Kako radimo',
   heading1: 'Recite nam šta volite',
   heading2: 'Tell us what you like',
