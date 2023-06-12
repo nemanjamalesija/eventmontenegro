@@ -6,7 +6,19 @@ import { josefinSans, nunito } from '../../../utils/fonts';
 import CustomLink from '@/components/ui/CustomLink';
 import { useAppContext } from '@/Provider/appContext';
 
-const Hero: FC = () => {
+type HeroProps = {
+  heroHeading: string;
+  heroDescription: string;
+  heroCta1: string;
+  heroCta2: string;
+};
+
+const Hero: FC<HeroProps> = ({
+  heroHeading,
+  heroDescription,
+  heroCta1,
+  heroCta2,
+}) => {
   const { heroRef, navRef } = useAppContext();
 
   useEffect(() => {
@@ -49,30 +61,27 @@ const Hero: FC = () => {
               'heading-primary text-center lg:text-start text-4xl md:text-5xl font-bold text-gray-700'
             )}
           >
-            Stvaramo nezaboravna sjećanja koja traju vječno
+            {/* Stvaramo nezaboravna sjećanja koja traju vječno */}
+            {heroHeading}
           </h1>
-          <p
-            className={clsx(
-              nunito.className,
-              'text-lg md:text-hero-p leading-7 lg:leading-9 text-center lg:text-start  text-gray-700 font-semibold lg:font-normal mt-4 sm:mt-6'
-            )}
-          >
-            Iznajmljivanje opreme, organizacija i koordinacija proslava.
-            Prilagođeno Vašim ličnim potrebama i detaljnim željama.
+          <p className='text-lg md:text-hero-p leading-7 lg:leading-9 text-center lg:text-start  text-gray-700 font-semibold lg:font-normal mt-4 sm:mt-6'>
+            {/* Iznajmljivanje opreme, organizacija i koordinacija proslava.
+            Prilagođeno Vašim ličnim potrebama i detaljnim željama. */}
+            {heroDescription}
           </p>
           <div className='mt-10 flex justify-center lg:justify-start gap-4 lg:gap-6'>
             <CustomLink
               href='#'
               className='btn px-4 py-2 sm:py-3 sm:px-6 text-lg sm:text-xl'
             >
-              Počnite projekat
+              {heroCta1}
             </CustomLink>
             <CustomLink
               className='btn ghost flex items-center justify-center px-4 py-2 sm:py-3 sm:px-10  text-lg  sm:text-xl'
               variant='ghost'
               href='#howItWorks'
             >
-              Saznajte više &darr;
+              {heroCta2} &darr;
             </CustomLink>
           </div>
         </div>
