@@ -5,15 +5,38 @@ import clsx from 'clsx';
 import { Check } from 'lucide-react';
 import { cn } from '../../../utils/twinMerge';
 import '../gallery.css';
-import {
-  balloonCategories,
-  balloonsContent,
-} from '../../../assets/data/balloons';
 import Gallery from '@/components/ui/Gallery';
 import { srcArrayBallons } from '../../../assets/img/baloni/baloniImages';
 
-const Balloons: FC = () => {
+type BalloonCategory = {
+  categoryContent: string;
+  offer?: string[];
+  comment?: string;
+};
+
+type BalloonsProps = {
+  content: {
+    sectionHeading: string;
+    sectionSubheading: string;
+    modalHeading: string;
+    balloonCategories: string[];
+    balloonsContent: BalloonCategory[];
+    galleryHeading: string;
+  };
+};
+
+const Balloons: FC<BalloonsProps> = ({ content }) => {
   const [categoryIndex, setCategoryIndex] = useState(0);
+
+  const {
+    sectionHeading,
+    sectionSubheading,
+    modalHeading,
+    galleryHeading,
+    balloonCategories,
+    balloonsContent,
+  } = content;
+
   return (
     <section id='balloons' className='py-24 lg:px-10  border-b-2 border-white'>
       <div className='mx-auto max-w-custom px-5'>
@@ -24,10 +47,10 @@ const Balloons: FC = () => {
               'text-base font-bold tracking-wide uppercase text-color-accent-main mb-3'
             )}
           >
-            Baloni
+            {sectionHeading}
           </h3>
           <h4 className='text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-700'>
-            Dekoracija, isporuka, ispuštanje i štampa balona
+            {sectionSubheading}
           </h4>
         </div>
         <div
@@ -64,7 +87,7 @@ const Balloons: FC = () => {
                       'text-lg lg:text-2xl font-medium text-color-accent-main mb-3'
                     )}
                   >
-                    U ponudi imamo:
+                    {modalHeading}
                   </h4>
                   <div className='balloons__offer-box modal py-6 px-8 rounded-md w-fit lg:w-full flex flex-col gap-3 lg:grid grid-cols-3 lg:justify-between'>
                     {balloonsContent[categoryIndex]?.offer?.map((off, i) => (
@@ -90,7 +113,7 @@ const Balloons: FC = () => {
             'text-lg lg:text-2xl font-medium text-color-accent-main mb-5 lg:mb-8  text-center'
           )}
         >
-          Foto galerija
+          {galleryHeading}
         </h4>
         <Gallery srcArray={srcArrayBallons} />;
       </div>
