@@ -1,5 +1,4 @@
 import { FC } from 'react';
-import { icons } from '../../../assets/svg/Icons';
 import clsx from 'clsx';
 import { josefinSans } from '../../../utils/fonts';
 import { Pointer, PartyPopper, HeartHandshake } from 'lucide-react';

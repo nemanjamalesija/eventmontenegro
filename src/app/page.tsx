@@ -24,7 +24,15 @@ import {
   rentEnglishContent,
   rentSerbianContent,
 } from '@/constants/rentEquipmentContent';
-import { balloonsEnglishContent, balloonsSerbianContent } from '@/constants/ballonsContent';
+import {
+  balloonsEnglishContent,
+  balloonsSerbianContent,
+} from '@/constants/ballonsContent';
+import {
+  reviewsContentEnglish,
+  reviewsContentSerbian,
+  reviewsGallery,
+} from '@/constants/reviewsContent';
 
 export default function Home() {
   const { isEnglish } = useAppContext();
@@ -35,7 +43,7 @@ export default function Home() {
       <Offers content={offersContentEnglish} />
       <RentEquipment content={rentEnglishContent} />
       <Balloons content={balloonsEnglishContent} />
-      <Reviews />
+      <Reviews content={reviewsContentEnglish} gallery={reviewsGallery} />
       <ContactForm />
     </main>
   ) : (
@@ -45,7 +53,7 @@ export default function Home() {
       <Offers content={offersContentSerbian} />
       <RentEquipment content={rentSerbianContent} />
       <Balloons content={balloonsSerbianContent} />
-      <Reviews />
+      <Reviews content={reviewsContentSerbian} gallery={reviewsGallery} />
       <ContactForm />
     </main>
   );
