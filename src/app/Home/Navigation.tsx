@@ -9,25 +9,10 @@ import { useAppContext } from '@/Provider/appContext';
 import { cn } from '../../../utils/twinMerge';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
+import { contentNavEnglish, contentNavSerbian } from '@/constants/navContent';
 
-type NavProps = {
-  link1: string;
-  link2: string;
-  link3: string;
-  link4: string;
-  link5: string;
-  linkCTA: string;
-};
-
-const Navigation: FC<NavProps> = ({
-  link1,
-  link2,
-  link3,
-  link4,
-  link5,
-  linkCTA,
-}) => {
-  const { isNavVisible, setIsNavVissible, navRef } = useAppContext();
+const Navigation: FC = () => {
+  const { isNavVisible, setIsNavVissible, navRef, isEnglish } = useAppContext();
   const router = useRouter();
 
   const handleBackHome = () => {
@@ -51,6 +36,8 @@ const Navigation: FC<NavProps> = ({
       window.removeEventListener('resize', handleResize);
     };
   }, [isNavVisible, setIsNavVissible]);
+
+  const content = isEnglish ? contentNavEnglish : contentNavSerbian;
 
   return (
     <header
@@ -107,7 +94,7 @@ const Navigation: FC<NavProps> = ({
               href='/'
               className='hover:text-color-shade-main cursor-pointer'
             >
-              {link1}
+              {content.link1}
             </Link>
           </li>
           <li
@@ -119,7 +106,7 @@ const Navigation: FC<NavProps> = ({
               href='#howItWorks'
               scroll={true}
             >
-              {link2}
+              {content.link2}
             </Link>
           </li>
           <li className='transition-all duration-300'>
@@ -128,7 +115,7 @@ const Navigation: FC<NavProps> = ({
               href='#offers'
               onClick={() => setIsNavVissible(false)}
             >
-              {link3}
+              {content.link3}
             </Link>
           </li>
           <li className='transition-all duration-300'>
@@ -137,7 +124,7 @@ const Navigation: FC<NavProps> = ({
               href='#rentEquipment'
               onClick={() => setIsNavVissible(false)}
             >
-              {link4}
+              {content.link4}
             </Link>
           </li>
           <li className='transition-all duration-300'>
@@ -146,7 +133,7 @@ const Navigation: FC<NavProps> = ({
               href='#balloons'
               onClick={() => setIsNavVissible(false)}
             >
-              {link5}
+              {content.link5}
             </Link>
           </li>
 
@@ -158,7 +145,7 @@ const Navigation: FC<NavProps> = ({
               href='#contact'
               className='btn py-2 px-5 lg:px-7 font-semibold btn active:scale-95 transition-all, duration-300 rounded-full inline-flex items-center justify-center transition-color focus:outline-none cursor-pointer bg-color-accent-main hover:bg-color-shade-main text-white text-lg sm:text-xl'
             >
-              {linkCTA}
+              {content.linkCTA}
             </Link>
           </li>
         </ul>
