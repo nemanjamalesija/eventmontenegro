@@ -14,6 +14,8 @@ const ContactForm: FC = () => {
   const [status, setStatus] = useState('');
   const { isEnglish } = useAppContext();
   const content = isEnglish ? formContentEnglish : formContentSerbian;
+  const { formHeading, formParagraph, messagePlaceholder, buttonText } =
+    content;
 
   const handleSubmit = async (e: any) => {
     e.preventDefault();
@@ -63,11 +65,9 @@ const ContactForm: FC = () => {
                     'heading-secondary mb-4 uppercase text-2xl lg:text-3xl font-bold'
                   )}
                 >
-                  {content.formHeading}
+                  {formHeading}
                 </h2>
-                <p className='mb-9 text-base text-gray-700'>
-                  {content.formParagraph}
-                </p>
+                <p className='mb-9 text-base text-gray-700'>{formParagraph}</p>
               </div>
               <div className='book-form__group mb-5'>
                 <input
@@ -84,7 +84,7 @@ const ContactForm: FC = () => {
                   id='message'
                   name='message'
                   className='book-form__input py-4 px-5 block p-2.5 w-full text-sm lg:text-base text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-emerald-500 focus:border-emerald-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-emerald-500 dark:focus:border-emerald-500'
-                  placeholder={content.messagePlaceholder}
+                  placeholder={messagePlaceholder}
                 ></textarea>
               </div>
 
@@ -92,7 +92,7 @@ const ContactForm: FC = () => {
                 type='submit'
                 className='btn active:scale-95 transition-all, duration-300 rounded-full inline-flex items-center justify-center transition-color focus:outline-none cursor-pointer bg-color-accent-main hover:bg-color-shade-main text-white py-2 px-5 lg:py-3 lg:px-7  text-lg lg:text-xl font-semibold'
               >
-                Sledeći korak &rarr;
+                {buttonText} &rarr;
               </button>
             </form>
           </div>

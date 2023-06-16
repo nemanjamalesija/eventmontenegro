@@ -10,9 +10,11 @@ import { cn } from '../../../utils/twinMerge';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { contentNavEnglish, contentNavSerbian } from '@/constants/navContent';
+import clsx from 'clsx';
 
 const Navigation: FC = () => {
-  const { isNavVisible, setIsNavVissible, navRef, isEnglish } = useAppContext();
+  const { isNavVisible, setIsNavVissible, navRef, isEnglish, setIsEnglish } =
+    useAppContext();
   const router = useRouter();
 
   const handleBackHome = () => {
@@ -44,11 +46,11 @@ const Navigation: FC = () => {
       ref={navRef}
       className='nav__header absolute top-0 left-0 w-full flex justify-between items-center h-20 sm:px-20 px-6 z-20'
     >
-      <div className='logo flex gap-2 items-center z-20'>
+      <div className='logo flex gap-2 items-center z-20 pt-2'>
         <Image
           src={logo}
           alt='Logo photo'
-          className='cursor-pointer  h-16 w-auto'
+          className='cursor-pointer  h-20 w-auto'
           priority={true}
           onClick={handleBackHome}
         />
@@ -85,9 +87,9 @@ const Navigation: FC = () => {
           }
         )}
       >
-        <ul className='flex flex-col lg:flex-row  gap-11 lg:gap-16 items-center mt-48 lg:mt-0  text-gray-600 font-bold  lg:font-normal text-2xl lg:text-xl'>
+        <ul className='flex flex-col lg:flex-row  gap-11 lg:gap-16 items-center mt-48 lg:mt-0  text-gray-600  lg:font-normal text-2xl lg:text-xl'>
           <li
-            className='transition-all duration-300'
+            className='transition-all font-medium duration-300'
             onClick={() => setIsNavVissible(false)}
           >
             <Link
@@ -98,7 +100,7 @@ const Navigation: FC = () => {
             </Link>
           </li>
           <li
-            className='transition-all duration-300'
+            className='transition-all font-medium duration-300'
             onClick={() => setIsNavVissible(false)}
           >
             <Link
@@ -109,7 +111,7 @@ const Navigation: FC = () => {
               {content.link2}
             </Link>
           </li>
-          <li className='transition-all duration-300'>
+          <li className='transition-all font-medium duration-300'>
             <Link
               className='hover:text-color-shade-main cursor-pointer'
               href='#offers'
@@ -118,7 +120,7 @@ const Navigation: FC = () => {
               {content.link3}
             </Link>
           </li>
-          <li className='transition-all duration-300'>
+          <li className='transition-all font-medium duration-300'>
             <Link
               className='hover:text-color-shade-main cursor-pointer'
               href='#rentEquipment'
@@ -128,13 +130,33 @@ const Navigation: FC = () => {
             </Link>
           </li>
 
+          <li className='flex gap-2 items-center'>
+            <span
+              className={clsx('text-color-shadest text-base cursor-pointer', {
+                'text-color-accent-main': isEnglish,
+              })}
+              onClick={(e) => setIsEnglish(true)}
+            >
+              ENG
+            </span>
+            <span>&nbsp;/&nbsp;</span>
+            <span
+              className={clsx('text-color-shadest text-base cursor-pointer', {
+                'text-color-accent-main': !isEnglish,
+              })}
+              onClick={(e) => setIsEnglish(false)}
+            >
+              MNE
+            </span>
+          </li>
+
           <li
             className='cursor-pointer'
             onClick={() => setIsNavVissible(false)}
           >
             <Link
               href='#contact'
-              className='btn py-2 px-5 lg:py-3 lg:px-7 font-semibold btn active:scale-95 transition-all, duration-300 rounded-full inline-flex items-center justify-center transition-color focus:outline-none cursor-pointer bg-color-accent-main hover:bg-color-shade-main text-white text-lg sm:text-xl'
+              className='btn py-2 px-5 lg:py-3 lg:px-7  btn active:scale-95 transition-all, duration-300 rounded-full inline-flex items-center justify-center transition-color focus:outline-none cursor-pointer bg-color-accent-main hover:bg-color-shade-main text-white text-lg sm:text-xl font-semibold'
             >
               {content.linkCTA}
             </Link>

@@ -51,7 +51,7 @@ const Hero: FC = () => {
           <h1
             className={clsx(
               josefinSans.className,
-              'heading-primary text-center lg:text-start text-4xl md:text-5xl font-bold text-gray-700'
+              'heading-primary text-center lg:text-start text-4xl md:text-6xl font-bold text-gray-700 '
             )}
           >
             {content.heroHeading}

@@ -19,7 +19,7 @@ export const howItWorksContentSerbian = {
   heading2: 'Tell us what you like',
   heading3: 'Izaberite ponudu',
 
-  sectionSubheading: "Organizujte svoj projekat iz snova u 3 laka koraka'",
+  sectionSubheading: 'Organizujte svoj projekat iz snova u 3 laka koraka',
   paragraph1:
     'Izaberite iz našeg obimnog izbora vrhunske opreme i dekoracije za događaje i pronađite savršene elemente za oživljavanje Vašeg događaja. Takođe, ako Vam je potrebna pomoć u organizaciji događaja, naš stručni tim može se pozabaviti logistikom, koordinacijom i ostalim sitnicama.',
   paragraph2:
