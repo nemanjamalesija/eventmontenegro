@@ -14,7 +14,7 @@ type CardProps = {
 };
 
 const Card = ({ cardNumber, cardHeadingText, href }: CardProps) => {
-  const { navRef } = useAppContext();
+  const { navRef, isEnglish } = useAppContext();
 
   const removeNavSticky = () => {
     navRef.current?.classList.remove('sticky');
@@ -44,7 +44,7 @@ const Card = ({ cardNumber, cardHeadingText, href }: CardProps) => {
             className='btnY active:scale-95 hover:scale-y-110 transition-all duration-300 block font-semibold transition-color focus:outline-none cursor-pointer px-7 py-4 w-full bg-color-accent-main hover:bg-color-shade-main text-white text-base sm:text-lg uppercase'
             onClick={removeNavSticky}
           >
-            Saznajte više
+            {isEnglish ? 'Learn more' : 'Saznajte više'}
           </button>
         </Link>
       </div>

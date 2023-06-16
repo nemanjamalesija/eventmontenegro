@@ -5,8 +5,18 @@ import { FC } from 'react';
 import { josefinSans } from '../../../utils/fonts';
 import Modal from '@/components/ui/Modal';
 
-const ContactForm: FC = () => {
+type FormProps = {
+  content: {
+    formHeading: string;
+    formParagraph: string;
+    messagePlaceholder: string;
+  };
+};
+
+const ContactForm: FC<FormProps> = ({ content }) => {
   const [status, setStatus] = useState('');
+
+  const { formHeading, formParagraph, messagePlaceholder } = content;
 
   const handleSubmit = async (e: any) => {
     e.preventDefault();
@@ -58,12 +68,9 @@ const ContactForm: FC = () => {
                     'heading-secondary mb-4 uppercase text-2xl lg:text-3xl font-bold'
                   )}
                 >
-                  Kreni sa projektom odmah
+                  {formHeading}
                 </h2>
-                <p className='mb-9 text-base text-gray-700'>
-                  Pošaljite nam e mail i neko iz našeg tima će Vam posvetiti
-                  pažnju u roku ne dužem od 24h.
-                </p>
+                <p className='mb-9 text-base text-gray-700'>{formParagraph}</p>
               </div>
               <div className='book-form__group mb-5'>
                 <input
@@ -80,7 +87,7 @@ const ContactForm: FC = () => {
                   id='message'
                   name='message'
                   className='book-form__input py-4 px-5 block p-2.5 w-full text-sm lg:text-base text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-emerald-500 focus:border-emerald-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-emerald-500 dark:focus:border-emerald-500'
-                  placeholder='Vaša poruka...'
+                  placeholder={messagePlaceholder}
                 ></textarea>
               </div>
 

@@ -143,7 +143,7 @@ const Navigation: FC = () => {
           >
             <Link
               href='#contact'
-              className='btn py-2 px-5 lg:px-7 font-semibold btn active:scale-95 transition-all, duration-300 rounded-full inline-flex items-center justify-center transition-color focus:outline-none cursor-pointer bg-color-accent-main hover:bg-color-shade-main text-white text-lg sm:text-xl'
+              className='btn py-2 px-5 lg:py-3 lg:px-7 font-semibold btn active:scale-95 transition-all, duration-300 rounded-full inline-flex items-center justify-center transition-color focus:outline-none cursor-pointer bg-color-accent-main hover:bg-color-shade-main text-white text-lg sm:text-xl'
             >
               {content.linkCTA}
             </Link>

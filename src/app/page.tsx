@@ -34,6 +34,11 @@ import {
   reviewsGallery,
 } from '@/constants/reviewsContent';
 
+import {
+  formContentEnglish,
+  formContentSerbian,
+} from '@/constants/formContent';
+
 export default function Home() {
   const { isEnglish } = useAppContext();
   return isEnglish ? (
@@ -44,7 +49,7 @@ export default function Home() {
       <RentEquipment content={rentEnglishContent} />
       <Balloons content={balloonsEnglishContent} />
       <Reviews content={reviewsContentEnglish} gallery={reviewsGallery} />
-      <ContactForm />
+      <ContactForm content={formContentEnglish} />
     </main>
   ) : (
     <main>
@@ -54,7 +59,7 @@ export default function Home() {
       <RentEquipment content={rentSerbianContent} />
       <Balloons content={balloonsSerbianContent} />
       <Reviews content={reviewsContentSerbian} gallery={reviewsGallery} />
-      <ContactForm />
+      <ContactForm content={formContentSerbian} />
     </main>
   );
 }

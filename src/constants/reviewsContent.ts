@@ -17,7 +17,7 @@ import kid3 from '../../assets/img/gallery1/kid3.avif';
 
 export const reviewsContentEnglish = {
   sectionHeading: 'Testimonials',
-  sectionSubheading: 'We offer unforgettable events',
+  sectionSubheading: 'Event with us is unforgettable',
   reviews: [
     {
       image: useramar.src,
