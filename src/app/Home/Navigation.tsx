@@ -46,7 +46,7 @@ const Navigation: FC = () => {
       ref={navRef}
       className='nav__header absolute top-0 left-0 w-full flex justify-between items-center h-20 sm:px-20 px-6 z-20'
     >
-      <div className='logo flex gap-2 items-center z-20 pt-2'>
+      <div className='logo flex gap-2 items-center z-20'>
         <Image
           src={logo}
           alt='Logo photo'
@@ -130,20 +130,26 @@ const Navigation: FC = () => {
             </Link>
           </li>
 
-          <li className='flex gap-2 items-center'>
+          <li className='flex gap-1 items-center'>
             <span
-              className={clsx('text-color-shadest text-base cursor-pointer', {
-                'text-color-accent-main': isEnglish,
-              })}
+              className={clsx(
+                'text-color-shadest text-base cursor-pointer font-medium',
+                {
+                  'text-color-accent-main': isEnglish,
+                }
+              )}
               onClick={(e) => setIsEnglish(true)}
             >
               ENG
             </span>
             <span>&nbsp;/&nbsp;</span>
             <span
-              className={clsx('text-color-shadest text-base cursor-pointer', {
-                'text-color-accent-main': !isEnglish,
-              })}
+              className={clsx(
+                'text-color-shadest text-base cursor-pointer font-medium',
+                {
+                  'text-color-accent-main': !isEnglish,
+                }
+              )}
               onClick={(e) => setIsEnglish(false)}
             >
               MNE
