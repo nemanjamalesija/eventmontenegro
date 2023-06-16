@@ -1,6 +1,5 @@
 export const balloonsEnglishContent = {
-  sectionHeading: 'Balloons',
-  sectionSubheading: 'Decoration, delivery, inflation, and balloon printing',
+  sectionHeading: 'Decoration, delivery, inflation, and balloon printing',
   modalHeading: 'Everything for celebrations',
   balloonCategories: ['Decoration', 'Delivery', 'Inflation', 'Printing'],
   balloonsContent: [
@@ -44,8 +43,7 @@ export const balloonsEnglishContent = {
 };
 
 export const balloonsSerbianContent = {
-  sectionHeading: 'Baloni',
-  sectionSubheading: 'Dekoracija, isporuka, ispuštanje i štampa balona',
+  sectionHeading: 'Dekoracija, isporuka, ispuštanje i štampa balona',
   modalHeading: 'Sve za proslave',
 
   balloonCategories: ['Dekoracija', 'Isporuka', 'Ispuštanje', 'Štampa'],

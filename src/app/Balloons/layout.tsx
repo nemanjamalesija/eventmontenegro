@@ -7,59 +7,37 @@ import { cn } from '../../../utils/twinMerge';
 import '../gallery.css';
 import Gallery from '@/components/ui/Gallery';
 import { srcArrayBallons } from '../../../assets/img/baloni/baloniImages';
+import {
+  balloonsEnglishContent,
+  balloonsSerbianContent,
+} from '@/constants/ballonsContent';
+import { useAppContext } from '@/Provider/appContext';
 
-type BalloonCategory = {
-  categoryContent: string;
-  offer?: string[];
-  comment?: string;
-};
-
-type BalloonsProps = {
-  content: {
-    sectionHeading: string;
-    sectionSubheading: string;
-    modalHeading: string;
-    balloonCategories: string[];
-    balloonsContent: BalloonCategory[];
-    galleryHeading: string;
-  };
-};
-
-const Balloons: FC<BalloonsProps> = ({ content }) => {
+const Balloons: FC = () => {
   const [categoryIndex, setCategoryIndex] = useState(0);
+  const { isEnglish } = useAppContext();
 
-  const {
-    sectionHeading,
-    sectionSubheading,
-    modalHeading,
-    galleryHeading,
-    balloonCategories,
-    balloonsContent,
-  } = content;
+  const content = isEnglish ? balloonsEnglishContent : balloonsSerbianContent;
 
   return (
-    <section id='balloons' className='py-24 lg:px-10  border-b-2 border-white'>
-      <div className='mx-auto max-w-custom px-5'>
-        <div className='mb-8 lg:mb-12'>
-          <h3
-            className={clsx(
-              josefinSans.className,
-              'text-base font-bold tracking-wide uppercase text-color-accent-main mb-3'
-            )}
-          >
-            {sectionHeading}
-          </h3>
-          <h4 className='text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-700'>
-            {sectionSubheading}
-          </h4>
-        </div>
+    <section className='py-24 lg:px-10 bg-color-lightest'>
+      <div className='mx-auto max-w-custom mt-10 lg:mt-14 mb-16 lg:mb-24 px-5'>
+        <h2
+          className={clsx(
+            josefinSans.className,
+            'text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-600 mb-4 lg:mb-6'
+          )}
+        >
+          {content.sectionHeading}
+        </h2>
+
         <div
           className='balloons__img-box h-[40vh] w-full bg-blend-screen
-          bg-cover'
+          bg-cover bg-center lg:bg-top mb-16 lg:mb-24'
         ></div>
         <div className='balloons__content'>
           <div className='balloons__buttons flex items-center justify-between lg:justify-center gap-0 lg:gap-10 -translate-y-6 mb-4 lg:mb-8'>
-            {balloonCategories.map((cat, i) => {
+            {content.balloonCategories.map((cat, i) => {
               return (
                 <button
                   key={i}
@@ -76,10 +54,10 @@ const Balloons: FC<BalloonsProps> = ({ content }) => {
           </div>
           <div className=' balloons__text mx-auto mb-16 lg:mb-24'>
             <p className='text-base lg:text-lg text-gray-700 mb-12 lg:mb-16'>
-              {balloonsContent[categoryIndex].categoryContent}
+              {content.balloonsContent[categoryIndex].categoryContent}
             </p>
             <ul className=' balloons__offer list-none flex flex-col'>
-              {balloonsContent[categoryIndex].offer && (
+              {content.balloonsContent[categoryIndex].offer && (
                 <div className='flex flex-col justify-center items-center'>
                   <h4
                     className={clsx(
@@ -87,18 +65,20 @@ const Balloons: FC<BalloonsProps> = ({ content }) => {
                       'text-lg lg:text-2xl font-medium text-color-accent-main mb-3'
                     )}
                   >
-                    {modalHeading}
+                    {content.modalHeading}
                   </h4>
                   <div className='balloons__offer-box modal py-6 px-8 rounded-md w-fit lg:w-full flex flex-col gap-3 lg:grid grid-cols-3 lg:justify-between'>
-                    {balloonsContent[categoryIndex]?.offer?.map((off, i) => (
-                      <li
-                        key={i}
-                        className='list__item flex items-center gap-2 text-center text-color-accent-darkest text-base lg:text-lg'
-                      >
-                        <Check className='stroke-color-accent-main' />
-                        {off}
-                      </li>
-                    ))}
+                    {content.balloonsContent[categoryIndex]?.offer?.map(
+                      (off, i) => (
+                        <li
+                          key={i}
+                          className='list__item flex items-center gap-2 text-center text-color-accent-darkest text-base lg:text-lg'
+                        >
+                          <Check className='stroke-color-accent-main' />
+                          {off}
+                        </li>
+                      )
+                    )}
                   </div>
                 </div>
               )}
@@ -113,7 +93,7 @@ const Balloons: FC<BalloonsProps> = ({ content }) => {
             'text-lg lg:text-2xl font-medium text-color-accent-main mb-5 lg:mb-8  text-center'
           )}
         >
-          {galleryHeading}
+          {content.galleryHeading}
         </h4>
         <Gallery srcArray={srcArrayBallons} />;
       </div>

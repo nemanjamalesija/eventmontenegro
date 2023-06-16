@@ -30,7 +30,7 @@ const HowItWorks: FC<HowItWorksProps> = ({ content }) => {
   return (
     <section
       id='howItWorks'
-      className='py-24  border-b-2 border-white lg:px-10'
+      className='py-16 lg:py-24  border-b-2 border-white lg:px-10'
     >
       <div className='mx-auto max-w-7xl px-5'>
         <div className='mb-16 lg:mb-24'>
@@ -46,7 +46,7 @@ const HowItWorks: FC<HowItWorksProps> = ({ content }) => {
             {sectionSubheading}
           </h4>
         </div>
-        <div className='kids__text-box flex flex-col lg:grid grid-cols-3  gap-20 '>
+        <div className='kids__text-box flex flex-col lg:grid grid-cols-3 gap-16 lg:gap-20'>
           <div className='kids__text '>
             <div className='flex items-center gap-4 mb-6'>
               <div className='kids__icons-set flex items-center justify-center rounded-full h-12 w-12 lg:h-14 lg:w-14 bg-color-accent-main'>

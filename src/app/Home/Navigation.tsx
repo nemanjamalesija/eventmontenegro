@@ -127,15 +127,6 @@ const Navigation: FC = () => {
               {content.link4}
             </Link>
           </li>
-          <li className='transition-all duration-300'>
-            <Link
-              className='hover:text-color-shade-main cursor-pointer'
-              href='#balloons'
-              onClick={() => setIsNavVissible(false)}
-            >
-              {content.link5}
-            </Link>
-          </li>
 
           <li
             className='cursor-pointer'

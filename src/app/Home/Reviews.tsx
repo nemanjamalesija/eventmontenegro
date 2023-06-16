@@ -27,7 +27,7 @@ const Reviews: FC<ReviewsProps> = ({ content, gallery }) => {
   const { sectionHeading, sectionSubheading, reviews } = content;
 
   return (
-    <section className='py-24 px-5 lg:px-8 bg-color-lightest border-b-2 border-white'>
+    <section className='py-16 lg:py-24 px-5 lg:px-8 bg-color-lightest border-b-2 border-white'>
       <div className='flex flex-col gap-y-24 lg:grid lg:grid-cols-2 lg:gap-x-20  lg:px-8 '>
         <div className='flex flex-col'>
           <div className='mb-16 lg:mb-24'>

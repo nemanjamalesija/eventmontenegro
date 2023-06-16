@@ -55,20 +55,20 @@ html {
 .kids__img-box {
   background-image: url('../../assets/img/cards/kidsbirthday.jpg');
 }
+
 .card__picture--4,
+.kids__img-box {
+  background-image: url('../../assets/img/baloni/img/baloni36.jpg');
+  background-position: left;
+}
+.card__picture--5,
 .other-celebrations__img-box {
   background-image: url('../../assets/img/otherCelebrations.webp');
 }
 
-.card__picture--5 {
+.card__picture--6 {
   background-image: url('../../assets/img/cards/dodatne.jpg');
 }
-
-/* 
-    'color-lightest': '#fdf2f3',
-        'color-accent-darkest': '#2e151a',
-
-        'color-gray-light-1': '#ffdde1', */
 
 /* balloons  */
 .balloons__img-box {

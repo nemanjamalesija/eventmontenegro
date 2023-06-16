@@ -3,7 +3,6 @@ export const contentNavEnglish = {
   link2: 'How it works',
   link3: 'Events',
   link4: 'Rent equipment',
-  link5: 'Balloons',
   linkCTA: 'Get in touch',
 };
 
@@ -12,6 +11,5 @@ export const contentNavSerbian = {
   link2: 'Kako radimo',
   link3: 'Proslave',
   link4: 'Iznajmi opremu',
-  link5: 'Baloni',
   linkCTA: 'Kontakt',
 };

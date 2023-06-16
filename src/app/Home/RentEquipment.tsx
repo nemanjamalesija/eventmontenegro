@@ -34,7 +34,7 @@ const RentEquipment: FC<rentEquipmentProps> = ({ content }) => {
   return (
     <section
       id='rentEquipment'
-      className='py-24  border-b-2 border-white lg:px-10'
+      className='py-16 lg:py-24  border-b-2 border-white lg:px-10'
     >
       <div className='mx-auto max-w-custom px-5'>
         <div className='mb-8 lg:mb-12'>
@@ -54,7 +54,7 @@ const RentEquipment: FC<rentEquipmentProps> = ({ content }) => {
           className='rent__equipment h-[40vh] w-full mb-4 lg:mb-8 bg-blend-screen
           bg-cover'
         ></div>
-        <p className='text-base lg:text-lg text-gray-700 mb-6 lg:mb-10'>
+        <p className='text-base lg:text-lg text-gray-700 mb-16 lg:mb-24'>
           {sectionIntro}
         </p>
 

@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const Footer = () => {
   return (
-    <footer className='footer py-24  bg-color-accent-darkest flex flex-col items-center justify-center relative'>
+    <footer className='footer py-16 lg:py-24  bg-color-accent-darkest flex flex-col items-center justify-center relative'>
       <div className='footer__logo flex gap-2 items-center mb-6'></div>
       <div className='imgs'></div>
       <div className='footer__company-adress mb-3'>

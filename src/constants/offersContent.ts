@@ -4,8 +4,9 @@ export const offersContentEnglish = {
   card1: 'weddings',
   card2: 'kids events',
   card3: 'business events',
-  card4: 'other events',
-  card5: 'other offers',
+  card4: 'balloons',
+  card5: 'other events',
+  card6: 'other offers',
 };
 
 export const offersContentSerbian = {
@@ -14,6 +15,7 @@ export const offersContentSerbian = {
   card1: 'vječanja',
   card2: 'dječije proslave',
   card3: 'Poslovni događaji',
-  card4: 'Ostale proslave',
-  card5: 'Dodatne usluge',
+  card4: 'Baloni',
+  card5: 'Ostale proslave',
+  card6: 'Dodatne usluge',
 };

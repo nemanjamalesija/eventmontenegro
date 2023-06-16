@@ -1,8 +1,6 @@
 'use client';
 import React from 'react';
 import Link from 'next/link';
-import Image, { StaticImageData } from 'next/image';
-import logoSub from '../../../assets/img/logo-sub.png';
 import { useAppContext } from '@/Provider/appContext';
 import clsx from 'clsx';
 import { josefinSans } from '../../../utils/fonts';

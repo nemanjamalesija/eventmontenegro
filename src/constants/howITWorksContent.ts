@@ -1,7 +1,7 @@
 export const howItWorksContentEnglish = {
   sectionHeading: 'How it works',
   heading1: 'Tell us what you like',
-  heading2: 'Choose an offer',
+  heading2: 'Choose the offer for you',
   heading3: 'Relax and enjoy',
 
   sectionSubheading: 'Organize your dream project in 3 easy steps',

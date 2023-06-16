@@ -1,7 +1,6 @@
 'use client';
 
 import { useAppContext } from '@/Provider/appContext';
-import Balloons from './Home/Balloons';
 import ContactForm from './Home/ContactForm';
 import Hero from './Home/Hero';
 import HowItWorks from './Home/HowItWorks';
@@ -25,10 +24,6 @@ import {
   rentSerbianContent,
 } from '@/constants/rentEquipmentContent';
 import {
-  balloonsEnglishContent,
-  balloonsSerbianContent,
-} from '@/constants/ballonsContent';
-import {
   reviewsContentEnglish,
   reviewsContentSerbian,
   reviewsGallery,
@@ -47,7 +42,6 @@ export default function Home() {
       <HowItWorks content={howItWorksContentEnglish} />
       <Offers content={offersContentEnglish} />
       <RentEquipment content={rentEnglishContent} />
-      <Balloons content={balloonsEnglishContent} />
       <Reviews content={reviewsContentEnglish} gallery={reviewsGallery} />
       <ContactForm content={formContentEnglish} />
     </main>
@@ -57,7 +51,6 @@ export default function Home() {
       <HowItWorks content={howItWorksContentSerbian} />
       <Offers content={offersContentSerbian} />
       <RentEquipment content={rentSerbianContent} />
-      <Balloons content={balloonsSerbianContent} />
       <Reviews content={reviewsContentSerbian} gallery={reviewsGallery} />
       <ContactForm content={formContentSerbian} />
     </main>
