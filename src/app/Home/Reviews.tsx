@@ -1,29 +1,18 @@
+'use client';
 import { FC } from 'react';
 import { josefinSans } from '../../../utils/fonts';
 import clsx from 'clsx';
 import Image from 'next/image';
+import { useAppContext } from '@/Provider/appContext';
+import {
+  reviewsContentEnglish,
+  reviewsContentSerbian,
+  reviewsGallery,
+} from '@/constants/reviewsContent';
 
-type Review = {
-  image: string;
-  text: string;
-  author: string;
-};
-
-type Gallery = {
-  image: string;
-  description: string;
-};
-
-type ReviewsProps = {
-  content: {
-    sectionHeading: string;
-    sectionSubheading: string;
-    reviews: Review[];
-  };
-  gallery: Gallery[];
-};
-
-const Reviews: FC<ReviewsProps> = ({ content, gallery }) => {
+const Reviews: FC = () => {
+  const { isEnglish } = useAppContext();
+  const content = isEnglish ? reviewsContentEnglish : reviewsContentSerbian;
   const { sectionHeading, sectionSubheading, reviews } = content;
 
   return (
@@ -67,7 +56,7 @@ const Reviews: FC<ReviewsProps> = ({ content, gallery }) => {
           </div>
         </div>
         <div className='images grid grid-cols-3 gap-x-2 gap-y-2 lg:gap-x-4 lg:gap-y-4 h-[640px] lg:h-auto  lg:px-8'>
-          {gallery.map((img, i) => {
+          {reviewsGallery.map((img, i) => {
             return (
               <div key={i} className='img__box relative overflow-hidden'>
                 <Image

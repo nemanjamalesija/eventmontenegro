@@ -1,22 +1,18 @@
+'use client';
 import { FC } from 'react';
 import Card from '@/components/ui/Card';
 import { josefinSans } from '../../../utils/fonts';
 import clsx from 'clsx';
+import { useAppContext } from '@/Provider/appContext';
+import {
+  offersContentEnglish,
+  offersContentSerbian,
+} from '@/constants/offersContent';
 
-type OffersProps = {
-  content: {
-    sectionTitle: string;
-    sectionSubheading: string;
-    card1: string;
-    card2: string;
-    card3: string;
-    card4: string;
-    card5: string;
-    card6: string;
-  };
-};
+const Offers: FC = () => {
+  const { isEnglish } = useAppContext();
+  const content = isEnglish ? offersContentEnglish : offersContentSerbian;
 
-const Offers: FC<OffersProps> = ({ content }) => {
   const {
     sectionTitle,
     sectionSubheading,

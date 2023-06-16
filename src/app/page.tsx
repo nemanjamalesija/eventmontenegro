@@ -1,58 +1,23 @@
-'use client';
-
-import { useAppContext } from '@/Provider/appContext';
 import ContactForm from './Home/ContactForm';
 import Hero from './Home/Hero';
 import HowItWorks from './Home/HowItWorks';
 import Offers from './Home/Offers';
 import RentEquipment from './Home/RentEquipment';
 import Reviews from './Home/Reviews';
-import {
-  howItWorksContentEnglish,
-  howItWorksContentSerbian,
-} from '@/constants/howITWorksContent';
-import {
-  heroContentEnglish,
-  heroContentSerbian,
-} from '@/constants/heroContent';
-import {
-  offersContentEnglish,
-  offersContentSerbian,
-} from '@/constants/offersContent';
-import {
-  rentEnglishContent,
-  rentSerbianContent,
-} from '@/constants/rentEquipmentContent';
-import {
-  reviewsContentEnglish,
-  reviewsContentSerbian,
-  reviewsGallery,
-} from '@/constants/reviewsContent';
 
-import {
-  formContentEnglish,
-  formContentSerbian,
-} from '@/constants/formContent';
+import { FC } from 'react';
 
-export default function Home() {
-  const { isEnglish } = useAppContext();
-  return isEnglish ? (
+const page: FC = () => {
+  return (
     <main>
-      <Hero content={heroContentEnglish} />
-      <HowItWorks content={howItWorksContentEnglish} />
-      <Offers content={offersContentEnglish} />
-      <RentEquipment content={rentEnglishContent} />
-      <Reviews content={reviewsContentEnglish} gallery={reviewsGallery} />
-      <ContactForm content={formContentEnglish} />
-    </main>
-  ) : (
-    <main>
-      <Hero content={heroContentSerbian} />
-      <HowItWorks content={howItWorksContentSerbian} />
-      <Offers content={offersContentSerbian} />
-      <RentEquipment content={rentSerbianContent} />
-      <Reviews content={reviewsContentSerbian} gallery={reviewsGallery} />
-      <ContactForm content={formContentSerbian} />
+      <Hero />
+      <HowItWorks />
+      <Offers />
+      <RentEquipment />
+      <Reviews />
+      <ContactForm />
     </main>
   );
-}
+};
+
+export default page;

@@ -1,22 +1,20 @@
+'use client';
 import { FC } from 'react';
 import clsx from 'clsx';
 import { josefinSans } from '../../../utils/fonts';
 import { Pointer, PartyPopper, HeartHandshake } from 'lucide-react';
+import { useAppContext } from '@/Provider/appContext';
+import {
+  howItWorksContentEnglish,
+  howItWorksContentSerbian,
+} from '@/constants/howITWorksContent';
 
-type HowItWorksProps = {
-  content: {
-    sectionHeading: string;
-    heading1: string;
-    heading2: string;
-    heading3: string;
-    sectionSubheading: string;
-    paragraph1: string;
-    paragraph2: string;
-    paragraph3: string;
-  };
-};
+const HowItWorks: FC = () => {
+  const { isEnglish } = useAppContext();
+  const content = isEnglish
+    ? howItWorksContentEnglish
+    : howItWorksContentSerbian;
 
-const HowItWorks: FC<HowItWorksProps> = ({ content }) => {
   const {
     sectionHeading,
     heading1,

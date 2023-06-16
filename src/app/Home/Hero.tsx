@@ -5,20 +5,14 @@ import clsx from 'clsx';
 import { josefinSans } from '../../../utils/fonts';
 import CustomLink from '@/components/ui/CustomLink';
 import { useAppContext } from '@/Provider/appContext';
+import {
+  heroContentEnglish,
+  heroContentSerbian,
+} from '@/constants/heroContent';
 
-type HeroProps = {
-  content: {
-    heroHeading: string;
-    heroDescription: string;
-    heroCta1: string;
-    heroCta2: string;
-  };
-};
-
-const Hero: FC<HeroProps> = ({ content }) => {
-  const { heroHeading, heroDescription, heroCta1, heroCta2 } = content;
-
-  const { heroRef, navRef } = useAppContext();
+const Hero: FC = () => {
+  const { heroRef, navRef, isEnglish } = useAppContext();
+  const content = isEnglish ? heroContentEnglish : heroContentSerbian;
 
   useEffect(() => {
     if (!heroRef.current) return;
@@ -60,24 +54,24 @@ const Hero: FC<HeroProps> = ({ content }) => {
               'heading-primary text-center lg:text-start text-4xl md:text-5xl font-bold text-gray-700'
             )}
           >
-            {heroHeading}
+            {content.heroHeading}
           </h1>
           <p className='text-lg md:text-hero-p leading-7 lg:leading-9 text-center lg:text-start  text-gray-700 font-semibold lg:font-normal mt-4 sm:mt-6'>
-            {heroDescription}
+            {content.heroDescription}
           </p>
           <div className='mt-10 flex justify-center lg:justify-start gap-4 lg:gap-6'>
             <CustomLink
               href='#'
               className='btn px-4 py-2 sm:py-3 sm:px-6 text-lg sm:text-xl'
             >
-              {heroCta1}
+              {content.heroCta1}
             </CustomLink>
             <CustomLink
               className='btn ghost flex items-center justify-center px-4 py-2 sm:py-3 sm:px-10  text-lg  sm:text-xl'
               variant='ghost'
               href='#howItWorks'
             >
-              {heroCta2} &darr;
+              {content.heroCta2} &darr;
             </CustomLink>
           </div>
         </div>

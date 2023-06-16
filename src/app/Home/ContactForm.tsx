@@ -4,26 +4,21 @@ import clsx from 'clsx';
 import { FC } from 'react';
 import { josefinSans } from '../../../utils/fonts';
 import Modal from '@/components/ui/Modal';
+import { useAppContext } from '@/Provider/appContext';
+import {
+  formContentEnglish,
+  formContentSerbian,
+} from '@/constants/formContent';
 
-type FormProps = {
-  content: {
-    formHeading: string;
-    formParagraph: string;
-    messagePlaceholder: string;
-  };
-};
-
-const ContactForm: FC<FormProps> = ({ content }) => {
+const ContactForm: FC = () => {
   const [status, setStatus] = useState('');
-
-  const { formHeading, formParagraph, messagePlaceholder } = content;
+  const { isEnglish } = useAppContext();
+  const content = isEnglish ? formContentEnglish : formContentSerbian;
 
   const handleSubmit = async (e: any) => {
     e.preventDefault();
     const form = e.target;
     const data = new FormData(form);
-
-    console.log(data);
 
     try {
       const response = await fetch('https://formspree.io/f/xayzgroq', {
@@ -68,9 +63,11 @@ const ContactForm: FC<FormProps> = ({ content }) => {
                     'heading-secondary mb-4 uppercase text-2xl lg:text-3xl font-bold'
                   )}
                 >
-                  {formHeading}
+                  {content.formHeading}
                 </h2>
-                <p className='mb-9 text-base text-gray-700'>{formParagraph}</p>
+                <p className='mb-9 text-base text-gray-700'>
+                  {content.formParagraph}
+                </p>
               </div>
               <div className='book-form__group mb-5'>
                 <input
@@ -87,7 +84,7 @@ const ContactForm: FC<FormProps> = ({ content }) => {
                   id='message'
                   name='message'
                   className='book-form__input py-4 px-5 block p-2.5 w-full text-sm lg:text-base text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-emerald-500 focus:border-emerald-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-emerald-500 dark:focus:border-emerald-500'
-                  placeholder={messagePlaceholder}
+                  placeholder={content.messagePlaceholder}
                 ></textarea>
               </div>
 

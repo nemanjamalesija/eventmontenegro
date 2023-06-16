@@ -1,27 +1,20 @@
+'use client';
 import { FC } from 'react';
 import { josefinSans } from '../../../utils/fonts';
 import clsx from 'clsx';
 import { Check } from 'lucide-react';
 import Gallery from '@/components/ui/Gallery';
 import { srcArrayRentEquipment } from '../../../assets/img/rent/rentImages';
+import { useAppContext } from '@/Provider/appContext';
+import {
+  rentEnglishContent,
+  rentSerbianContent,
+} from '@/constants/rentEquipmentContent';
 
-type rentEquipmentProps = {
-  content: {
-    sectionHeading: string;
-    sectionSubheading: string;
-    sectionIntro: string;
-    modalHeading: string;
-    offers: {
-      rentOffer1: string[];
-      rentOffer2: string[];
-      rentOffer3: string[];
-      rentOffer4: string[];
-    };
-    galleryHeading: string;
-  };
-};
+const RentEquipment: FC = () => {
+  const { isEnglish } = useAppContext();
+  const content = isEnglish ? rentEnglishContent : rentSerbianContent;
 
-const RentEquipment: FC<rentEquipmentProps> = ({ content }) => {
   const {
     sectionHeading,
     sectionSubheading,
