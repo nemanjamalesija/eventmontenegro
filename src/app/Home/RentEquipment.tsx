@@ -2,17 +2,35 @@ import { FC } from 'react';
 import { josefinSans } from '../../../utils/fonts';
 import clsx from 'clsx';
 import { Check } from 'lucide-react';
-
-import {
-  rentOffer1,
-  rentOffer2,
-  rentOffer3,
-  rentOffer4,
-} from '../../../assets/data/rentEquipment';
 import Gallery from '@/components/ui/Gallery';
 import { srcArrayRentEquipment } from '../../../assets/img/rent/rentImages';
 
-const RentEquipment: FC = () => {
+type rentEquipmentProps = {
+  content: {
+    sectionHeading: string;
+    sectionSubheading: string;
+    sectionIntro: string;
+    modalHeading: string;
+    offers: {
+      rentOffer1: string[];
+      rentOffer2: string[];
+      rentOffer3: string[];
+      rentOffer4: string[];
+    };
+    galleryHeading: string;
+  };
+};
+
+const RentEquipment: FC<rentEquipmentProps> = ({ content }) => {
+  const {
+    sectionHeading,
+    sectionSubheading,
+    sectionIntro,
+    modalHeading,
+    offers: { rentOffer1, rentOffer2, rentOffer3, rentOffer4 },
+    galleryHeading,
+  } = content;
+
   return (
     <section
       id='rentEquipment'
@@ -26,10 +44,10 @@ const RentEquipment: FC = () => {
               'text-base font-bold tracking-wide uppercase text-color-accent-main mb-3'
             )}
           >
-            Iznajmjivanje opreme
+            {sectionHeading}
           </h3>
           <h4 className='text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-700'>
-            Sve što je potrebno za Vaš projekat
+            {sectionSubheading}
           </h4>
         </div>
         <div
@@ -37,10 +55,7 @@ const RentEquipment: FC = () => {
           bg-cover'
         ></div>
         <p className='text-base lg:text-lg text-gray-700 mb-6 lg:mb-10'>
-          Ukoliko se odlučite da sami organizujete vjenčanje, poslovni događaj,
-          rođendan ili bilo koju drugu proslavu, sigurni smo da ćete iz našeg
-          bogatog asortimana mobilijara, opreme i dekorativnih elemenata moći
-          izabrati upravo ono što Vam je potrebno.
+          {sectionIntro}
         </p>
 
         <div className='flex flex-col items-center justify-center mb-16 lg:mb-24'>
@@ -50,7 +65,7 @@ const RentEquipment: FC = () => {
               'text-lg lg:text-2xl font-semibold text-color-accent-main mb-3'
             )}
           >
-            Sve za proslave
+            {modalHeading}
           </h4>
           <div className='modal py-6 px-8 rounded-md w-fit lg:w-full'>
             <ul className='list-none flex flex-col gap-2 lg:flex-row lg:justify-between'>
@@ -109,7 +124,7 @@ const RentEquipment: FC = () => {
             'text-lg lg:text-2xl font-semibold text-color-accent-main mb-5 lg:mb-8  text-center'
           )}
         >
-          Foto Galerija
+          {galleryHeading}
         </h4>
         <Gallery srcArray={srcArrayRentEquipment} />
       </div>

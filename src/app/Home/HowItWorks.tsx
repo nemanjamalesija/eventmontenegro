@@ -6,11 +6,11 @@ import { Pointer, PartyPopper, HeartHandshake } from 'lucide-react';
 
 type HowItWorksProps = {
   content: {
-    heading0: string;
+    sectionHeading: string;
     heading1: string;
     heading2: string;
     heading3: string;
-    paragraph0: string;
+    sectionSubheading: string;
     paragraph1: string;
     paragraph2: string;
     paragraph3: string;
@@ -19,11 +19,11 @@ type HowItWorksProps = {
 
 const HowItWorks: FC<HowItWorksProps> = ({ content }) => {
   const {
-    heading0,
+    sectionHeading,
     heading1,
     heading2,
     heading3,
-    paragraph0,
+    sectionSubheading,
     paragraph1,
     paragraph2,
     paragraph3,
@@ -41,10 +41,10 @@ const HowItWorks: FC<HowItWorksProps> = ({ content }) => {
               'text-base font-bold tracking-wide uppercase text-color-accent-main mb-3'
             )}
           >
-            {heading0}
+            {sectionHeading}
           </h3>
           <h4 className='text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-700'>
-            {paragraph0}
+            {sectionSubheading}
           </h4>
         </div>
         <div className='kids__text-box flex flex-col lg:grid grid-cols-3  gap-20 '>

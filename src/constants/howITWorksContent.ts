@@ -1,10 +1,10 @@
 export const howItWorksContentEnglish = {
-  heading0: 'How it works',
+  sectionHeading: 'How it works',
   heading1: 'Tell us what you like',
   heading2: 'Choose an offer',
   heading3: 'Relax and enjoy',
 
-  paragraph0: 'Organize your dream project in 3 easy steps',
+  sectionSubheading: 'Organize your dream project in 3 easy steps',
   paragraph1:
     "Tell us about your dream project. Whether it's a children's event, wedding, birthday celebration, or balloon festival, share your desires and special requests with us. We're here to listen to you and do our best to understand your vision and create a unique experience.",
   paragraph2:
@@ -14,12 +14,12 @@ export const howItWorksContentEnglish = {
 };
 
 export const howItWorksContentSerbian = {
-  heading0: 'Kako radimo',
+  sectionHeading: 'Kako radimo',
   heading1: 'Recite nam šta volite',
   heading2: 'Tell us what you like',
   heading3: 'Izaberite ponudu',
 
-  paragraph0: "Organizujte svoj projekat iz snova u 3 laka koraka'",
+  sectionSubheading: "Organizujte svoj projekat iz snova u 3 laka koraka'",
   paragraph1:
     'Izaberite iz našeg obimnog izbora vrhunske opreme i dekoracije za događaje i pronađite savršene elemente za oživljavanje Vašeg događaja. Takođe, ako Vam je potrebna pomoć u organizaciji događaja, naš stručni tim može se pozabaviti logistikom, koordinacijom i ostalim sitnicama.',
   paragraph2:
