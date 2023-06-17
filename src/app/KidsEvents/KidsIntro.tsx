@@ -12,6 +12,7 @@ import {
   kidsEventsContentSerbian,
 } from '@/constants/kidsEventsContent';
 import { FC } from 'react';
+import PageIntroHeading from '@/components/PageIntroHeading';
 
 const KidsIntro: FC = () => {
   const { isEnglish } = useAppContext();
@@ -25,14 +26,9 @@ const KidsIntro: FC = () => {
 
   return (
     <div>
-      <h2
-        className={clsx(
-          josefinSans.className,
-          'text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-600 mb-4 lg:mb-6'
-        )}
-      >
-        {isEnglish ? 'Kids events' : ' Dječije proslave'}
-      </h2>
+      <PageIntroHeading
+        heading={isEnglish ? 'Kids events' : ' Dječije proslave'}
+      />
 
       <div
         className='kids__img-box  h-[40vh] w-full bg-blend-screen
