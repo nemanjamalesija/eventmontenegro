@@ -1,7 +1,7 @@
 export const formContentEnglish = {
   formHeading: 'Plan your event now',
   formParagraph:
-    'Send us an email and someone from our team will give you attention within 24 hours',
+    'Send us an email and someone from our team will give you their full attention within 24 hours.',
   messagePlaceholder: 'Your message...',
   buttonText: 'Next step',
 };

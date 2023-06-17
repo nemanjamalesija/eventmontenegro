@@ -16,7 +16,7 @@ const ProductsContext = React.createContext<appContextValues>(
 );
 
 const AppProvider = ({ children }: { children: React.ReactNode }) => {
-  const [isEnglish, setIsEnglish] = useState(false);
+  const [isEnglish, setIsEnglish] = useState(true);
   const [isNavVisible, setIsNavVissible] = useState<boolean>(false);
   const navRef = useRef<HTMLDivElement | null>(null);
   const heroRef = useRef<HTMLDivElement | null>(null);

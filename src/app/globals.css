@@ -415,7 +415,3 @@ html {
   -webkit-mask: url('../../assets/img/logo.png') center / contain no-repeat;
   mask: url('../../assets/img/logo.png') center / contain no-repeat;
 }
-
-.imgs {
-  background-color: blue;
-}

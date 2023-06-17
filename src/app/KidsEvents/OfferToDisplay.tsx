@@ -1,24 +1,28 @@
 'use client';
 import { useEffect, useState } from 'react';
-
 import { FC } from 'react';
-import { kidsOffers } from './kidsOffers';
 import clsx from 'clsx';
 import { josefinSans } from '../../../utils/fonts';
+import { useAppContext } from '@/Provider/appContext';
+import {
+  kidsOffersEnglish,
+  kidsOffersSerbian,
+} from '@/constants/kidsEventsContent';
 
 const OfferToDisplay: FC = () => {
-  const [currentCategory, setCurrentCategory] = useState('Maskote');
-  const [currentOffer, setCurrentOffer] = useState(kidsOffers[0]);
+  const { isEnglish } = useAppContext();
+  const [activeCategoryIndex, setActiveCategoryIndex] = useState(0);
+  const [currentCategory, setCurrentCategory] = useState('Mascots');
+  const kidsOffers = isEnglish ? kidsOffersEnglish : kidsOffersSerbian;
+
+  const toggleContentModal = (currCat: string, currIndex: number) => {
+    setCurrentCategory(currCat);
+    setActiveCategoryIndex(currIndex);
+  };
 
   useEffect(() => {
-    const offerToDisplay = kidsOffers.filter(
-      (o) => o.category === currentCategory
-    );
-
-    const { category, content } = offerToDisplay[0];
-
-    setCurrentOffer({ category, content });
-  }, [currentCategory]);
+    setCurrentCategory(kidsOffers[activeCategoryIndex].category);
+  }, [activeCategoryIndex, kidsOffers]);
 
   return (
     <div className='flex flex-col lg:grid lg:grid-cols-2 items-center gap-12 lg:gap-24 mb-12 lg:mb-24'>
@@ -28,7 +32,7 @@ const OfferToDisplay: FC = () => {
         )}
       >
         <p className={clsx('text-base lg:text-lg lg:leading-9 text-gray-600')}>
-          {currentOffer.content}
+          {kidsOffers[activeCategoryIndex].content}
         </p>
       </div>
       <div>
@@ -38,7 +42,7 @@ const OfferToDisplay: FC = () => {
             'text-xl text-color-accent-main font-semibold mb-3'
           )}
         >
-          Saznajte više:
+          {isEnglish ? 'Learn more:' : 'Saznajte više:'}
         </h5>
 
         <div
@@ -56,7 +60,7 @@ const OfferToDisplay: FC = () => {
                   'text-color-accent-darkest': c.category !== currentCategory,
                 }
               )}
-              onClick={() => setCurrentCategory(c.category)}
+              onClick={() => toggleContentModal(c.category, i)}
             >
               {c.category === currentCategory
                 ? `${c.category} \u2190`
