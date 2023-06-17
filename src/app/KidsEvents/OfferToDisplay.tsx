@@ -26,15 +26,6 @@ const OfferToDisplay: FC = () => {
 
   return (
     <div className='flex flex-col lg:grid lg:grid-cols-2 items-center gap-12 lg:gap-24 mb-12 lg:mb-24'>
-      <div
-        className={clsx(
-          'text-color-gray-light-1 rounded-md justify-between py-2'
-        )}
-      >
-        <p className={clsx('text-base lg:text-lg lg:leading-9 text-gray-600')}>
-          {kidsOffers[activeCategoryIndex].content}
-        </p>
-      </div>
       <div>
         <h5
           className={clsx(
@@ -47,7 +38,7 @@ const OfferToDisplay: FC = () => {
 
         <div
           className={clsx(
-            'modal grid grid-cols-2 gap-y-[10px] py-2 px-4 rounded-md justify-between'
+            'modal grid grid-cols-2 gap-y-[10px] py-2 px-4 rounded-md justify-between gap-x-5 lg:gap-x-0'
           )}
         >
           {kidsOffers.map((c, i) => (
@@ -68,6 +59,15 @@ const OfferToDisplay: FC = () => {
             </span>
           ))}
         </div>
+      </div>
+      <div
+        className={clsx(
+          'text-color-gray-light-1 rounded-md justify-between py-2'
+        )}
+      >
+        <p className={clsx('text-base lg:text-lg lg:leading-9 text-gray-600')}>
+          {kidsOffers[activeCategoryIndex].content}
+        </p>
       </div>
     </div>
   );

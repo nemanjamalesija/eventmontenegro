@@ -45,12 +45,12 @@ const Offers: FC = () => {
         </div>
         <div className='flex flex-col gap-16 lg:gap-y-24 lg:grid lg:grid-cols-custom3fr lg:gap-x-20 '>
           <Card cardNumber={1} cardHeadingText={card1} href={'Weddings'} />
+          <Card cardNumber={3} cardHeadingText={card2} href={'KidsEvents'} />
           <Card
             cardNumber={2}
-            cardHeadingText={card2}
+            cardHeadingText={card3}
             href={'BusinessEvents'}
           />
-          <Card cardNumber={3} cardHeadingText={card3} href={'KidsEvents'} />
           <Card cardNumber={4} cardHeadingText={card4} href={'Balloons'} />
           <Card cardNumber={5} cardHeadingText={card5} href={'OtherEvents'} />
           <Card cardNumber={6} cardHeadingText={card6} href={'OtherOffers'} />

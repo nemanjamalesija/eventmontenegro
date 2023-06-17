@@ -35,7 +35,7 @@ const KidsIntro: FC = () => {
       </h2>
 
       <div
-        className='kids__img-box h-[40vh] w-full bg-blend-screen
+        className='kids__img-box  h-[40vh] w-full bg-blend-screen
         bg-cover bg-center lg:bg-top mb-16 lg:mb-24'
       ></div>
 
@@ -69,15 +69,6 @@ const KidsIntro: FC = () => {
         </figure>
       </div>
       <div className='step flex flex-col lg:grid lg:grid-cols-2 items-center gap-12 lg:gap-30 mb-16 lg:mb-24'>
-        <figure className='relative lg:flex justify-start'>
-          <Image
-            src={animacijeDisplay}
-            alt='Photo showing decoration example'
-            className='block object-cover rounded-md'
-            width={500}
-            height={500}
-          />
-        </figure>
         <div className='kids__text'>
           <div className='flex items-center gap-4 mb-4'>
             <div className='kids__icons-set flex items-center justify-center rounded-full h-14 w-14 lg:h-16 lg:w-16 bg-color-accent-main'>
@@ -97,6 +88,15 @@ const KidsIntro: FC = () => {
             {firstColRightP}
           </p>
         </div>
+        <figure className='relative lg:flex lg:justify-end'>
+          <Image
+            src={animacijeDisplay}
+            alt='Photo showing decoration example'
+            className='block object-cover rounded-md'
+            width={500}
+            height={500}
+          />
+        </figure>
       </div>
     </div>
   );

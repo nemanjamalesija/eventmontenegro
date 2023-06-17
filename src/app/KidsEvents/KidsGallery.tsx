@@ -32,7 +32,6 @@ const KidsGallery: FC = () => {
           )}
         >
           {isEnglish ? 'Birthdays' : 'Rođendani'}
-          Rođendani
         </h5>
 
         <Gallery srcArray={srcArrayBirthdays} />

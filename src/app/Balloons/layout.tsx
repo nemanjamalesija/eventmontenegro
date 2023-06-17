@@ -36,7 +36,7 @@ const Balloons: FC = () => {
           bg-cover bg-center lg:bg-top mb-16 lg:mb-24'
         ></div>
         <div className='balloons__content'>
-          <div className='balloons__buttons flex items-center justify-between lg:justify-center gap-0 lg:gap-10 -translate-y-6 mb-4 lg:mb-8'>
+          <div className='balloons__buttons flex items-center  justify-center gap-4 lg:gap-10 -translate-y-20 lg:-translate-y-[7.3rem] mb-4 lg:mb-8'>
             {content.balloonCategories.map((cat, i) => {
               return (
                 <button
