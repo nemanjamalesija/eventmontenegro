@@ -31,7 +31,7 @@ const KidsIntro: FC = () => {
           'text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-600 mb-4 lg:mb-6'
         )}
       >
-        Dječije proslave
+        {isEnglish ? 'Kids events' : ' Dječije proslave'}
       </h2>
 
       <div

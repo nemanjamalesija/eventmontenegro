@@ -1,4 +1,47 @@
-export const otherOffers = [
+export const otherOffersContentEnglish = [
+  {
+    category: 'Dances',
+    content:
+      'If you want to delight your guests with entertaining and theatrical performances, we suggest modern dance, salsa, or belly dance as excellent entertainment where attendees can relax and enjoy.',
+  },
+  {
+    category: 'Fire Dancing',
+    content:
+      'Fire dancing is a rare discipline of dangerous exhibitionism. Skilled dancers control flaming torches with their ability and concentration, spinning them around their bodies with great speed and precision. This combination of play, gymnastics, martial arts movements, and music leaves a powerful impact on the audience.',
+  },
+  {
+    category: 'Magician',
+    content:
+      'A great way to entertain your guests is with the help of magic. The magician offers an interactive show with plenty of interesting and incredible tricks. They can perform their tricks on stage or mingle with the audience, individually showcasing some of their tricks.',
+  },
+  {
+    category: 'Bartender Show',
+    content:
+      'If you want to have a bartender at your party, your guests will enjoy not only the attractive skill of bottle juggling but also the taste of the best cocktails. With energetic music in the background, the bartender will demonstrate their professional abilities, artistry, and dexterity.',
+  },
+  {
+    category: 'Live Music',
+    content:
+      'You can opt for instrumental music and allow your guests to enjoy a relaxed atmosphere with the sounds of guitar, violin, or saxophone. If you choose an accordion, a music band, or a DJ, your party will surely take on a more festive tone, and you can expect your guests to not only sing but also dance.',
+  },
+  {
+    category: 'Folklore',
+    content:
+      'Folklore consists of various musical and theatrical performances. Folk dance and traditional dances are performed by folklore groups from various regions of Montenegro, showcasing well-designed choreography. Each performance is visually striking and original.',
+  },
+  {
+    category: 'Foam Party',
+    content:
+      'A foam party is an unforgettable entertainment experience. Foam is completely harmless to humans and the environment, with a pleasant scent that does not irritate mucous membranes or dry out the skin. Please contact us in advance to coordinate dates and schedules.',
+  },
+  {
+    category: 'Aqua Aerobics & Aqua Dance',
+    content:
+      'Water aerobics is a healthy activity that helps maintain an ideal body shape. Aqua aerobics exercises are diverse, with benefits including a low risk of injury, full-body workouts, and exercising in the open air. To make this form of entertainment more enjoyable, we combine music and movements in the water, performing aqua dance. Our instructors are known for their knowledge of foreign languages, innovative choreography, kindness, and warmth, which guests quickly recognize.',
+  },
+];
+
+export const otherOffersContentSerbian = [
   {
     category: 'Plesovi',
     content:

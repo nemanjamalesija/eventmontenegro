@@ -4,7 +4,6 @@ import { josefinSans } from '../../../utils/fonts';
 import clsx from 'clsx';
 import { Check } from 'lucide-react';
 import { cn } from '../../../utils/twinMerge';
-import '../gallery.css';
 import Gallery from '@/components/ui/Gallery';
 import { srcArrayBallons } from '../../../assets/img/baloni/baloniImages';
 import {

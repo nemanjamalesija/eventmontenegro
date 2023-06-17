@@ -1,22 +1,29 @@
 'use client';
 
 import { FC, useEffect, useState } from 'react';
-import { otherOffers } from './otherOffers';
+import {
+  otherOffersContentSerbian,
+  otherOffersContentEnglish,
+} from './otherOffers';
 import clsx from 'clsx';
+import { useAppContext } from '@/Provider/appContext';
 
 const OfferToDispay: FC = () => {
-  const [currentCategory, setCurrentCategory] = useState('Plesovi');
-  const [currentOffer, setCurrentOffer] = useState(otherOffers[0]);
+  const { isEnglish } = useAppContext();
+  const [currentCategory, setCurrentCategory] = useState('Dances');
+  const [activeCategoryIndex, setActiveCategoryIndex] = useState(0);
+  const otherOffers = isEnglish
+    ? otherOffersContentEnglish
+    : otherOffersContentSerbian;
+
+  const toggleContentModal = (currCat: string, currIndex: number) => {
+    setCurrentCategory(currCat);
+    setActiveCategoryIndex(currIndex);
+  };
 
   useEffect(() => {
-    const offerToDisplay = otherOffers.filter(
-      (o) => o.category === currentCategory
-    );
-
-    const { category, content } = offerToDisplay[0];
-
-    setCurrentOffer({ category, content });
-  }, [currentCategory]);
+    setCurrentCategory(otherOffers[activeCategoryIndex].category);
+  }, [activeCategoryIndex, otherOffers]);
 
   return (
     <div className='flex flex-col lg:grid grid-cols-2 gap-x-24 gap-5 mb-12 lg:mb-16'>
@@ -35,7 +42,7 @@ const OfferToDispay: FC = () => {
                 'text-color-accent-darkest': c.category !== currentCategory,
               }
             )}
-            onClick={() => setCurrentCategory(c.category)}
+            onClick={() => toggleContentModal(c.category, i)}
           >
             {c.category === currentCategory
               ? `${c.category} \u2190`
@@ -49,7 +56,7 @@ const OfferToDispay: FC = () => {
         )}
       >
         <p className={clsx('text-base lg:text-lg  text-gray-600')}>
-          {currentOffer.content}
+          {otherOffers[activeCategoryIndex].content}
         </p>
       </div>
     </div>

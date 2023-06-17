@@ -1,5 +1,5 @@
 export const kidsEventsContentSerbian = {
-  firstColLeftH: 'Dekoraije',
+  firstColLeftH: 'Dekoracije',
   firstColLeftP:
     'Izaberite temu rođendana ili druge diječije proslave, a mi ćemo kreirati dekoraciju koja će oduševiti sve prisutne. Slatki sto predstavlja centralni dio dekoracije, zato se trudimo da svaki detalj na njemu bude savršeno uklopljen. Baloni su nezaobilazni dio dekoracije, a djeca im se najviše raduju. Dopustite nam da uljepšamo Vaš poseban dan i učinimo ga neponovljivim.',
 
