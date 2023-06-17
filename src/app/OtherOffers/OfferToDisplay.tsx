@@ -1,22 +1,29 @@
 'use client';
 
 import { FC, useEffect, useState } from 'react';
-import { otherOffers } from './otherOffers';
+import {
+  otherOffersContentEnglish,
+  otherOffersContentSerbian,
+} from '../../constants/otherOffersContent';
 import clsx from 'clsx';
+import { useAppContext } from '@/Provider/appContext';
 
 const OfferToDispay: FC = () => {
-  const [currentCategory, setCurrentCategory] = useState('Štampa na platnu');
-  const [currentOffer, setCurrentOffer] = useState(otherOffers[0]);
+  const { isEnglish } = useAppContext();
+  const [activeCategoryIndex, setActiveCategoryIndex] = useState(0);
+  const [currentCategory, setCurrentCategory] = useState('Canvas Printing');
+  const otherOfffers = isEnglish
+    ? otherOffersContentEnglish
+    : otherOffersContentSerbian;
+
+  const toggleContentModal = (currCat: string, currIndex: number) => {
+    setCurrentCategory(currCat);
+    setActiveCategoryIndex(currIndex);
+  };
 
   useEffect(() => {
-    const offerToDisplay = otherOffers.filter(
-      (o) => o.category === currentCategory
-    );
-
-    const { category, content } = offerToDisplay[0];
-
-    setCurrentOffer({ category, content });
-  }, [currentCategory]);
+    setCurrentCategory(otherOfffers[activeCategoryIndex].category);
+  }, [activeCategoryIndex, otherOfffers]);
 
   return (
     <div className='flex flex-col lg:grid grid-cols-2 gap-x-24 gap-5 mb-16 lg:mb-20'>
@@ -25,7 +32,7 @@ const OfferToDispay: FC = () => {
           'modal grid grid-cols-2 gap-y-[10px] py-2 px-4  lg:flex lg:flex-col rounded-md justify-between lg:h-48'
         )}
       >
-        {otherOffers.map((c, i) => (
+        {otherOfffers.map((c, i) => (
           <span
             key={i}
             className={clsx(
@@ -35,7 +42,7 @@ const OfferToDispay: FC = () => {
                 'text-color-accent-darkest': c.category !== currentCategory,
               }
             )}
-            onClick={() => setCurrentCategory(c.category)}
+            onClick={() => toggleContentModal(c.category, i)}
           >
             {c.category === currentCategory
               ? `${c.category} \u2190`
@@ -49,7 +56,7 @@ const OfferToDispay: FC = () => {
         )}
       >
         <p className={clsx('text-base lg:text-lg  text-gray-600')}>
-          {currentOffer.content}
+          {otherOfffers[activeCategoryIndex].content}
         </p>
       </div>
     </div>

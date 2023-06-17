@@ -11,6 +11,7 @@ import {
   balloonsSerbianContent,
 } from '@/constants/ballonsContent';
 import { useAppContext } from '@/Provider/appContext';
+import PageGalleryHeading from '@/components/PageGalleryHeading';
 
 const Balloons: FC = () => {
   const [categoryIndex, setCategoryIndex] = useState(0);
@@ -86,14 +87,7 @@ const Balloons: FC = () => {
         </div>
       </div>
       <div className='p__gallery px-2 lg:px-8'>
-        <h4
-          className={clsx(
-            josefinSans.className,
-            'text-lg lg:text-2xl font-medium text-color-accent-main mb-5 lg:mb-8  text-center'
-          )}
-        >
-          {content.galleryHeading}
-        </h4>
+        <PageGalleryHeading />
         <Gallery srcArray={srcArrayBallons} />;
       </div>
     </section>
