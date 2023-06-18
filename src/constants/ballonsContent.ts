@@ -1,6 +1,6 @@
 export const balloonsEnglishContent = {
   sectionHeading: 'Decoration, delivery, inflation, and balloon printing',
-  modalHeading: 'Everything for celebrations',
+  modalHeading: 'We offer',
   balloonCategories: ['Decoration', 'Delivery', 'Inflation', 'Printing'],
   balloonsContent: [
     {

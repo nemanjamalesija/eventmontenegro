@@ -40,6 +40,7 @@ const Navigation: FC = () => {
   }, [isNavVisible, setIsNavVissible]);
 
   const content = isEnglish ? contentNavEnglish : contentNavSerbian;
+  const { link1, link2, link3, link4, linkCTA } = content;
 
   return (
     <header
@@ -96,7 +97,7 @@ const Navigation: FC = () => {
               href='/'
               className='hover:text-color-shade-main cursor-pointer'
             >
-              {content.link1}
+              {link1}
             </Link>
           </li>
           <li
@@ -108,7 +109,7 @@ const Navigation: FC = () => {
               href='#howItWorks'
               scroll={true}
             >
-              {content.link2}
+              {link2}
             </Link>
           </li>
           <li className='transition-all font-medium duration-300'>
@@ -117,7 +118,7 @@ const Navigation: FC = () => {
               href='#offers'
               onClick={() => setIsNavVissible(false)}
             >
-              {content.link3}
+              {link3}
             </Link>
           </li>
           <li className='transition-all font-medium duration-300'>
@@ -126,7 +127,7 @@ const Navigation: FC = () => {
               href='#rentEquipment'
               onClick={() => setIsNavVissible(false)}
             >
-              {content.link4}
+              {link4}
             </Link>
           </li>
 
@@ -161,10 +162,10 @@ const Navigation: FC = () => {
             onClick={() => setIsNavVissible(false)}
           >
             <Link
-              href='#contact'
+              href='#contactForm'
               className='btn py-2 px-5 lg:py-3 lg:px-7  btn active:scale-95 transition-all, duration-300 rounded-full inline-flex items-center justify-center transition-color focus:outline-none cursor-pointer bg-color-accent-main hover:bg-color-shade-main text-white text-lg sm:text-xl font-semibold'
             >
-              {content.linkCTA}
+              {linkCTA}
             </Link>
           </li>
         </ul>

@@ -16,8 +16,8 @@ export const howItWorksContentEnglish = {
 export const howItWorksContentSerbian = {
   sectionHeading: 'Kako radimo',
   heading1: 'Recite nam šta volite',
-  heading2: 'Tell us what you like',
-  heading3: 'Izaberite ponudu',
+  heading2: 'Izaberite ponudu za Vas',
+  heading3: 'Opustite se i uživajte',
 
   sectionSubheading: 'Organizujte svoj projekat iz snova u 3 laka koraka',
   paragraph1:
