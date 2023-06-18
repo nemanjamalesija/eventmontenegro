@@ -48,7 +48,7 @@ const ContactForm: FC = () => {
   };
 
   return (
-    <section id='contact' className='section-book py-16 lg:py-24 lg:px-10 '>
+    <section id='contactForm' className='section-book py-16 lg:py-24 lg:px-10 '>
       <div className='row mx-auto max-w-custom px-5'>
         <div className='book'>
           <div className='book__form--container'>

@@ -13,6 +13,7 @@ import {
 const Hero: FC = () => {
   const { heroRef, navRef, isEnglish } = useAppContext();
   const content = isEnglish ? heroContentEnglish : heroContentSerbian;
+  const { heroHeading, heroDescription, heroCta1, heroCta2 } = content;
 
   useEffect(() => {
     if (!heroRef.current) return;
@@ -54,24 +55,24 @@ const Hero: FC = () => {
               'heading-primary text-center lg:text-start text-4xl md:text-6xl font-bold text-gray-700 '
             )}
           >
-            {content.heroHeading}
+            {heroHeading}
           </h1>
           <p className='text-lg md:text-hero-p leading-7 lg:leading-9 text-center lg:text-start  text-gray-700 font-semibold lg:font-normal mt-4 sm:mt-6'>
-            {content.heroDescription}
+            {heroDescription}
           </p>
           <div className='mt-10 flex justify-center lg:justify-start gap-4 lg:gap-6'>
             <CustomLink
-              href='#'
+              href='#contactForm'
               className='btn px-4 py-2 sm:py-3 sm:px-6 text-lg sm:text-xl'
             >
-              {content.heroCta1}
+              {heroCta1}
             </CustomLink>
             <CustomLink
               className='btn ghost flex items-center justify-center px-4 py-2 sm:py-3 sm:px-10  text-lg  sm:text-xl'
               variant='ghost'
               href='#howItWorks'
             >
-              {content.heroCta2} &darr;
+              {heroCta2} &darr;
             </CustomLink>
           </div>
         </div>
