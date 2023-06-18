@@ -1,5 +1,3 @@
-import { josefinSans } from '../../../utils/fonts';
-import clsx from 'clsx';
 import OfferToDispay from './OfferToDispay';
 import OtherOffersIntro from './OtherOffersIntro';
 
