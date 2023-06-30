@@ -407,8 +407,8 @@ html {
 }
 
 .footer__logo {
-  width: 160px;
-  height: 160px;
+  width: 220px;
+  height: 220px;
   background-color: #ffdde1;
   display: inline-block;
   -webkit-mask: url('../../assets/img/logo.png') center / contain no-repeat;
