@@ -51,7 +51,7 @@ const ContactForm: FC = () => {
     <section id='contactForm' className='section-book py-16 lg:py-24 lg:px-10 '>
       <div className='row mx-auto max-w-custom px-5'>
         <div className='book'>
-          <div className='book__form--container'>
+          <div className='book__form--container flex justify-end'>
             <form
               action='https://formspree.io/f/xayzgroq'
               method='POST'

@@ -30,7 +30,7 @@ const Hero: FC = () => {
     const headerObserver = new IntersectionObserver(stickyNav, {
       root: null,
       threshold: 0,
-      rootMargin: '-1px',
+      rootMargin: '-80px',
     });
 
     headerObserver.observe(heroRef.current);
