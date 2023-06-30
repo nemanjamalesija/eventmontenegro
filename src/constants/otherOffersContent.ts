@@ -23,7 +23,7 @@ export const otherOffersContentSerbian = [
 
 export const otherOffersContentEnglish = [
   {
-    category: 'Canvas Printing',
+    category: 'Textil Printing',
     content:
       "We do text prints on t-shirts, baby onesies, and sashes. If you want to convey a special message to others in an unusual way, printing on a t-shirt or baby onesie is the right choice. Sashes highlight the event you are celebrating. Whether it's graduation, a bachelorette party, coming of age, or any other occasion, we create prints on a sash that will be a lasting memento of your special day.",
   },
