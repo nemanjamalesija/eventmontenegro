@@ -384,6 +384,7 @@ html {
 
   -webkit-transition: all 0.2s;
   -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
 }
 
