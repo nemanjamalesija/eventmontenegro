@@ -48,7 +48,7 @@ const Hero: FC = () => {
       ref={heroRef}
     >
       <div className='flex flex-col lg:grid lg:grid-cols-custom2fr lg:items-center gap-20 lg:gap-24 mx-auto max-w-7xl '>
-        <div className='mt-16 sm:mt-20'>
+        <div className='mt-20'>
           <h1
             className={clsx(
               josefinSans.className,

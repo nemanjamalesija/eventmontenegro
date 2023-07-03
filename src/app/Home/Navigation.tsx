@@ -50,14 +50,14 @@ const Navigation: FC = () => {
         <Image
           src={logo}
           alt='Logo photo'
-          className='logo cursor-pointer  h-32  w-44 mt-6'
+          className='logo cursor-pointer  h-28 w-40 lg:h-32  lg:w-44 mt-6'
           priority={true}
           onClick={handleBackHome}
         />
         <Image
           src={logoSub}
           alt='Logo text'
-          className='cursor-pointer   h-16 w-auto'
+          className='cursor-pointer  h-14 lg:h-16 w-auto'
           onClick={handleBackHome}
         />
       </div>
