@@ -44,13 +44,13 @@ const Navigation: FC = () => {
   return (
     <header
       ref={navRef}
-      className='nav__header absolute top-0 left-0 w-full h-40 flex justify-between items-center sm:px-20 px-6 z-20'
+      className='nav__header absolute top-0 left-0 w-full h-28 flex justify-between items-center sm:px-20 px-6 z-20'
     >
       <div className='logo flex gap-2 items-center z-20'>
         <Image
           src={logo}
           alt='Logo photo'
-          className='cursor-pointer  h-36  w-48'
+          className='logo cursor-pointer  h-32  w-44 mt-6'
           priority={true}
           onClick={handleBackHome}
         />

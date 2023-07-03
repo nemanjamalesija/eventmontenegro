@@ -35,10 +35,15 @@ html {
   position: fixed;
   background-color: rgba(255, 255, 255, 0.95);
   box-shadow: 0 1.2px 3.2px rgba(0, 0, 0, 0.03);
+  height: 140px;
 }
 
 .nav__header.sticky .nav {
   background-color: rgba(255, 255, 255, 0.95);
+}
+
+.nav__header.sticky .logo {
+  margin-top: 0;
 }
 
 .card__picture--1,
