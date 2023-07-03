@@ -1,7 +1,6 @@
 'use client';
 import { useEffect } from 'react';
 import { FC } from 'react';
-import clsx from 'clsx';
 import { josefinSans } from '../../../utils/fonts';
 import CustomLink from '@/components/ui/CustomLink';
 import { useAppContext } from '@/Provider/appContext';
@@ -9,6 +8,7 @@ import {
   heroContentEnglish,
   heroContentSerbian,
 } from '@/constants/heroContent';
+import clsx from 'clsx';
 
 const Hero: FC = () => {
   const { heroRef, navRef, isEnglish } = useAppContext();
