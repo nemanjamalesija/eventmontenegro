@@ -413,8 +413,8 @@ html {
 }
 
 .footer__logo {
-  width: 220px;
-  height: 220px;
+  width: 200px;
+  height: 200px;
   background-color: #ffdde1;
   display: inline-block;
   -webkit-mask: url('../../assets/img/logo.png') center / contain no-repeat;
