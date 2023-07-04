@@ -110,6 +110,9 @@ const RentEquipment: FC = () => {
           </div>
         </div>
       </div>
+      <div>
+        <a href='#'>Saznajte jos vise na nasoj instagram stranici</a>
+      </div>
       <div className='p__gallery px-2 lg:px-8'>
         <h4
           className={clsx(
