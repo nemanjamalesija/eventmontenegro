@@ -109,10 +109,16 @@ const RentEquipment: FC = () => {
             </ul>
           </div>
         </div>
+        <div className='mb-8 -mt-5 text-start'>
+          <a
+            href='#'
+            className='text-base lg:text-lg text-color-accent-main hover:text-color-shade-main '
+          >
+            Saznajte jos vise na nasoj instagram stranici &rarr;
+          </a>
+        </div>
       </div>
-      <div>
-        <a href='#'>Saznajte jos vise na nasoj instagram stranici</a>
-      </div>
+
       <div className='p__gallery px-2 lg:px-8'>
         <h4
           className={clsx(

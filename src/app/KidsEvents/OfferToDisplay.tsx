@@ -69,6 +69,14 @@ const OfferToDisplay: FC = () => {
           {kidsOffers[activeCategoryIndex].content}
         </p>
       </div>
+      <div>
+        <a
+          href='#'
+          className='text-base lg:text-lg text-color-accent-main hover:text-color-shade-main'
+        >
+          Saznajte jos vise na nasoj instagram stranici &rarr;
+        </a>
+      </div>
     </div>
   );
 };

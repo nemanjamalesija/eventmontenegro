@@ -8,9 +8,7 @@ const layout = () => {
       <div className='mx-auto max-w-custom mt-10 lg:mt-14 mb-16 lg:mb-24 px-5'>
         <KidsIntro />
         <OfferToDisplay />
-        <div>
-          <a href='#'>Saznajte jos vise na nasoj instagram stranici</a>
-        </div>
+
         <KidsGallery />
       </div>
     </section>
