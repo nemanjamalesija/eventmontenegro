@@ -19,6 +19,9 @@ const layout = () => {
       <div className='mx-auto max-w-custom mt-10 lg:mt-14 mb-16 lg:mb-24 px-5'>
         <WeddingsContent />
       </div>
+      <div>
+        <a href='#'>Saznajte jos vise na nasoj instagram stranici</a>
+      </div>
       <div className='p__gallery px-2 lg:px-8'>
         <PageGalleryHeading />
         <Gallery srcArray={srcArrayWeddings} />
