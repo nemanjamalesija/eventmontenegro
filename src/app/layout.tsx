@@ -19,12 +19,13 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <head></head>
-      <body className={clsx(nunito.className, "bg-color-lightest relative ")}>
+      <body className={clsx(nunito.className, "bg-color-lightest")}>
         <AppProvider>
           <Navigation />
           {children}
           <Footer />
         </AppProvider>
+      </body>
     </html>
   );
 }
