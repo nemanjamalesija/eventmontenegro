@@ -22,9 +22,9 @@ html {
   scroll-behavior: smooth;
 }
 
-.hero__container {
-  background-image: url('../../assets/img/heroruzni.png');
-  background-position: center;
+body {
+  background-image: url("/heroflowers.png");
+  background-repeat: no-repeat;
 }
 
 .ghost:hover {
@@ -48,45 +48,45 @@ html {
 
 .card__picture--1,
 .weddings__img-box {
-  background-image: url('../../assets/img/cards/vjencanje.jpg');
+  background-image: url("../../assets/img/cards/vjencanje.jpg");
 }
 
 .card__picture--2,
 .business-celebrations__img-box {
-  background-image: url('../../assets/img/biznis.jpg');
+  background-image: url("../../assets/img/biznis.jpg");
 }
 
 .card__picture--3,
 .kids__img-box {
-  background-image: url('../../assets/img/cards/kidsbirthday.jpg');
+  background-image: url("../../assets/img/cards/kidsbirthday.jpg");
 }
 
 .card__picture--4 {
-  background-image: url('../../assets/img/baloni36.jpg');
+  background-image: url("../../assets/img/baloni36.jpg");
 }
 
 .card__picture--5,
 .other-celebrations__img-box {
-  background-image: url('../../assets/img/otherCelebrations.webp');
+  background-image: url("../../assets/img/otherCelebrations.webp");
 }
 
 .card__picture--6 {
-  background-image: url('../../assets/img/cards/dodatne.jpg');
+  background-image: url("../../assets/img/cards/dodatne.jpg");
 }
 
 /* balloons  */
 .balloons__img-box {
-  background-image: url('../../assets/img/balonicover.jpg');
+  background-image: url("../../assets/img/balonicover.jpg");
 }
 
 /* rent equpment */
 .rent__equipment {
-  background-image: url('../../assets/img/rent.webp');
+  background-image: url("../../assets/img/rent.webp");
 }
 
 /* other offers */
 .other-offers__img-box {
-  background-image: url('../../assets/img/ostale.jpg');
+  background-image: url("../../assets/img/ostale.jpg");
 }
 .modal {
   position: relative;
@@ -96,7 +96,7 @@ html {
 }
 
 .modal::before {
-  content: '\2665';
+  content: "\2665";
   color: #ee9ca7;
   position: absolute;
   top: -45px;
@@ -306,7 +306,7 @@ html {
       rgba(255, 255, 255, 0.9) 52%,
       transparent 50%
     ),
-    url('../../assets/img/weddings/tijanaMilo/tijanaMilo13.jpg');
+    url("../../assets/img/weddings/tijanaMilo/tijanaMilo13.jpg");
   background-size: 100%;
   background-size: 100%;
   border-radius: 3px;
@@ -418,6 +418,6 @@ html {
   height: 200px;
   background-color: #ffdde1;
   display: inline-block;
-  -webkit-mask: url('../../assets/img/logo.png') center / contain no-repeat;
-  mask: url('../../assets/img/logo.png') center / contain no-repeat;
+  -webkit-mask: url("../../assets/img/logo.png") center / contain no-repeat;
+  mask: url("../../assets/img/logo.png") center / contain no-repeat;
 }

@@ -1,14 +1,15 @@
-'use client';
-import { useEffect } from 'react';
-import { FC } from 'react';
-import { josefinSans } from '../../../utils/fonts';
-import CustomLink from '@/components/ui/CustomLink';
-import { useAppContext } from '@/Provider/appContext';
+"use client";
+import { useEffect } from "react";
+import { FC } from "react";
+import { josefinSans } from "../../../utils/fonts";
+import CustomLink from "@/components/ui/CustomLink";
+import { useAppContext } from "@/Provider/appContext";
 import {
   heroContentEnglish,
   heroContentSerbian,
-} from '@/constants/heroContent';
-import clsx from 'clsx';
+} from "@/constants/heroContent";
+import clsx from "clsx";
+import Image from "next/image";
 
 const Hero: FC = () => {
   const { heroRef, navRef, isEnglish } = useAppContext();
@@ -23,14 +24,14 @@ const Hero: FC = () => {
 
       const [entry] = entries;
 
-      if (!entry.isIntersecting) navRef.current.classList.add('sticky');
-      else navRef.current.classList.remove('sticky');
+      if (!entry.isIntersecting) navRef.current.classList.add("sticky");
+      else navRef.current.classList.remove("sticky");
     };
 
     const headerObserver = new IntersectionObserver(stickyNav, {
       root: null,
       threshold: 0,
-      rootMargin: '-80px',
+      rootMargin: "-80px",
     });
 
     headerObserver.observe(heroRef.current);
@@ -43,34 +44,34 @@ const Hero: FC = () => {
 
   return (
     <section
-      id='home'
-      className='hero__container pt-20 h-screen sm:pt-32 px-2 lg:px-0'
+      id="home"
+      className="hero__container pt-20 h-screen sm:pt-32 px-2 lg:px-0 "
       ref={heroRef}
     >
-      <div className='flex flex-col lg:grid lg:grid-cols-custom2fr lg:items-center gap-20 lg:gap-24 mx-auto max-w-7xl '>
-        <div className='mt-20'>
+      <div className="flex flex-col lg:grid lg:grid-cols-custom2fr lg:items-center gap-20 lg:gap-24 mx-auto max-w-7xl ">
+        <div className="mt-20">
           <h1
             className={clsx(
               josefinSans.className,
-              'heading-primary text-center lg:text-start text-4xl md:text-6xl font-bold text-gray-700 '
+              "heading-primary text-center lg:text-start text-4xl md:text-6xl font-bold text-gray-700 "
             )}
           >
             {heroHeading}
           </h1>
-          <p className='text-lg md:text-hero-p leading-7 lg:leading-9 text-center lg:text-start  text-gray-700 font-semibold lg:font-normal mt-4 sm:mt-6'>
+          <p className="text-lg md:text-hero-p leading-7 lg:leading-9 text-center lg:text-start  text-gray-700 font-semibold lg:font-normal mt-4 sm:mt-6">
             {heroDescription}
           </p>
-          <div className='mt-10 flex justify-center lg:justify-start gap-4 lg:gap-6'>
+          <div className="mt-10 flex justify-center lg:justify-start gap-4 lg:gap-6">
             <CustomLink
-              href='#contactForm'
-              className='btn px-4 py-2 sm:py-3 sm:px-6 text-lg sm:text-xl'
+              href="#contactForm"
+              className="btn px-4 py-2 sm:py-3 sm:px-6 text-lg sm:text-xl"
             >
               {heroCta1}
             </CustomLink>
             <CustomLink
-              className='btn ghost flex items-center justify-center px-4 py-2 sm:py-3 sm:px-10  text-lg  sm:text-xl'
-              variant='ghost'
-              href='#howItWorks'
+              className="btn ghost flex items-center justify-center px-4 py-2 sm:py-3 sm:px-10  text-lg  sm:text-xl"
+              variant="ghost"
+              href="#howItWorks"
             >
               {heroCta2} &darr;
             </CustomLink>
